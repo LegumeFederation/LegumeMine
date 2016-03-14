@@ -1,12 +1,12 @@
 #!/bin/sh
 ./clean
 date > started
-cd dbmodel
-./go
-cd ..
-cd integrate
-./go
-cd ..
+#cd dbmodel
+#./go
+#cd ..
+#cd integrate
+#./go
+#cd ..
 cd postprocess
 ./go
 cd ..
