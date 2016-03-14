@@ -1,9 +1,9 @@
 #!/bin/sh
 rm intermine.log
 ant clean
+ant -Dsource=multi-synteny
 ant -Dsource=bean-genetics
 ant -Dsource=soy-genetics
-ant -Dsource=multi-synteny
 ant -Dsource=multi-genomics
 ant -Dsource=so
 ant -Dsource=entrez-organism
