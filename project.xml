@@ -19,7 +19,7 @@
     </source>
 
     <!-- Phaseolus vulgaris (common bean) genetics -->
-    <source name="bean-genetics" type="legfed" dump="true">
+    <source name="chado-genetics" type="legfed" dump="true">
       <property name="source.db.name" value="tripal"/>
       <property name="organisms" value="3885"/>
       <property name="dataSetTitle" value="LegFed chado genetic data"/>
@@ -29,7 +29,7 @@
     </source>
 
     <!-- Glycine maximus (soybean) genetics -->
-    <source name="soy-genetics" type="legfed" dump="true">
+    <source name="soybase-genetics" type="legfed" dump="true">
       <property name="source.db.name" value="tripal"/>
       <property name="organisms" value="3847"/>
       <property name="dataSetTitle" value="Soybase data"/>
