@@ -12,8 +12,8 @@
       <property name="source.db.name" value="tripal"/>
       <!-- SPACE-delimited tax IDs! -->
       <property name="organisms" value="3847 3885 3398"/>
-      <property name="dataSetTitle" value="LegFed chado genomic data"/>
-      <property name="dataSourceName" value="LegFed chado genomic data"/>
+      <property name="dataSetTitle" value="LIS chado genomic data"/>
+      <property name="dataSourceName" value="LIS chado genomic data"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.SequenceProcessor"/>
     </source>
@@ -22,8 +22,8 @@
     <source name="chado-genetics" type="legfed" dump="true">
       <property name="source.db.name" value="tripal"/>
       <property name="organisms" value="3885"/>
-      <property name="dataSetTitle" value="LegFed chado genetic data"/>
-      <property name="dataSourceName" value="LegFed chado genetic data"/>
+      <property name="dataSetTitle" value="LIS chado genetic data"/>
+      <property name="dataSourceName" value="LIS chado genetic data"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/>
     </source>
@@ -31,6 +31,7 @@
     <!-- Glycine maximus (soybean) genetics -->
     <source name="soybase-genetics" type="legfed" dump="true">
       <property name="source.db.name" value="tripal"/>
+      <property name="src.data.file" value="/home/intermine/data/synteny_Pv_with_Gm.gff3"/>
       <property name="organisms" value="3847"/>
       <property name="dataSetTitle" value="Soybase data"/>
       <property name="dataSourceName" value="Soybase data"/>
@@ -41,11 +42,29 @@
     <!-- Pv to Gm Synteny -->
     <source name="lis-synteny" type="legfed" dump="true">
       <property name="source.db.name" value="tripal"/>
-      <property name="organisms" value="3885 3847"/>
-      <property name="dataSetTitle" value="LIS Synteny data"/>
-      <property name="dataSourceName" value="LIS Synteny data"/>
+      <property name="organisms" value="3847 3885"/>
+      <property name="sourceOrganism" value="3885"/>
+      <property name="targetOrganism" value="3847"/>
+      <property name="dagChainerFile" location="/home/intermine/data/synteny_Pv_with_Gm.gff3"/> 
+      <property name="dataSetTitle" value="LIS synteny data"/>
+      <property name="dataSourceName" value="LIS synteny data"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.SyntenyProcessor"/>
+    </source>
+
+    <!-- gene ontology -->
+    <source name="go" type="go">
+        <property name="src.data.file" location="/home/intermine/data/go-annotation/go.obo"/>
+    </source>
+
+    <!-- chado GO annotation -->
+    <source name="chado-go" type="legfed" dump="true">
+      <property name="source.db.name" value="tripal"/>
+      <property name="organisms" value="3847 3885"/>
+      <property name="dataSetTitle" value="LegFed Phaseolus vulgaris (3885) data"/>
+      <property name="dataSourceName" value="LegFed Tripal database"/>
+      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.GOProcessor"/>
     </source>
 
     <!-- sequence ontology -->

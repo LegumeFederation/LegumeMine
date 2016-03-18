@@ -96,6 +96,15 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.OntologyAnnotation">
+    <fields>
+      <fieldconfig fieldExpr="subject.primaryIdentifier" label="Gene"/>
+      <fieldconfig fieldExpr="ontologyTerm.identifier" label="Identifier"/>
+      <fieldconfig fieldExpr="ontologyTerm.name" label="Name"/>
+      <fieldconfig fieldExpr="ontologyTerm.description" label="Description"/>
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.OntologyTerm">
     <headerconfig>
       <titles>
@@ -103,9 +112,9 @@
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="identifier"/>
-      <fieldconfig fieldExpr="name"/>
-      <fieldconfig fieldExpr="description" doNotTruncate="true" />
+      <fieldconfig fieldExpr="identifier" />
+      <fieldconfig fieldExpr="name" />
+      <fieldconfig fieldExpr="description" doNotTruncate="false" />
     </fields>
   </class>
 
