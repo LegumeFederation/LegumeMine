@@ -1,9 +1,9 @@
 #!/bin/sh
 # ant -Dsource=go
-ant clean
-ant -Dsource=lis-synteny
+#ant clean
+#ant -Dsource=chado-go
+#ant -Dsource=lis-synteny
 ant -Dsource=soybase-genetics
-ant -Dsource=chado-go
 ant -Dsource=chado-genetics
 ant -Dsource=chado-genomics
 ant -Dsource=so
