@@ -1,10 +1,10 @@
 #!/bin/sh
 # ant -Dsource=go
-#ant clean
-#ant -Dsource=chado-go
-#ant -Dsource=lis-synteny
-ant -Dsource=soybase-genetics
-ant -Dsource=chado-genetics
+ant clean
 ant -Dsource=chado-genomics
+ant -Dsource=chado-genetics
+ant -Dsource=soybase-genetics
+ant -Dsource=chado-go
+ant -Dsource=lis-synteny
 ant -Dsource=so
 ant -Dsource=entrez-organism
