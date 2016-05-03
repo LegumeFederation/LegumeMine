@@ -1,6 +1,6 @@
-<project name="multimine-webapp" default="default" basedir=".">
+<project name="legumemine-webapp" default="default" basedir=".">
 
-  <description>build, test, package multimine-webapp</description>
+  <description>build, test, package legumemine-webapp</description>
   <import file="../../imbuild/application.xml"/>
 
   <target name="-pre-jar"

@@ -1,6 +1,6 @@
-<project name="multimine-postprocess" default="default" basedir=".">
+<project name="legumemine-postprocess" default="default" basedir=".">
 
-  <description>perform post processing for multimine</description>
+  <description>perform post processing for legumemine</description>
 
   <import file="../../imbuild/postprocess.xml"/>
 

@@ -1,2 +1,3 @@
 #!/bin/sh
+echo "********** legumemine/dbmodel **********"
 ant clean build-db

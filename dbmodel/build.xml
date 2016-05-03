@@ -1,4 +1,4 @@
-<project name="multimine-dbmodel" default="default" basedir=".">
+<project name="legumemine-dbmodel" default="default" basedir=".">
   <description>represents the production objectstore and the model therein</description>
   <import file="../../imbuild/objectstore.xml"/>
 
