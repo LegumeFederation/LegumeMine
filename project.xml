@@ -8,7 +8,7 @@
   <sources>
 
     <!-- chado genomics - bean, soybean -->
-    <source name="chado-genomics1" type="legfed" dump="true">
+    <source name="chado-genomics1" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="tripal"/>
       <property name="organisms" value="3847 3885 3398"/>
       <property name="dataSetTitle" value="LIS chado genomic data"/>
@@ -18,7 +18,7 @@
     </source>
 
     <!-- chado genomics - peanut -->
-    <source name="chado-genomics2" type="legfed" dump="true">
+    <source name="chado-genomics2" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="peanutbase"/>
       <property name="organisms" value="3398 3817 3818 130453 130454"/>
       <property name="dataSetTitle" value="LIS Arachis data"/>
@@ -28,7 +28,7 @@
     </source>
 
     <!-- chado genetics - bean, soybean -->
-    <source name="chado-genetics1" type="legfed" dump="true">
+    <source name="chado-genetics1" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="tripal"/>
       <property name="organisms" value="3847 3885 3398"/>
       <property name="dataSetTitle" value="LIS chado genetic data"/>
@@ -38,7 +38,7 @@
     </source>
 
     <!-- chado genetics - peanut -->
-    <source name="chado-genetics2" type="legfed" dump="true">
+    <source name="chado-genetics2" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="peanutbase"/>
       <property name="organisms" value="3398 3817 3818 130453 130454"/>
       <property name="dataSetTitle" value="LIS Arachis data"/>
@@ -48,7 +48,7 @@
     </source>
 
     <!-- chado featureprop - bean, soybean -->
-    <source name="chado-featureprop1" type="legfed" dump="true">
+    <source name="chado-featureprop1" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="tripal"/>
       <property name="organisms" value="3847 3885 3398"/>
       <property name="dataSetTitle" value="LIS Glycine max (3847) data"/>
@@ -58,7 +58,7 @@
     </source>
 
     <!-- chado featureprop - peanut -->
-    <source name="chado-featureprop2" type="legfed" dump="true">
+    <source name="chado-featureprop2" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="peanutbase"/>
       <property name="organisms" value="3398 3817 3818 130453 130454"/>
       <property name="dataSetTitle" value="LIS Arachis data"/>
@@ -68,78 +68,43 @@
     </source>
 
     <!-- chado go - bean, soybean -->
-    <source name="chado-go1" type="legfed" dump="true">
+    <source name="chado-go1" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="tripal"/>
       <property name="organisms" value="3847 3885 3398"/>
       <property name="dataSetTitle" value="LIS Phaseolus vulgaris (3885) data"/>
       <property name="dataSourceName" value="LIS Tripal1 database"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GOProcessor"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.GOAnnotationProcessor"/>
     </source>
 
     <!-- chado go - peanut -->
-    <source name="chado-go2" type="legfed" dump="true">
+    <source name="chado-go2" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="peanutbase"/>
       <property name="organisms" value="3398 3817 3818 130453 130454"/>
       <property name="dataSetTitle" value="LIS Arachis data"/>
       <property name="dataSourceName" value="LIS Tripal2 database"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GOProcessor"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.GOAnnotationProcessor"/>
     </source>
 
-    <!-- soybean genetic markers from GFF file -->
-    <source name="gff-geneticmarkers" type="legfed" dump="true">
-      <property name="source.db.name" value="tripal"/>
-      <property name="organisms" value="3847"/>
-      <property name="geneticMarkerGffFile" value="/home/intermine/data/soybean_map_version_4_0.gff3"/>
-      <property name="dataSetTitle" value="Soybase genetic markers GFF dump"/>
-      <property name="dataSourceName" value="LIS Tripal database"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GeneticMarkerGFFProcessor"/>
+    <!-- genetic markers from GFF files -->
+    <source name="gff-geneticmarkers" type="legfed-geneticmarker-gff" dump="true">
+      <property name="src.data.dir" location="/home/intermine/data/legumes-markers"/>
     </source>
 
-    <!-- soybean linkage group-QTL-marker relationships from tab-delimited CMap export file -->
-    <source name="file-cmap" type="legfed" dump="true">
-      <property name="source.db.name" value="tripal"/>
-      <property name="organisms" value="3847"/>
-      <property name="cmapFile" value="/home/intermine/data/Soybean-GmComposite2003.txt"/>
-      <property name="dataSetTitle" value="Soybase CMap linkage group-QTL-marker text file"/>
-      <property name="dataSourceName" value="LIS Tripal database"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.CMapFileProcessor"/>
+    <!-- linkage group-QTL-marker relationships from tab-delimited CMap export files -->
+    <source name="file-cmap" type="legfed-cmap-file" dump="true">
+      <property name="src.data.dir" location="/home/intermine/data/legumes-cmap"/>
     </source>
 
-    <!-- soybean QTL-marker relationships from MySQL dump tab-delimited file -->
-    <source name="file-qtlmarkers" type="legfed" dump="true">
-      <property name="source.db.name" value="tripal"/>
-      <property name="organisms" value="3847"/>
-      <property name="qtlMarkerFile" value="/home/intermine/data/SoyBase-QTL-markers.txt"/>
-      <property name="dataSetTitle" value="Soybase QTL-marker text file"/>
-      <property name="dataSourceName" value="LIS Tripal database"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.QTLMarkerFileProcessor"/>
+    <!-- QTL-marker relationships from MySQL dump tab-delimited files -->
+    <source name="file-qtlmarkers" type="legfed-qtlmarker-file" dump="true">
+      <property name="src.data.dir" location="/home/intermine/data/legumes-qtl-markers"/>
     </source>
 
-    <!-- bean to soybean synteny from GFF file -->
-    <source name="file-synteny1" type="legfed" dump="true">
-      <property name="source.db.name" value="tripal"/>
-      <property name="organisms" value="3885 3847"/>
-      <property name="dagChainerFile" location="/home/intermine/data/synteny.3885_with_3847.gff3"/>
-      <property name="dataSetTitle" value="LIS synteny dump"/>
-      <property name="dataSourceName" value="LIS Tripal database"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.SyntenyProcessor"/>
-    </source>
-
-    <!-- duranensis to ipaensis synteny from GFF file -->
-    <source name="file-synteny2" type="legfed" dump="true">
-      <property name="source.db.name" value="tripal"/>
-      <property name="organisms" value="130453 130454"/>
-      <property name="dagChainerFile" location="/home/intermine/data/synteny.130453_with_130454.gff3"/>
-      <property name="dataSetTitle" value="Peanutbase synteny dump"/>
-      <property name="dataSourceName" value="LIS Tripal database"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.SyntenyProcessor"/>
+    <!-- synteny from GFF files -->
+    <source name="gff-synteny" type="legfed-synteny-gff" dump="true">
+      <property name="src.data.dir" location="/home/intermine/data/legumes-synteny"/>
     </source>
 
     <!-- gene ontology -->
@@ -160,6 +125,10 @@
   </sources>
 
   <post-processing>
+
+    <!-- legfed -->
+    <post-process name="create-polypeptide-gene-references" dump="true"/>
+    <post-process name="populate-gene-spanning-qtls" dump="true"/>
 
     <!-- order from flymine -->
     <post-process name="populate-located-features"/>

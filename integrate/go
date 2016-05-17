@@ -3,16 +3,16 @@ echo "********** legumemine/integrate **********"
 # ant -Dsource=go
 # ant -Dsource=so
 ant clean
-ant -Dsource=chado-genomics
+ant -Dsource=chado-genomics1
 ant -Dsource=chado-genomics2
-ant -Dsource=chado-genetics
-ant -Dsource=chado-genetics2
-ant -Dsource=chado-featureprop
-ant -Dsource=chado-featureprop2
-ant -Dsource=chado-go
-ant -Dsource=chado-go2
 ant -Dsource=gff-geneticmarkers
+ant -Dsource=chado-genetics1
+ant -Dsource=chado-genetics2
 ant -Dsource=file-cmap
+ant -Dsource=chado-featureprop1
+ant -Dsource=chado-featureprop2
+ant -Dsource=chado-go1
+ant -Dsource=chado-go2
 ant -Dsource=file-qtlmarkers
-ant -Dsource=file-synteny
+ant -Dsource=gff-synteny
 ant -Dsource=entrez-organism
