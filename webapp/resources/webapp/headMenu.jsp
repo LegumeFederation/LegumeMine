@@ -37,11 +37,11 @@
   <div id="header">
     <a href="${WEB_PROPERTIES['project.sitePrefix']}" alt="Home" rel="NOFOLLOW"><img id="logo" src="model/images/logo.png" alt="Logo" /></a>
     <h1><html:link href="${WEB_PROPERTIES['project.sitePrefix']}/"><c:out value="${WEB_PROPERTIES['project.title']}" escapeXml="false"/></html:link></h1>
-    <p id="version"><fmt:message key="header.version"/> <c:out value="${WEB_PROPERTIES['project.releaseVersion']}" escapeXml="false"/></span>
+    <p id="version"><fmt:message key="header.version"/> <c:out value="${WEB_PROPERTIES['project.releaseVersion']}" escapeXml="false"/></p>
     <p><c:out value="${WEB_PROPERTIES['project.subTitle']}" escapeXml="false"/></p>
   </div>
 
-    <!-- Tab Menu -->
+  <!-- Tab Menu -->
   <fmt:message key="${pageName}.tab" var="tab" />
   <div id="menucontainer">
     <ul id="nav">
@@ -90,7 +90,8 @@
     </ul>
     <ul id="loginbar">
         <!-- start of LegFed adds -->
-        <li><a href="http://legumeinfo.org" target="_blank" alt="LIS - Legume Information System">Legume Information System</a></li>
+        <li><a href="http://mines.legumeinfo.org/" alt="LIS Mines">LIS Mines</a></li>
+        <li><a href="http://legumefederation.org/" target="_blank" alt="Legume Federation">LegFed Home</a></li>
         <!-- end of LegFed adds -->
         <li><a href="#" onclick="showContactForm();return false;"><fmt:message key="feedback.link"/></a></li>
         <c:if test="${PROFILE.loggedIn}">
