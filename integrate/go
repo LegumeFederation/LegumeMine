@@ -1,20 +1,5 @@
 #!/bin/sh
 echo "********** legumemine/integrate **********"
-# ant -Dsource=go
-# ant -Dsource=so
+# ant -Dsource=so,go
 ant clean
-ant -Dsource=chado-genomics1
-ant -Dsource=chado-genomics2
-ant -Dsource=gff-geneticmarkers
-ant -Dsource=chado-genetics1
-ant -Dsource=chado-genetics2
-ant -Dsource=file-cmap
-ant -Dsource=chado-featureprop1
-ant -Dsource=chado-featureprop2
-ant -Dsource=chado-go1
-ant -Dsource=chado-go2
-ant -Dsource=chado-reactome-file1
-ant -Dsource=chado-reactome-file2
-ant -Dsource=file-qtlmarkers
-ant -Dsource=gff-synteny
-ant -Dsource=entrez-organism
+ant -v -Dsource=chado-genomics1,chado-genomics2,chado-genetics1,chado-genetics2,chado-featureprop1,chado-featureprop2,chado-go1,chado-go2,chado-reactome-file1,chado-reactome-file2,chado-homology,file-cmap,gff-geneticmarkers,file-qtlmarkers,gff-synteny,entrez-organism
