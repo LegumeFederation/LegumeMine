@@ -41,7 +41,7 @@
     <p><c:out value="${WEB_PROPERTIES['project.subTitle']}" escapeXml="false"/></p>
   </div>
 
-  <!-- Tab Menu -->
+    <!-- Tab Menu -->
   <fmt:message key="${pageName}.tab" var="tab" />
   <div id="menucontainer">
     <ul id="nav">
@@ -90,8 +90,8 @@
     </ul>
     <ul id="loginbar">
         <!-- start of LegFed adds -->
-        <li><a href="http://mines.legumeinfo.org/" alt="LIS Mines">LIS Mines</a></li>
-        <li><a href="http://legumefederation.org/" target="_blank" alt="Legume Federation">LegFed Home</a></li>
+        <li><a href="http://mines.legumeinfo.org/" alt="LIS Mines">Other LIS Mines</a></li>
+        <li><a href="http://legumeinfo.org/" target="_blank" alt="LIS - Legume Information System">LIS Home</a></li>
         <!-- end of LegFed adds -->
         <li><a href="#" onclick="showContactForm();return false;"><fmt:message key="feedback.link"/></a></li>
         <c:if test="${PROFILE.loggedIn}">
