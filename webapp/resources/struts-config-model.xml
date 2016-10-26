@@ -57,3 +57,12 @@
 
 <action path="/linkageGroupDiagram" forward="linkageGroupDiagram.page" />
 
+<!-- MEME analysis -->
+<action path="/initMemeAnalysis"
+        type="org.ncgr.intermine.web.MemeController" />
+
+<!-- Motif Search -->
+<action path="/initMotifSearch"
+        type="org.ncgr.intermine.web.MotifSearchController" />
+
+

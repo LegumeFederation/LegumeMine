@@ -2,4 +2,5 @@
 echo "********** legumemine/integrate **********"
 # ant -Dsource=so,go
 ant clean
-ant -v -Dsource=chado-genomics1,chado-genomics2,chado-genetics1,chado-genetics2,chado-featureprop1,chado-featureprop2,chado-go1,chado-go2,chado-reactome-file1,chado-reactome-file2,chado-homology,file-cmap,gff-geneticmarkers,file-qtlmarkers,gff-synteny,entrez-organism
+#ant -v -Dsource=so,go,chado-genomics1,chado-genomics2,chado-genetics1,chado-genetics2,chado-featureprop1,chado-featureprop2,chado-go1,chado-go2,chado-reactome-file1,chado-reactome-file2,chado-homology,file-cmap,gff-geneticmarkers,file-qtlmarkers,gff-synteny,entrez-organism
+ant -v -Dsource=so,go,chado-genomics1,chado-genomics2,chado-genetics1,chado-genetics2,chado-featureprop1,chado-featureprop2,chado-go1,chado-go2,chado-reactome-file1,chado-reactome-file2,chado-homology,file-cmap,gff-geneticmarkers,file-qtlmarkers,gff-synteny,entrez-organism

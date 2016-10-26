@@ -1,4 +1,29 @@
 #!/bin/sh
 echo "********** legumemine/postprocess **********"
 ant clean
-ant
+
+#ant
+
+#ant -Daction=do-sources
+
+#ant -Daction=populate-gene-spanning-qtls
+#ant -Daction=create-protein-gene-references
+#ant -Daction=create-protein-domain-references
+#ant -Daction=populate-interpro-data
+    
+#ant -Daction=create-intron-features
+#ant -Daction=create-intergenic-region-features
+#ant -Daction=create-gene-flanking-features 
+   
+#ant -Daction=populate-located-features
+#ant -Daction=populate-child-features
+#ant -Daction=create-references
+#ant -Daction=create-chromosome-locations-and-lengths
+#ant -Daction=transfer-sequences
+
+#ant -Daction=create-location-overlap-index
+#ant -Daction=create-overlap-view
+#ant -Daction=create-attribute-indexes
+#ant -Daction=summarise-objectstore
+#ant -Daction=create-autocomplete-index
+#ant -Daction=create-search-index
