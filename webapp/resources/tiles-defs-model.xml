@@ -36,6 +36,7 @@
 
 <definition name="friendlyMineLinkDisplayer.tile" path="/model/friendlyMineLinkDisplayer.jsp" controllerUrl="/initFriendlyMineLinkDisplayer.do"/>
 
+
 <!-- Heat Map -->
 <definition name="heatMap.tile" path="/model/heatMap.jsp"
             controllerUrl="/initHeatMap.do"/>
@@ -61,3 +62,7 @@
 <!-- Motif Search -->
 <definition name="motifSearch.tile" path="/model/motifSearch.jsp"
             controllerUrl="/initMotifSearch.do" />
+
+<!-- LIS pages -->
+<definition name="lisLinkDisplayer.tile" path="/model/lisLinkDisplayer.jsp"/>
+

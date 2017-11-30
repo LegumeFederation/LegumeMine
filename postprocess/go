@@ -2,25 +2,22 @@
 echo "********** legumemine/postprocess **********"
 ant clean
 
-#ant
+# the full Monty
+ant -v
 
-#ant -Daction=do-sources
-
-#ant -Daction=populate-gene-spanning-qtls
-#ant -Daction=create-protein-gene-references
-#ant -Daction=create-protein-domain-references
-#ant -Daction=populate-interpro-data
-    
+# add features
 #ant -Daction=create-intron-features
 #ant -Daction=create-intergenic-region-features
-#ant -Daction=create-gene-flanking-features 
-   
+#ant -Daction=create-gene-flanking-features
+
+# create various references and collections
 #ant -Daction=populate-located-features
 #ant -Daction=populate-child-features
 #ant -Daction=create-references
 #ant -Daction=create-chromosome-locations-and-lengths
 #ant -Daction=transfer-sequences
 
+# views and indexes, after all data is set
 #ant -Daction=create-location-overlap-index
 #ant -Daction=create-overlap-view
 #ant -Daction=create-attribute-indexes
