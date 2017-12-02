@@ -372,12 +372,6 @@
   <!-- report displayers -->
   <reportdisplayers>
 
-    <!-- <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer" -->
-    <!--                  jspName="model/geneOntologyDisplayer.jsp" -->
-    <!--                  replacesFields="ontologyAnnotations" -->
-    <!--                  placement="other" -->
-    <!--                  types="Gene"/> -->
-    
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneStructureDisplayer"
                      jspName="model/geneStructureDisplayer.jsp"
                      replacesFields="transcripts,exons,CDSs,introns,UTRs,fivePrimeUTR,threePrimeUTR"

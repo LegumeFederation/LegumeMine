@@ -18,7 +18,8 @@ ant clean
 #pg_restore -d legumemine /home/shokin/dumps/legumemine.chado.dat
 
 # whole chado kaboodle kit
-ant -v -Dsource=lis-genomics,lis-genetics,peanutbase-genetics,lis-featureprop,lis-genefamilies,lis-homology,lis-go-annotation,lis-reactome-file
+#ant -v -Dsource=lis-genomics,lis-genetics,peanutbase-genetics,lis-featureprop,lis-genefamilies,lis-homology,lis-go-annotation,lis-reactome-file
+pg_restore -d legumemine /home/shokin/dumps/legumemine.chado.dat
 
 # restore gene.genefamilyid which gets lost in the merges above
 #psql legumemine -f ../dbmodel/build/model/add-update-triggers.sql
@@ -40,20 +41,16 @@ ant -v -Dsource=lis-genomics,lis-genetics,peanutbase-genetics,lis-featureprop,li
 #psql legumemine -f ../dbmodel/build/model/remove-update-triggers.sql
 
 # bean non-chado imports
-#ant -v -Dsource=bean-qtl-ontology-file
-#ant -v -Dsource=bean-expression
+#ant -v -Dsource=bean-qtl-ontology-file,bean-expression
 
 # chickpea non-chado imports
 #ant -v -Dsource=chickpea-expression
 
 # cowpea non-chado imports
-#ant -v -Dsource=cowpea-snpmarkers,cowpea-snppositions,cowpea-linkagegroup-file,cowpea-marker-linkagegroup-file,cowpea-qtl-file,cowpea-marker-qtl-file,cowpea-qtl-ontology-file
+#ant -v -Dsource=cowpea-qtl-file,cowpea-qtl-ontology-file,cowpea-snpmarkers,cowpea-snppositions,cowpea-linkagegroup-file,cowpea-marker-linkagegroup-file,cowpea-marker-qtl-file
 
 # peanut non-chado imports
-#ant -v -Dsource=peanut-geneticmarker-gff,peanut-synteny-gff
-#ant -v -Dsource=peanut-expression
+#ant -v -Dsource=peanut-geneticmarker-gff,peanut-expression
 
 # soybean non-chado imports
-#ant -v -Dsource=soybase-qtl-file,soybase-qtl-ontology-file,soybase-marker-chromosome-file,soybase-linkagegroup-file,soybase-marker-linkagegroup-file,soybase-marker-qtl-file
-#ant -v -Dsource=soybean-expression
-
+#ant -v -Dsource=soybase-qtl-file,soybase-qtl-ontology-file,soybase-marker-chromosome-file,soybase-linkagegroup-file,soybase-marker-linkagegroup-file,soybase-marker-qtl-file,soybean-expression

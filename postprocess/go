@@ -3,7 +3,7 @@ echo "********** legumemine/postprocess **********"
 ant clean
 
 # the full Monty
-ant -v
+#ant -v
 
 # add features
 #ant -Daction=create-intron-features
@@ -20,7 +20,7 @@ ant -v
 # views and indexes, after all data is set
 #ant -Daction=create-location-overlap-index
 #ant -Daction=create-overlap-view
-#ant -Daction=create-attribute-indexes
-#ant -Daction=summarise-objectstore
-#ant -Daction=create-autocomplete-index
-#ant -Daction=create-search-index
+ant -Daction=create-attribute-indexes
+ant -Daction=summarise-objectstore
+ant -Daction=create-autocomplete-index
+ant -Daction=create-search-index
