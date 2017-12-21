@@ -102,22 +102,20 @@
                 </c:choose>
                 <c:if test="${!empty WEB_PROPERTIES['begin.thirdBox.linkTitle']}">
                     <div class="bottom">
-                        <c:choose>
-                            <c:when test="${!isNewUser && !empty (WEB_PROPERTIES['begin.thirdBox.visitedLink'])}">
-                                <div style="margin-left:14px;height:80px;width:250px;text-align:center;background-color:lightgray;border:2px solid gray">
-                                    <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLink']}" />" >
-                                        <c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLinkTitle']}" />
-                                    </a>
-                                </div>
-                            </c:when>
-                            <c:otherwise>
-                                <div style="margin-left:14px;height:80px;width:250px;text-align:center;background-color:lightgray;border:2px solid gray">
-                                    <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.link']}" />" >
-                                        <c:out value="${WEB_PROPERTIES['begin.thirdBox.linkTitle']}" />
-                                    </a>
-                                </div>
-                            </c:otherwise>
+                      <div style="margin:0 0 0 14px;padding:10px 2px 2px 2px;height:60px;width:250px;text-align:center;background-color:lightgray;border:2px solid gray;">
+			<c:choose>
+                          <c:when test="${!isNewUser && !empty (WEB_PROPERTIES['begin.thirdBox.visitedLink'])}">
+                            <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLink']}" />" >
+                              <c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLinkTitle']}" />
+                            </a>
+                          </c:when>
+                          <c:otherwise>
+                            <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.link']}" />" >
+                              <c:out value="${WEB_PROPERTIES['begin.thirdBox.linkTitle']}" />
+                            </a>
+                          </c:otherwise>
                         </c:choose>
+		      </div>
                     </div>
                 </c:if>
             </div>

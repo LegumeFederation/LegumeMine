@@ -3,40 +3,22 @@ echo "********** legumemine/integrate **********"
 ant clean
 
 #ant -v -Dsource=so,go,to,po
+
 #pg_restore -d legumemine /home/shokin/dumps/legumemine.ontologies.dat
 
-#ant -v -Dsource=lis-genomics
-#pg_restore -d legumemine /home/shokin/dumps/legumemine.genomics.dat
-
-#ant -v -Dsource=lis-genetics,peanutbase-genetics,lis-featureprop
-#pg_restore -d legumemine /home/shokin/dumps/legumemine.genetics.dat
-
-#ant -v -Dsource=lis-genefamilies,lis-homology
-#pg_restore -d legumemine /home/shokin/dumps/legumemine.genefamilies.dat
-
-#ant -v -Dsource=lis-go-annotation,lis-reactome-file
-#pg_restore -d legumemine /home/shokin/dumps/legumemine.chado.dat
-
 # whole chado kaboodle kit
-#ant -v -Dsource=lis-genomics,lis-genetics,peanutbase-genetics,lis-featureprop,lis-genefamilies,lis-homology,lis-go-annotation,lis-reactome-file
-pg_restore -d legumemine /home/shokin/dumps/legumemine.chado.dat
+#ant -v -Dsource=lis-genomics,lis-genetics,lis-featureprop,lis-reactome-file,lis-genefamilies,lis-homology
+#ant -v -Dsource=peanutbase-genetics,peanutbase-featureprop
 
-# restore gene.genefamilyid which gets lost in the merges above
-#psql legumemine -f ../dbmodel/build/model/add-update-triggers.sql
-#psql legumemine -f ../sql/update-gene-genefamilies.sql
-#psql legumemine -f ../dbmodel/build/model/remove-update-triggers.sql
-
-# post-chado organism attribute updates, no change to existing chado data
-#psql legumemine -f ../dbmodel/build/model/add-update-triggers.sql
-#psql legumemine -f ../sql/update-organisms.sql
-#psql legumemine -f ../dbmodel/build/model/remove-update-triggers.sql
+#pg_restore -d legumemine /home/shokin/dumps/legumemine.chado.dat
 
 ############################################################################################################################
 # ALL of the chado data loading must be DONE and BACKED UP before continuing, because identifiers are changed by SQL below #
 ############################################################################################################################
 
-# update identifiers from chado to more common values for primary identifiers
+# post-chado organism attribute updates, no change to existing chado data
 #psql legumemine -f ../dbmodel/build/model/add-update-triggers.sql
+#psql legumemine -f ../sql/update-organisms.sql
 #psql legumemine -f ../sql/update-identifiers.sql
 #psql legumemine -f ../dbmodel/build/model/remove-update-triggers.sql
 
@@ -54,3 +36,7 @@ pg_restore -d legumemine /home/shokin/dumps/legumemine.chado.dat
 
 # soybean non-chado imports
 #ant -v -Dsource=soybase-qtl-file,soybase-qtl-ontology-file,soybase-marker-chromosome-file,soybase-linkagegroup-file,soybase-marker-linkagegroup-file,soybase-marker-qtl-file,soybean-expression
+
+# pigeonpea non-chado imports
+ant -v -Dsource=pigeonpea-expression
+

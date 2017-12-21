@@ -39,22 +39,22 @@
       <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/>
     </source>
 
-    <!-- LIS chado go annotation -->
-    <source name="lis-go-annotation" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3821_ICPL87119 3827_CDCFrontier 3827_ICC4958 3847_Williams82 3871_Tanjil 3880_A17 3885_G19833 3914_Gyeongwon 3920_IT97K-499-35 34305_MG20 57577_MilvusB 130453_V14167 130454_K30076 157791_VC1973A"/>
-      <property name="dataSetTitle" value="LIS chado GO data"/>
-      <property name="dataSourceName" value="LIS chado"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GOAnnotationProcessor"/>
-    </source>
-
     <!-- LIS chado featureprop -->
     <source name="lis-featureprop" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
       <property name="organisms" value="3821_ICPL87119 3827_CDCFrontier 3827_ICC4958 3847_Williams82 3871_Tanjil 3880_A17 3885_G19833 3914_Gyeongwon 3920_IT97K-499-35 34305_MG20 57577_MilvusB 130453_V14167 130454_K30076 157791_VC1973A"/>
       <property name="dataSetTitle" value="LIS chado featureprop data"/>
       <property name="dataSourceName" value="LIS chado"/>
+      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
+    </source>
+
+    <!-- Peanutbase chado featureprop -->
+    <source name="peanutbase-featureprop" type="legfed-chado-db" dump="true">
+      <property name="source.db.name" value="peanutbase-chado"/>
+      <property name="organisms" value="3818_Various 130453_V14167 130454_K30076"/>
+      <property name="dataSetTitle" value="Peanutbase chado featureprop data"/>
+      <property name="dataSourceName" value="Peanutbase chado"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
     </source>
@@ -167,6 +167,13 @@
       <property name="src.data.dir" location="/home/shokin/intermine-data/peanut-expression"/>
     </source>
 
+    <!-- PIGEONPEA NON-CHADO -->
+
+    <!-- pigeonpea expression -->
+    <source name="pigeonpea-expression" type="legfed-expression" dump="true">
+      <property name="src.data.dir" location="/home/shokin/intermine-data/pigeonpea-expression"/>
+    </source>
+
     <!-- SOYBEAN NON-CHADO -->
 
     <!-- soybean expression -->
@@ -234,14 +241,16 @@
     <post-process name="do-sources" dump="true"/>
 
     <!-- legfed -->
+    <post-process name="create-go-annotations" dump="true"/>
+    <post-process name="create-protein-gene-references" dump="true"/>
+    <post-process name="create-protein-domain-references" dump="true"/>
+    <post-process name="create-ontology-parent-annotations" dump="true"/>
     <post-process name="populate-linkagegroup-lengths" dump="true"/>
     <post-process name="populate-qtl-linkagegroups" dump="true"/>
     <post-process name="populate-gene-spanning-qtls" dump="true"/>
-    <post-process name="create-protein-gene-references" dump="true"/>
-    <post-process name="create-protein-domain-references" dump="true"/>
     <post-process name="populate-interpro-data" dump="true"/>
-    <!--    <post-process name="create-ontology-parent-annotations" dump="true"/> -->
-    
+    <post-process name="populate-publications" dump="true"/>
+
     <!-- add features -->
     <post-process name="create-intron-features"/>
     <post-process name="create-intergenic-region-features"/>
