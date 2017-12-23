@@ -6,9 +6,15 @@ ant clean
 
 #pg_restore -d legumemine /home/shokin/dumps/legumemine.ontologies.dat
 
-# whole chado kaboodle kit
-#ant -v -Dsource=lis-genomics,lis-genetics,lis-featureprop,lis-reactome-file,lis-genefamilies,lis-homology
-#ant -v -Dsource=peanutbase-genetics,peanutbase-featureprop
+# chado loaders
+#ant -v -Dsource=lis-genomics
+#ant -v -Dsource=lis-genetics
+#ant -v -Dsource=lis-featureprop
+#ant -v -Dsource=lis-reactome-file
+#ant -v -Dsource=lis-genefamilies
+#ant -v -Dsource=lis-homology
+#ant -v -Dsource=peanutbase-genetics
+#ant -v -Dsource=peanutbase-featureprop
 
 #pg_restore -d legumemine /home/shokin/dumps/legumemine.chado.dat
 
@@ -18,25 +24,32 @@ ant clean
 
 # post-chado organism attribute updates, no change to existing chado data
 #psql legumemine -f ../dbmodel/build/model/add-update-triggers.sql
+#psql legumemine -f ../sql/cleanup-chado-bugs.sql
 #psql legumemine -f ../sql/update-organisms.sql
 #psql legumemine -f ../sql/update-identifiers.sql
 #psql legumemine -f ../dbmodel/build/model/remove-update-triggers.sql
 
 # bean non-chado imports
-#ant -v -Dsource=bean-qtl-ontology-file,bean-expression
+#ant -v -Dsource=bean-qtl-ontology-file,
+#ant -v -Dsource=bean-expression
 
 # chickpea non-chado imports
 #ant -v -Dsource=chickpea-expression
 
 # cowpea non-chado imports
-#ant -v -Dsource=cowpea-qtl-file,cowpea-qtl-ontology-file,cowpea-snpmarkers,cowpea-snppositions,cowpea-linkagegroup-file,cowpea-marker-linkagegroup-file,cowpea-marker-qtl-file
+#ant -v -Dsource=cowpea-snpmarkers,cowpea-snppositions
+#ant -v -Dsource=cowpea-qtl-file,cowpea-qtl-ontology-file,cowpea-linkagegroup-file
+#ant -v -Dsource=cowpea-marker-qtl-file,cowpea-marker-linkagegroup-file
 
 # peanut non-chado imports
-#ant -v -Dsource=peanut-geneticmarker-gff,peanut-expression
+#ant -v -Dsource=peanut-geneticmarker-gff
+#ant -v -Dsource=peanut-expression
 
 # soybean non-chado imports
-#ant -v -Dsource=soybase-qtl-file,soybase-qtl-ontology-file,soybase-marker-chromosome-file,soybase-linkagegroup-file,soybase-marker-linkagegroup-file,soybase-marker-qtl-file,soybean-expression
+#ant -v -Dsource=soybase-marker-chromosome-file
+#ant -v -Dsource=soybase-qtl-file,soybase-qtl-ontology-file,soybase-linkagegroup-file
+#ant -v -Dsource=soybase-marker-qtl-file,soybase-marker-linkagegroup-file
+#ant -v -Dsource=soybean-expression
 
 # pigeonpea non-chado imports
-ant -v -Dsource=pigeonpea-expression
-
+#ant -v -Dsource=pigeonpea-expression
