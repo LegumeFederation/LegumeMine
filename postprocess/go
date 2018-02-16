@@ -3,7 +3,7 @@ echo "********** legumemine/postprocess **********"
 ant clean
 
 # the whole kaboodle kit
-ant -v
+#ant -v
 
 # legfed
 # ant -v -Daction=create-go-annotations
@@ -29,7 +29,7 @@ ant -v
 # views and indexes, after all data is set
 #ant -v -Daction=create-location-overlap-index
 #ant -v -Daction=create-overlap-view
-#ant -v -Daction=create-attribute-indexes
-#ant -v -Daction=summarise-objectstore
-#ant -v -Daction=create-autocomplete-index
-#ant -v -Daction=create-search-index
+ant -v -Daction=create-attribute-indexes
+ant -v -Daction=summarise-objectstore
+ant -v -Daction=create-autocomplete-index
+ant -v -Daction=create-search-index
