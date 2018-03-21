@@ -71,7 +71,7 @@
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier" />
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
-      <fieldconfig fieldExpr="description"/>
+      <fieldconfig fieldExpr="description" doNotTruncate="true"/>
     </fields>
     <bagdisplayers>
       <displayer src="heatMap.tile" showOnLeft="true" />
@@ -301,6 +301,7 @@
       </titles>
     </headerconfig>
     <fields>
+      <fieldconfig fieldExpr="comment" doNotTruncate="true" />
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
     </fields>
   </class>
