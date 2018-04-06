@@ -301,7 +301,7 @@
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="comment" doNotTruncate="true" />
+      <fieldconfig fieldExpr="description" doNotTruncate="true" />
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
     </fields>
   </class>
