@@ -1,7 +1,0 @@
-<project name="legumemine-postprocess" default="default" basedir=".">
-
-  <description>perform post processing for legumemine</description>
-
-  <import file="../../imbuild/postprocess.xml"/>
-
-</project>

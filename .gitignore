@@ -1,7 +1,3 @@
-dist
 build
-*.log
 *~
-sql
-webapp/src
-webapp/resources/webapp/model
+webapp/src/main/java
