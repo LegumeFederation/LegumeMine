@@ -8,7 +8,20 @@
       The gene structure and other genome annotation in LegFed mines are loaded from the chado database which powers the LIS site.
     </intro-text>
     <tile-name>model/genomics.jsp</tile-name>
-    <aspect-source name="LIS" url="http://legumeinfo.org/"/>
+    <aspect-source name="LIS" url="https://legumeinfo.org/"/>
+  </aspect>
+
+  <aspect name="Genetics">
+    <subtitle>Genetic quantities</subtitle>
+    <icon-image>model/images/genetics.gif</icon-image>
+    <large-image>model/images/genetics.gif</large-image>
+    <intro-text>
+      Genetic quantities (QTLs, markers, linkage groups, etc.) are loaded from the LIS and Peanutbase chado databases as well as flat files from Soybase and publications.
+    </intro-text>
+    <tile-name>model/genetics.jsp</tile-name>
+    <aspect-source name="LIS" url="https://legumeinfo.org/"/>
+    <aspect-source name="LIS" url="https://peanutbase.org/"/>
+    <aspect-source name="LIS" url="https://soybase.org/"/>
   </aspect>
 
   <aspect name="Proteins">
@@ -19,17 +32,17 @@
       Protein annotation (including protein domains and protein matches) is loaded from the chado database which powers the LIS site.
     </intro-text>
     <tile-name>model/proteins.jsp</tile-name>
-    <aspect-source name="LIS" url="http://legumeinfo.org/"/>
+    <aspect-source name="LIS" url="https://legumeinfo.org/"/>
   </aspect>
 
   <aspect name="Reactome">
-	<subtitle>Protein reactome/pathway data</subtitle>
-	<icon-image>model/images/plantreactome.png</icon-image>
-	<large-image>model/images/plantreactome.png</large-image>
-	<intro-text>
-	Protein pathways are imported from Gramene Plant Reactome.
-	</intro-text>
-	<aspect-source name="Plant Reactome" url="http://plantreactome.gramene.org/"/>
+    <subtitle>Protein reactome/pathway data</subtitle>
+    <icon-image>model/images/plantreactome.png</icon-image>
+    <large-image>model/images/plantreactome.png</large-image>
+    <intro-text>
+      Protein pathways are imported from Gramene Plant Reactome.
+    </intro-text>
+    <aspect-source name="Plant Reactome" url="http://plantreactome.gramene.org/"/>
   </aspect>
 
   <aspect name="Expression">
@@ -37,9 +50,9 @@
     <icon-image>model/images/genomics.gif</icon-image>
     <large-image>model/images/genomics.gif</large-image>
     <intro-text>
-      Gene expression is loaded from the RNA-seq Atlas of Glycine max via SoyBase.
+      Gene expression is imported from a number of sources, including LIS.
     </intro-text>
-    <aspect-source name="SoyBase" url="http://soybase.org/"/>
+    <aspect-source name="LIS" url="https://legumeinfo.org/"/>
   </aspect>
 
 
