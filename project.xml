@@ -89,6 +89,11 @@
     <!--   <property name="processors" value="org.intermine.bio.dataconversion.HomologyProcessor"/> -->
     <!-- </source> -->
 
+    <!-- synteny from GFF files -->
+    <source name="legumes-synteny" type="legfed-synteny-gff" dump="true">
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/legumes-synteny"/>
+    </source>
+    
     <!-- COMMON BEAN NON-CHADO -->
 
     <!-- QTL TO terms -->
@@ -162,11 +167,6 @@
       <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/peanut-markers"/>
     </source>
 
-    <!-- duranensis to ipaensis synteny from GFF file -->
-    <source name="peanut-synteny-gff" type="legfed-synteny-gff" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/peanut-synteny"/>
-    </source>
-    
     <!-- peanutbase expression -->
     <source name="peanut-expression" type="legfed-expression" dump="true">
       <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/peanut-expression"/>

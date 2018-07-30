@@ -74,8 +74,10 @@
 #./gradlew integrate -Psource=pigeonpea-expression
 #./gradlew integrate -Psource=cowpea-expression
 
+./gradlew integrate -Psource=legumes-synteny
+
 ## update the genus and species for the germplasms we added, don't touch the descriptions!
-./gradlew generateUpdateTriggers
-psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+#./gradlew generateUpdateTriggers
+#psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+#psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+#psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql

@@ -3,6 +3,19 @@ apply from: "https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.p
 apply plugin: "webapp"
 apply plugin: "com.bmuschko.cargo"
 
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
+        }
+    }
+    dependencies {
+        classpath group: 'org.intermine', name: 'plugin', version: System.getProperty("imVersion")
+    }
+}
+
 sourceSets {
   main {
     java {
@@ -47,6 +60,7 @@ dependencies {
 
   // https://mvnrepository.com/artifact/org.jglobus/gram
   compile group: 'org.jglobus', name: 'gram', version: '2.1.0'
+
 }
 
 def explodedWebAppDir = "$buildDir/explodedWebApp"
