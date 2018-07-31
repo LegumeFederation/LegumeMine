@@ -344,7 +344,6 @@ ul#submenulist li span {
 .roundcorners, .gradientbox, .plainbox {
     margin: 0px 5px 10px 5px;
     padding: 0;
-    height: 1%; /**kill peek-a-boo bug**/
     font-size: 1em;
     text-align: left;
 }
@@ -394,9 +393,6 @@ div.templateLine {
 
 div.templateDetails {
     margin-left: 15px;
-    /* needed to prevent the peekaboo bug on IE:
-     http://www.positioniseverything.net/explorer/peekaboo.html */
-    height: 0.01%;
 }
 
 .boxTopRight {
