@@ -74,7 +74,7 @@
 #./gradlew integrate -Psource=pigeonpea-expression
 #./gradlew integrate -Psource=cowpea-expression
 
-./gradlew integrate -Psource=legumes-synteny
+./gradlew integrate -Psource=legumes-synteny $1
 
 ## update the genus and species for the germplasms we added, don't touch the descriptions!
 #./gradlew generateUpdateTriggers
