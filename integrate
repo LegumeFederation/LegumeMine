@@ -21,63 +21,67 @@
 # ALL of the chado data loading must be DONE and BACKED UP before continuing, because identifiers are changed by SQL below #
 ############################################################################################################################
 
-## post-chado organism attribute updates, no change to existing chado data
-#./gradlew generateUpdateTriggers
-#psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-#psql legumemine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
-#psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-#psql legumemine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
-#psql legumemine-dev -f ../legfed-intermine-sql/update-identifiers.sql
-#psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+## post-chado identifier updates
+./gradlew generateUpdateTriggers
+psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+psql legumemine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
+psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+psql legumemine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
+psql legumemine-dev -f ../legfed-intermine-sql/update-identifiers.sql
+psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 
 ## germplasm files (organism varieties, with descriptions)
-#./gradlew integrate -Psource=cowpea-germplasms
+./gradlew integrate -Psource=cowpea-germplasms
 
 ## QTL files
-#./gradlew integrate -Psource=cowpea-qtls
-#./gradlew integrate -Psource=soybase-qtls
+./gradlew integrate -Psource=cowpea-qtls
+./gradlew integrate -Psource=soybase-qtls
 
 ## QTL ontology terms
-#./gradlew integrate -Psource=bean-qtl-ontology
-#./gradlew integrate -Psource=cowpea-qtl-ontology
-#./gradlew integrate -Psource=soybase-qtl-ontology
+./gradlew integrate -Psource=bean-qtl-ontology
+./gradlew integrate -Psource=cowpea-qtl-ontology
+./gradlew integrate -Psource=soybase-qtl-ontology
 
 ## QTLs - markers
-#./gradlew integrate -Psource=cowpea-markers-qtls
-#./gradlew integrate -Psource=soybase-markers-qtls
+./gradlew integrate -Psource=cowpea-markers-qtls
+./gradlew integrate -Psource=soybase-markers-qtls
 
 ## SNPs
-#./gradlew integrate -Psource=cowpea-snpmarkers
+./gradlew integrate -Psource=cowpea-snpmarkers
 
 ## SNP positions
-#./gradlew integrate -Psource=cowpea-snppositions
+./gradlew integrate -Psource=cowpea-snppositions
 
 ## linkage groups
-#./gradlew integrate -Psource=soybase-linkagegroups
-#./gradlew integrate -Psource=cowpea-linkagegroups
+./gradlew integrate -Psource=soybase-linkagegroups
+./gradlew integrate -Psource=cowpea-linkagegroups
 
 ## linkage groups - markers
-#./gradlew integrate -Psource=soybase-markers-linkagegroups
-#./gradlew integrate -Psource=cowpea-markers-linkagegroups
+./gradlew integrate -Psource=soybase-markers-linkagegroups
+./gradlew integrate -Psource=cowpea-markers-linkagegroups
 
 ## markers from GFF
-#./gradlew integrate -Psource=peanut-geneticmarker-gff
+./gradlew integrate -Psource=peanut-geneticmarker-gff
 
 ## marker chromosome positions
-#./gradlew integrate -Psource=soybase-markers-chromosomes
+./gradlew integrate -Psource=soybase-markers-chromosomes
 
 ## Expression
-#./gradlew integrate -Psource=bean-expression
-#./gradlew integrate -Psource=chickpea-expression
-#./gradlew integrate -Psource=peanut-expression
-#./gradlew integrate -Psource=soybean-expression
-#./gradlew integrate -Psource=pigeonpea-expression
-#./gradlew integrate -Psource=cowpea-expression
+./gradlew integrate -Psource=bean-expression
+./gradlew integrate -Psource=chickpea-expression
+./gradlew integrate -Psource=peanut-expression
+./gradlew integrate -Psource=soybean-expression
+./gradlew integrate -Psource=pigeonpea-expression
+./gradlew integrate -Psource=cowpea-expression
 
+## Synteny
 ./gradlew integrate -Psource=legumes-synteny $1
 
-## update the genus and species for the germplasms we added, don't touch the descriptions!
+###########################################################################################
+# update the genus and species for the germplasms we added, don't touch the descriptions! #
+###########################################################################################
+
 #./gradlew generateUpdateTriggers
-#psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-#psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-#psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql

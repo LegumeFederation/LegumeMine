@@ -14,14 +14,14 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
     </fields>
   </class>
 
   <class className="org.intermine.model.bio.Chromosome">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
     </fields>
@@ -30,7 +30,7 @@
   <class className="org.intermine.model.bio.Supercontig">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
     </fields>
@@ -72,7 +72,7 @@
   <class className="org.intermine.model.bio.Gene">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier" />
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="description" doNotTruncate="true"/>
@@ -104,7 +104,7 @@
     <fields>
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="chromosome.primaryIdentifier" showInInlineCollection="true" showInSummary="false" label="Chromosome" />
       <fieldconfig fieldExpr="chromosomeLocation.start" showInInlineCollection="true" showInSummary="false" label="Start" />
@@ -115,7 +115,7 @@
   <class className="org.intermine.model.bio.Protein">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
     </fields>
   </class>
@@ -123,7 +123,7 @@
   <class className="org.intermine.model.bio.ProteinDomain">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="interproId" label="Interpro ID"/>
       <fieldconfig fieldExpr="interproShortName" label="Interpro Short Name"/>
@@ -229,7 +229,7 @@
     <fields>
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
       <fieldconfig fieldExpr="chromosome.primaryIdentifier" showInInlineCollection="true" showInSummary="false" label="Chromosome" />
     </fields>
@@ -243,7 +243,7 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="length" label="Length (cM)" />
     </fields>
     <bagdisplayers>
@@ -294,7 +294,7 @@
   <class className="org.intermine.model.bio.GeneticMarker">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
       <fieldconfig fieldExpr="type" label="Type"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
       <!-- <fieldconfig fieldExpr="chromosomeLocation" displayer="/model/chromosomeLocDisplayer.jsp" showInResults="false" /> -->
@@ -313,7 +313,7 @@
     <fields>
       <fieldconfig fieldExpr="description" doNotTruncate="true" />
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS chado name"/>
     </fields>
   </class>
 
@@ -372,7 +372,36 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.GWASExperiment">
+    <headerconfig>
+      <titles>
+        <title mainTitles="soybaseId" numberofMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+  </class>
 
+  <class className="org.intermine.model.bio.SyntenyBlock">
+    <headerconfig>
+      <titles>
+        <title mainTitles="primaryIdentifier" numberofMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="primaryIdentifier" label="DB Identifier"/>
+      <fieldconfig fieldExpr="medianKs" label="median Ks"/>
+    </fields>
+  </class>
+
+  <class className="org.intermine.model.bio.SyntenicRegion">
+    <fields>
+      <fieldconfig fieldExpr="organism.name" label="Organism"/>
+      <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
+      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="chromosome.primaryIdentifier" showInInlineCollection="true" showInSummary="false" label="Chromosome" />
+      <fieldconfig fieldExpr="chromosomeLocation.start" showInInlineCollection="true" showInSummary="false" label="Start" />
+      <fieldconfig fieldExpr="chromosomeLocation.end" showInInlineCollection="true" showInSummary="false" label="End" />
+    </fields>
+  </class>
 
 
   <!-- exporters -->
@@ -383,6 +412,13 @@
   <!-- report displayers -->
   <reportdisplayers>
 
+    <!-- this appears to be broken, but using it to avoid duplicating Ontology Annotations display for now -->
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer"
+                     jspName="model/geneOntologyDisplayer.jsp"
+                     replacesFields="ontologyAnnotations"
+                     placement="other"
+                     types="Gene"/>
+    
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneStructureDisplayer"
                      jspName="model/geneStructureDisplayer.jsp"
                      replacesFields="transcripts,exons,CDSs,introns,UTRs,fivePrimeUTR,threePrimeUTR"
@@ -402,16 +438,28 @@
                      types="SequenceFeature"/>
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
-                     jspName="model/linkageGroupDiagram.jsp"
-                     replacesFields="QTLs,geneticMarkers"
+                     jspName="model/linkageGroupDisplayer.jsp"
+                     replacesFields="QTLs,markers"
                      placement="summary"
                      types="LinkageGroup"/>
 
-    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneticMapDisplayer"
-                     jspName="model/linkageGroupDiagram.jsp"
-                     replacesFields="linkageGroups,geneticMarkers"
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
+                     jspName="model/linkageGroupDisplayer.jsp"
+                     replacesFields="linkageGroups"
                      placement="summary"
-                     types="GeneticMap"/>
+                     types="QTL"/>
+
+    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.MarkerDisplayer" -->
+    <!--                  jspName="model/markerDisplayer.jsp" -->
+    <!--                  replacesFields="lines" -->
+    <!--                  placement="summary" -->
+    <!--                  types="GeneticMarker"/> -->
+
+    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneticMapDisplayer" -->
+    <!--                  jspName="model/linkageGroupDiagram.jsp" -->
+    <!--                  replacesFields="linkageGroups,markers" -->
+    <!--                  placement="summary" -->
+    <!--                  types="GeneticMap"/> -->
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer"
                      jspName="model/geneBarchartDisplayer.jsp"
@@ -421,7 +469,7 @@
 
   </reportdisplayers>
 
-  <!-- widgets -->
+
   <widgets>
 
     <graphdisplayer id="chromosome_distribution_for_gene"
@@ -439,7 +487,8 @@
                     seriesPath="ActualExpectedCriteria"
                     constraints="organism.name=[Organism]"
                     views="primaryIdentifier, symbol, secondaryIdentifier, organism.name, chromosome.primaryIdentifier,
-                           chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand"/>
+                           chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand" />
+
 
     <!-- constraints skip biological_process, molecular_function and cellular_component GO terms -->
     <enrichmentwidgetdisplayer id="go_enrichment_for_gene"
@@ -451,17 +500,18 @@
                                startClass="Gene"
                                typeClass="Gene"
                                startClassDisplay="primaryIdentifier"
-                               enrich="ontologyAnnotations.ontologyTerm.name"
-                               enrichIdentifier="ontologyAnnotations.ontologyTerm.identifier"
-                               constraints="ontologyAnnotations.ontologyTerm.namespace=[Ontology],organism.name=[list],
+                               enrich="ontologyAnnotations.ontologyTerm.parents.name"
+                               enrichIdentifier="ontologyAnnotations.ontologyTerm.parents.identifier"
+                               constraints="organism.name=[list],
                                             primaryIdentifier!=null,
-                                            ontologyAnnotations.ontologyTerm.identifier!=GO:0008150,
-                                            ontologyAnnotations.ontologyTerm.identifier!=GO:0003674,
-                                            ontologyAnnotations.ontologyTerm.identifier!=GO:0005575"
+                                            ontologyAnnotations.qualifier=null,
+                                            ontologyAnnotations.ontologyTerm.parents.identifier!=go:0008150,
+                                            ontologyAnnotations.ontologyTerm.parents.identifier!=go:0003674,
+                                            ontologyAnnotations.ontologyTerm.parents.identifier!=go:0005575"
                                views="secondaryIdentifier,symbol,primaryIdentifier,organism.name,
-                                      ontologyAnnotations.ontologyTerm.identifier,
-                                      ontologyAnnotations.ontologyTerm.name"
-                               externalLink="http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=" />
+                                      ontologyAnnotations.ontologyTerm.identifier, ontologyAnnotations.ontologyTerm.name,
+                                      ontologyAnnotations.ontologyTerm.parents.identifier, ontologyAnnotations.ontologyTerm.parents.name"
+                               externalLink="http://amigo.geneontology.org/amigo/term/" />
 
     <enrichmentwidgetdisplayer id="to_enrichment_for_qtl"
                                title="Plant Trait Ontology Enrichment"
@@ -476,7 +526,7 @@
                                       ontologyAnnotations.ontologyTerm.identifier,
                                       ontologyAnnotations.ontologyTerm.name"
                                externalLink="http://archive.gramene.org/db/ontology/search?id=" />
-    
+
   </widgets>
   
 </webconfig>
