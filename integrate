@@ -1,21 +1,21 @@
 #!/bin/sh
 
 ## ontologies
-#./gradlew integrate -Psource=so
-#./gradlew integrate -Psource=go
-#./gradlew integrate -Psource=to
-#./gradlew integrate -Psource=po
+./gradlew integrate -Psource=so
+./gradlew integrate -Psource=go
+./gradlew integrate -Psource=to
+./gradlew integrate -Psource=po
 
 ## LIS chado loaders (includes peanut genomics)
-#./gradlew integrate -Psource=lis-genomics
-#./gradlew integrate -Psource=lis-genetics
-#./gradlew integrate -Psource=lis-featureprop
-#./gradlew integrate -Psource=lis-reactome-file
-#./gradlew integrate -Psource=lis-genefamilies
+./gradlew integrate -Psource=lis-genomics
+./gradlew integrate -Psource=lis-genetics
+./gradlew integrate -Psource=lis-featureprop
+./gradlew integrate -Psource=lis-reactome-file
+./gradlew integrate -Psource=lis-genefamilies
 
 ## PeanutBase chado loaders (genetics)
-#./gradlew integrate -Psource=peanutbase-genetics $1
-#./gradlew integrate -Psource=peanutbase-featureprop $1
+./gradlew integrate -Psource=peanutbase-genetics $1
+./gradlew integrate -Psource=peanutbase-featureprop $1
 
 ############################################################################################################################
 # ALL of the chado data loading must be DONE and BACKED UP before continuing, because identifiers are changed by SQL below #
@@ -66,7 +66,7 @@ psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 ## marker chromosome positions
 ./gradlew integrate -Psource=soybase-markers-chromosomes
 
-## Expression
+## expression
 ./gradlew integrate -Psource=bean-expression
 ./gradlew integrate -Psource=chickpea-expression
 ./gradlew integrate -Psource=peanut-expression
@@ -74,7 +74,7 @@ psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 ./gradlew integrate -Psource=pigeonpea-expression
 ./gradlew integrate -Psource=cowpea-expression
 
-## Synteny
+## synteny
 ./gradlew integrate -Psource=legumes-synteny $1
 
 ###########################################################################################
