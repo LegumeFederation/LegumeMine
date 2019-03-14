@@ -1,7 +1,13 @@
 #!/bin/sh
-echo "----- MINE -----"
+echo "----------------------------------------------"
+echo "-------------------- MINE --------------------"
+echo "----------------------------------------------"
 git status
-echo "----- WEBAPP MODEL -----"
-git status webapp/src/main/webapp/model/
-echo "----- WEBAPP JAVA -----"
-git status webapp/src/main/java
+echo "------------------------------------------------------"
+echo "-------------------- WEBAPP MODEL --------------------"
+echo "------------------------------------------------------"
+cd webapp/src/main/webapp/model; git status; cd -
+echo "-----------------------------------------------------"
+echo "-------------------- WEBAPP JAVA --------------------"
+echo "-----------------------------------------------------"
+cd webapp/src/main/java; git status; cd -

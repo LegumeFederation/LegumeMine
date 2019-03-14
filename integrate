@@ -1,87 +1,94 @@
 #!/bin/sh
 
-## ontologies
-./gradlew integrate -Psource=so
-./gradlew integrate -Psource=go
-./gradlew integrate -Psource=to
-./gradlew integrate -Psource=po
+## clear the logs (quietly)
+rm -f intermine.log
 
-## LIS chado loaders (includes peanut genomics)
-./gradlew integrate -Psource=lis-genomics
-./gradlew integrate -Psource=lis-genetics
-./gradlew integrate -Psource=lis-featureprop
-./gradlew integrate -Psource=lis-reactome-file
-./gradlew integrate -Psource=lis-genefamilies
+## echo a big marker so we can see when this run started in the scroll
+echo "##################################################################################################"
+echo "###################################### integrate #################################################"
+echo "##################################################################################################"
 
-## PeanutBase chado loaders (genetics)
-./gradlew integrate -Psource=peanutbase-genetics $1
-./gradlew integrate -Psource=peanutbase-featureprop $1
+# ## ontologies
+# ./gradlew integrate -Psource=so
+# ./gradlew integrate -Psource=go
+# ./gradlew integrate -Psource=to
+# ./gradlew integrate -Psource=po
+
+# ## LIS chado loaders (includes peanut genomics)
+# ./gradlew integrate -Psource=lis-genomics --stacktrace
+# ./gradlew integrate -Psource=lis-genetics --stacktrace
+# ./gradlew integrate -Psource=lis-featureprop --stacktrace
+# ./gradlew integrate -Psource=lis-reactome-file --stacktrace
+# ./gradlew integrate -Psource=lis-genefamilies --stacktrace
+
+# ## PeanutBase chado loaders (genetics)
+# ./gradlew integrate -Psource=peanutbase-genetics --stacktrace
+# ./gradlew integrate -Psource=peanutbase-featureprop --stacktrace
 
 ############################################################################################################################
 # ALL of the chado data loading must be DONE and BACKED UP before continuing, because identifiers are changed by SQL below #
 ############################################################################################################################
 
-## post-chado identifier updates
-./gradlew generateUpdateTriggers
-psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-psql legumemine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
-psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-psql legumemine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
-psql legumemine-dev -f ../legfed-intermine-sql/update-identifiers.sql
-psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+# ## SQL updates
+# ./gradlew generateUpdateTriggers
+# psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+# psql legumemine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
+# psql legumemine-dev -f ../legfed-intermine-sql/update-identifiers.sql
+# psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+# psql legumemine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
+# psql legumemine-dev -f ../legfed-intermine-sql/update-strain-descriptions.sql
+# psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 
-## germplasm files (organism varieties, with descriptions)
-./gradlew integrate -Psource=cowpea-germplasms
+# ## germplasm files (organism varieties, with descriptions)
+# ./gradlew integrate -Psource=cowpea-germplasms --stacktrace
 
-## QTL files
-./gradlew integrate -Psource=cowpea-qtls
-./gradlew integrate -Psource=soybase-qtls
+# ## QTL files
+# ./gradlew integrate -Psource=cowpea-qtls --stacktrace
+# ./gradlew integrate -Psource=soybase-qtls --stacktrace
 
-## QTL ontology terms
-./gradlew integrate -Psource=bean-qtl-ontology
-./gradlew integrate -Psource=cowpea-qtl-ontology
-./gradlew integrate -Psource=soybase-qtl-ontology
+# ## QTL ontology terms
+# ./gradlew integrate -Psource=bean-qtl-ontology --stacktrace
+# ./gradlew integrate -Psource=cowpea-qtl-ontology --stacktrace
+# ./gradlew integrate -Psource=soybase-qtl-ontology --stacktrace
 
-## QTLs - markers
-./gradlew integrate -Psource=cowpea-markers-qtls
-./gradlew integrate -Psource=soybase-markers-qtls
+# ## QTLs - markers
+# ./gradlew integrate -Psource=cowpea-markers-qtls --stacktrace
+# ./gradlew integrate -Psource=soybase-markers-qtls --stacktrace
 
-## SNPs
-./gradlew integrate -Psource=cowpea-snpmarkers
+# ## SNPs
+# ./gradlew integrate -Psource=cowpea-snpmarkers --stacktrace
 
-## SNP positions
-./gradlew integrate -Psource=cowpea-snppositions
+# ## SNP positions
+# ./gradlew integrate -Psource=cowpea-snppositions --stacktrace
 
-## linkage groups
-./gradlew integrate -Psource=soybase-linkagegroups
-./gradlew integrate -Psource=cowpea-linkagegroups
+# ## linkage groups
+# ./gradlew integrate -Psource=soybase-linkagegroups --stacktrace
+# ./gradlew integrate -Psource=cowpea-linkagegroups --stacktrace
 
-## linkage groups - markers
-./gradlew integrate -Psource=soybase-markers-linkagegroups
-./gradlew integrate -Psource=cowpea-markers-linkagegroups
+# ## linkage groups - markers
+# ./gradlew integrate -Psource=soybase-markers-linkagegroups --stacktrace
+# ./gradlew integrate -Psource=cowpea-markers-linkagegroups --stacktrace
 
-## markers from GFF
-./gradlew integrate -Psource=peanut-geneticmarker-gff
+# ## markers from GFF
+# ./gradlew integrate -Psource=peanut-geneticmarker-gff --stacktrace
 
-## marker chromosome positions
-./gradlew integrate -Psource=soybase-markers-chromosomes
+# ## marker chromosome positions
+# ./gradlew integrate -Psource=soybase-markers-chromosomes --stacktrace
 
-## expression
-./gradlew integrate -Psource=bean-expression
-./gradlew integrate -Psource=chickpea-expression
-./gradlew integrate -Psource=peanut-expression
-./gradlew integrate -Psource=soybean-expression
-./gradlew integrate -Psource=pigeonpea-expression
-./gradlew integrate -Psource=cowpea-expression
+# ## expression
+# ./gradlew integrate -Psource=bean-expression --stacktrace
+# ./gradlew integrate -Psource=chickpea-expression --stacktrace
+# ./gradlew integrate -Psource=peanut-expression --stacktrace
+# ./gradlew integrate -Psource=soybean-expression --stacktrace
+# ./gradlew integrate -Psource=pigeonpea-expression --stacktrace
+# ./gradlew integrate -Psource=cowpea-expression --stacktrace
 
 ## synteny
-./gradlew integrate -Psource=legumes-synteny $1
+./gradlew integrate -Psource=legumes-synteny --stacktrace --stacktrace
 
-###########################################################################################
-# update the genus and species for the germplasms we added, don't touch the descriptions! #
-###########################################################################################
-
-#./gradlew generateUpdateTriggers
-psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+# ## re-update the strain descriptions and organism genus/species
+# ./gradlew generateUpdateTriggers
+# psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+# psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+# psql soymine-dev -f ../legfed-intermine-sql/update-strain-descriptions.sql
+# psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
