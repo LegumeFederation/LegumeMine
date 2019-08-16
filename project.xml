@@ -5,20 +5,18 @@
 
   <sources>
 
-    <!-- LIS chado genomics - all the LIS species with genes plus 3398_consensus for protein domains -->
+    <!-- LIS CHADO -->
+    
+    <!-- LIS chado genomics -->
     <source name="lis-genomics" type="legfed-chado-db" dump="true">
-      <property name="organisms" value="3818"/>
-      <property name="strains" value="Tifrunner"/>
+      <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3914 3920 34305 57577 130453 130454 157791"/>
+      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
       <property name="source.db.name" value="lis-chado"/>
       <property name="dataSetTitle" value="LIS chado genomic data"/>
       <property name="dataSourceName" value="LIS chado"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.SequenceProcessor"/>
     </source>
-
-    <!-- <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3914 3920 34305 57577 130453 130454 157791"/> -->
-    <!-- <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/> -->
-
 
     <!-- LIS chado genetics - all but peanut -->
     <source name="lis-genetics" type="legfed-chado-db" dump="true">
@@ -31,17 +29,6 @@
       <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/>
     </source>
 
-    <!-- Peanutbase chado genetics -->
-    <source name="peanutbase-genetics" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="peanutbase-chado"/>
-      <property name="organisms" value="3818 130453 130454"/>
-      <property name="strains" value="Tifrunner V14167 K30076"/>
-      <property name="dataSetTitle" value="Peanutbase chado genetic data"/>
-      <property name="dataSourceName" value="Peanutbase chado"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/>
-    </source>
-
     <!-- LIS chado featureprop -->
     <source name="lis-featureprop" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
@@ -49,17 +36,6 @@
       <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
       <property name="dataSetTitle" value="LIS chado featureprop data"/>
       <property name="dataSourceName" value="LIS chado"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
-    </source>
-
-    <!-- Peanutbase chado featureprop -->
-    <source name="peanutbase-featureprop" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="peanutbase-chado"/>
-      <property name="organisms" value="3818 130453 130454"/>
-      <property name="strains" value="Tifrunner V14167 K30076"/>
-      <property name="dataSetTitle" value="Peanutbase chado featureprop data"/>
-      <property name="dataSourceName" value="Peanutbase chado"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
     </source>
@@ -80,7 +56,7 @@
     <!-- LIS chado + reactome file -->
     <source name="lis-reactome-file" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
-      <property name="reactome.filename" value="/home/shokin/legfed-intermine-data/plant-reactome/gene_ids_by_pathway_and_species.tab"/>
+      <property name="reactome.filename" value="/data/legfed-intermine-data/plant-reactome/gene_ids_by_pathway_and_species.tab"/>
       <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3914 3920 34305 57577 130453 130454 157791"/>
       <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
       <property name="dataSetTitle" value="Plant Reactome data"/>
@@ -89,154 +65,179 @@
       <property name="processors" value="org.intermine.bio.dataconversion.ReactomeProcessor"/>
     </source>
 
+    <!-- PEANUTBASE CHADO -->
+
+    <!-- Peanutbase chado genetics -->
+    <source name="peanutbase-genetics" type="legfed-chado-db" dump="true">
+      <property name="source.db.name" value="peanutbase-chado"/>
+      <property name="organisms" value="3818 130453 130454"/>
+      <property name="strains" value="Tifrunner V14167 K30076"/>
+      <property name="dataSetTitle" value="Peanutbase chado genetic data"/>
+      <property name="dataSourceName" value="Peanutbase chado"/>
+      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/>
+    </source>
+
+    <!-- Peanutbase chado featureprop -->
+    <source name="peanutbase-featureprop" type="legfed-chado-db" dump="true">
+      <property name="source.db.name" value="peanutbase-chado"/>
+      <property name="organisms" value="3818 130453 130454"/>
+      <property name="strains" value="Tifrunner V14167 K30076"/>
+      <property name="dataSetTitle" value="Peanutbase chado featureprop data"/>
+      <property name="dataSourceName" value="Peanutbase chado"/>
+      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
+    </source>
+
+    
     <!-- synteny from GFF files -->
     <source name="legumes-synteny" type="legfed-synteny-gff" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/legumes-synteny"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/legumes-synteny"/>
     </source>
     
     <!-- COMMON BEAN NON-CHADO -->
 
     <!-- QTL TO terms -->
     <source name="bean-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/bean-qtl-trait-ontology"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/bean-qtl-trait-ontology"/>
     </source>
 
     <!-- PvGEA expression -->
     <source name="bean-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/bean-expression"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/bean-expression"/>
     </source>
 
     <!-- CHICKPEA NON-CHADO -->
 
     <!-- Chickpea Transcriptome Atlas - I -->
     <source name="chickpea-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/chickpea-expression"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/chickpea-expression"/>
     </source>
 
     <!-- COWPEA NON-CHADO -->
 
     <!-- Germplasms from custom tab-delimited file -->
     <source name="cowpea-germplasms" type="legfed-germplasm-file" dump="true">
-        <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-germplasms"/>
+        <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-germplasms"/>
     </source>
 
     <!-- SNP marker details (sequences, alleles, etc.) -->
     <source name="cowpea-snpmarkers" type="legfed-snpmarker-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-iSelect-snps"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-iSelect-snps"/>
     </source>
 
     <!-- SNP marker genomic locations -->
     <source name="cowpea-snppositions" type="legfed-snpvcf-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-1m-selected-snps"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-1m-selected-snps"/>
     </source>
 
     <!-- cowpea linkage groups and genetic maps from tab-delimited file -->
     <source name="cowpea-linkagegroups" type="legfed-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-linkagegroups"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-linkagegroups"/>
     </source>
 
     <!-- cowpea genetic marker locations on linkage groups from tab-delimited file -->
     <source name="cowpea-markers-linkagegroups" type="legfed-marker-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-markers-linkagegroups"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-markers-linkagegroups"/>
     </source>
 
     <!-- cowpea QTL data from tab-delimited file -->
     <source name="cowpea-qtls" type="legfed-qtl-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-qtl"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl"/>
     </source>
 
     <!-- cowpea marker-QTL relations -->
     <source name="cowpea-markers-qtls" type="legfed-marker-qtl-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-qtl-markers"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl-markers"/>
     </source>
 
     <!-- cowpea QTL-ontology relations from tab-delimited file -->
     <source name="cowpea-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-qtl-trait-ontology"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl-trait-ontology"/>
     </source>
 
     <!-- VuGEA expression -->
     <source name="cowpea-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/cowpea-expression"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-expression"/>
     </source>
 
     <!-- PEANUT NON-CHADO -->
 
     <!-- genetic marker genomic locations from GFF files -->
     <source name="peanut-geneticmarker-gff" type="legfed-geneticmarker-gff" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/peanut-markers"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/peanut-markers"/>
     </source>
 
     <!-- peanutbase expression -->
     <source name="peanut-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/peanut-expression"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/peanut-expression"/>
     </source>
 
     <!-- PIGEONPEA NON-CHADO -->
 
     <!-- pigeonpea expression -->
     <source name="pigeonpea-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/pigeonpea-expression"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/pigeonpea-expression"/>
     </source>
 
     <!-- SOYBEAN NON-CHADO -->
 
     <!-- soybean expression -->
     <source name="soybean-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-expression"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-expression"/>
     </source>
 
     <!-- Soybase QTL data from tab-delimited file -->
     <source name="soybase-qtls" type="legfed-qtl-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-qtl"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl"/>
     </source>
 
     <!-- Soybase QTL-ontology relations from tab-delimited file -->
     <source name="soybase-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-	    <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-qtl-ontology"/>
+	    <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl-ontology"/>
     </source>
 
     <!-- Soybase genetic marker genomic locations and types from tab-delimited file -->
     <source name="soybase-markers-chromosomes" type="legfed-marker-chromosome-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-markers-chromosomes"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-chromosomes"/>
     </source>
 
     <!-- Soybase linkage groups and genetic maps from tab-delimited file -->
     <source name="soybase-linkagegroups" type="legfed-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-linkagegroups"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-linkagegroups"/>
     </source>
 
     <!-- Soybase genetic marker genetic locations on linkage groups from tab-delimited file -->
     <source name="soybase-markers-linkagegroups" type="legfed-marker-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-markers-linkagegroups"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-linkagegroups"/>
     </source>
 
     <!-- Soybase genetic marker associations with QTLs from tab-delimited file -->
     <source name="soybase-markers-qtls" type="legfed-marker-qtl-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-markers-qtls"/>
+      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-qtls"/>
     </source>
 
     <!-- ONTOLOGIES -->
     
     <!-- gene ontology -->
     <source name="go" type="go">
-      <property name="src.data.file" location="/home/shokin/legfed-intermine-data/gene-ontology/go-basic.obo"/>
+      <property name="src.data.file" location="/data/gene-ontology/go-basic.obo"/>
     </source>
 
     <!-- sequence ontology -->
     <source name="so" type="so">
-      <property name="src.data.file" location="/home/shokin/SO-Ontologies/so-simple.obo"/>
+      <property name="src.data.file" location="/data/SO-Ontologies/so-simple.obo"/>
     </source>
 
     <!-- trait ontology -->
     <source name="to" type="legfed-trait-ontology">
-      <property name="src.data.file" location="/home/shokin/plant-trait-ontology/to.obo"/>
+      <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/>
       <property name="ontology.prefix" value="TO"/>
     </source>
 
     <!-- plant ontology -->
     <source name="po" type="legfed-plant-ontology">
-      <property name="src.data.file" location="/home/shokin/legfed-intermine-data/plant-ontology/po.obo"/>
+      <property name="src.data.file" location="/data/legfed-intermine-data/plant-ontology/po.obo"/>
       <property name="ontology.prefix" value="PO"/>
     </source>
 
@@ -254,12 +255,12 @@
     <post-process name="create-intergenic-region-features"/>
 
     <!-- legfed references and collections -->
+    <post-process name="legfed-create-exon-gene-references"/>
     <post-process name="legfed-create-go-annotations"/>
     <post-process name="legfed-create-ontology-parent-annotations"/>
     <post-process name="legfed-create-proteindomain-references"/>
     <post-process name="legfed-create-protein-gene-references"/>
     <post-process name="legfed-create-qtl-linkagegroup-references"/>
-
     <post-process name="legfed-populate-gene-spanning-qtls"/>
     <post-process name="legfed-populate-interpro-data"/>
     <post-process name="legfed-populate-linkagegroup-lengths"/>

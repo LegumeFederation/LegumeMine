@@ -8,14 +8,14 @@ echo "##########################################################################
 echo "##################################### postprocess ################################################"
 echo "##################################################################################################"
 
-## legfed
+# ## legfed
 ./gradlew postprocess -Pprocess=legfed-create-gene-flanking-regions
-./gradlew postprocess -Pprocess=legfed-create-go-annotations
 ./gradlew postprocess -Pprocess=legfed-create-intron-features
-./gradlew postprocess -Pprocess=legfed-create-ontology-parent-annotations
-./gradlew postprocess -Pprocess=legfed-create-exon-gene-references
-./gradlew postprocess -Pprocess=legfed-create-protein-gene-references
+# ./gradlew postprocess -Pprocess=legfed-create-exon-gene-references --stacktrace
+./gradlew postprocess -Pprocess=legfed-create-protein-gene-references --stacktrace
 ./gradlew postprocess -Pprocess=legfed-create-supercontig-flanking-regions
+./gradlew postprocess -Pprocess=legfed-create-go-annotations
+./gradlew postprocess -Pprocess=legfed-create-ontology-parent-annotations
 ./gradlew postprocess -Pprocess=legfed-populate-gene-spanning-qtls
 ./gradlew postprocess -Pprocess=legfed-populate-interpro-data
 ./gradlew postprocess -Pprocess=legfed-populate-linkagegroup-lengths
