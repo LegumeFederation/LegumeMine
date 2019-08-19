@@ -189,6 +189,19 @@
   </class>
 
 
+  <class className="org.intermine.model.bio.Strain">
+    <headerconfig>
+      <titles>
+        <title mainTitles="primaryIdentifier"/>
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="description"/>
+      <fieldconfig fieldExpr="organism.name"/>
+      <fieldconfig fieldExpr="organism.taxonId" />
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.Publication">
     <headerconfig>
       <titles>
