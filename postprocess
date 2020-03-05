@@ -9,35 +9,32 @@ echo "##################################### postprocess ########################
 echo "##################################################################################################"
 
 # ## legfed
-./gradlew postprocess -Pprocess=legfed-create-gene-flanking-regions
-./gradlew postprocess -Pprocess=legfed-create-intron-features
+# ./gradlew postprocess -Pprocess=legfed-create-gene-flanking-regions --stacktrace
+# ./gradlew postprocess -Pprocess=legfed-create-intron-features --stacktrace
 # ./gradlew postprocess -Pprocess=legfed-create-exon-gene-references --stacktrace
-./gradlew postprocess -Pprocess=legfed-create-protein-gene-references --stacktrace
-./gradlew postprocess -Pprocess=legfed-create-supercontig-flanking-regions
-./gradlew postprocess -Pprocess=legfed-create-go-annotations
-./gradlew postprocess -Pprocess=legfed-create-ontology-parent-annotations
-./gradlew postprocess -Pprocess=legfed-populate-gene-spanning-qtls
-./gradlew postprocess -Pprocess=legfed-populate-interpro-data
-./gradlew postprocess -Pprocess=legfed-populate-linkagegroup-lengths
-./gradlew postprocess -Pprocess=legfed-populate-publications
+# ./gradlew postprocess -Pprocess=legfed-create-protein-gene-references --stacktrace
+# ./gradlew postprocess -Pprocess=legfed-create-supercontig-flanking-regions --stacktrace
+# ./gradlew postprocess -Pprocess=legfed-create-go-annotations --stacktrace
+# ./gradlew postprocess -Pprocess=legfed-populate-interpro-data --stacktrace
+# ./gradlew postprocess -Pprocess=legfed-populate-publications --stacktrace
 
-## more features
-./gradlew postprocess -Pprocess=create-intergenic-region-features
+# ## more features
+# ./gradlew postprocess -Pprocess=create-intergenic-region-features --stacktrace
 
-## create various references and collections
-./gradlew postprocess -Pprocess=populate-child-features
-./gradlew postprocess -Pprocess=create-references
-./gradlew postprocess -Pprocess=create-chromosome-locations-and-lengths
-./gradlew postprocess -Pprocess=transfer-sequences
+## create various references and collections and sequences
+./gradlew postprocess -Pprocess=populate-child-features --stacktrace
+./gradlew postprocess -Pprocess=create-references --stacktrace
+./gradlew postprocess -Pprocess=create-chromosome-locations-and-lengths --stacktrace
+./gradlew postprocess -Pprocess=transfer-sequences --stacktrace
 
 ## views and indexes, after all data is set
-./gradlew postprocess -Pprocess=create-location-overlap-index
-./gradlew postprocess -Pprocess=create-overlap-view
+./gradlew postprocess -Pprocess=create-location-overlap-index --stacktrace
+./gradlew postprocess -Pprocess=create-overlap-view --stacktrace
 
 ## these must be run after any data is changed
-./gradlew postprocess -Pprocess=create-attribute-indexes
-./gradlew postprocess -Pprocess=summarise-objectstore
+./gradlew postprocess -Pprocess=create-attribute-indexes --stacktrace
+./gradlew postprocess -Pprocess=summarise-objectstore --stacktrace
 
 ## these require Solr server
-./gradlew postprocess -Pprocess=create-autocomplete-index
-./gradlew postprocess -Pprocess=create-search-index
+./gradlew postprocess -Pprocess=create-autocomplete-index --stacktrace
+./gradlew postprocess -Pprocess=create-search-index --stacktrace

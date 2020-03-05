@@ -9,8 +9,8 @@
     
     <!-- LIS chado genomics -->
     <source name="lis-genomics" type="legfed-chado-db" dump="true">
-      <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
-      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
+      <property name="organisms" value="3818 3821 3827 3847 3870 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
+      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Amiga Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
       <property name="source.db.name" value="lis-chado"/>
       <property name="dataSetTitle" value="LIS chado genomic data"/>
       <property name="dataSourceName" value="LIS chado"/>
@@ -18,11 +18,22 @@
       <property name="processors" value="org.intermine.bio.dataconversion.SequenceProcessor"/>
     </source>
 
+    <!-- chado proteins -->
+    <source name="lis-proteins" type="legfed-chado-db" dump="true">
+      <property name="source.db.name" value="lis-chado"/>
+      <property name="organisms" value="3818 3821 3827 3847 3870 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
+      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Amiga Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
+      <property name="dataSetTitle" value="LIS chado protein data"/>
+      <property name="dataSourceName" value="LIS chado database"/>
+      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.ProteinProcessor"/>
+    </source>
+
     <!-- LIS chado genetics - all but peanut -->
     <source name="lis-genetics" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
-      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
+      <property name="organisms" value="3818 3821 3827 3847 3870 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
+      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Amiga Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
       <property name="dataSetTitle" value="LIS chado genetic data"/>
       <property name="dataSourceName" value="LIS chado"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
@@ -32,37 +43,51 @@
     <!-- LIS chado featureprop -->
     <source name="lis-featureprop" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
-      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
+      <property name="organisms" value="3818 3821 3827 3847 3870 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
+      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Amiga Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
       <property name="dataSetTitle" value="LIS chado featureprop data"/>
       <property name="dataSourceName" value="LIS chado"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
     </source>
 
+    <!-- LIS chado + reactome file -->
+    <source name="lis-reactome-file" type="legfed-chado-db" dump="true">
+      <property name="source.db.name" value="lis-chado"/>
+      <property name="reactome.filename" value="/data/legfed-intermine-data/plant-reactome/gene_ids_by_pathway_and_species.tab"/>
+      <property name="organisms" value="3818 3821 3827 3847 3870 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
+      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Amiga Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
+      <property name="dataSetTitle" value="Plant Reactome data"/>
+      <property name="dataSourceName" value="Plant Reactome file"/>
+      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.ReactomeProcessor"/>
+    </source>
+
     <!-- LIS chado gene families -->
     <source name="lis-genefamilies" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
-      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
-      <property name="homologue.organisms" value="3818 3821 3827 3847 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
-      <property name="homologue.strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
       <property name="dataSetTitle" value="LIS chado gene family data"/>
       <property name="dataSourceName" value="LIS chado"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.GeneFamilyProcessor"/>
     </source>
 
-    <!-- LIS chado + reactome file -->
-    <source name="lis-reactome-file" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="reactome.filename" value="/data/legfed-intermine-data/plant-reactome/gene_ids_by_pathway_and_species.tab"/>
-      <property name="organisms" value="3818 3821 3827 3847 3871 3880 3885 3888 3914 3920 34305 57577 130453 130454 157791"/>
-      <property name="strains" value="Tifrunner ICPL87119 CDCFrontier ICC4958 Williams82 Tanjil A17 Cameor G19833 Gyeongwon IT97K-499-35 MG20 MilvusB V14167 K30076 VC1973A"/>
-      <property name="dataSetTitle" value="Plant Reactome data"/>
-      <property name="dataSourceName" value="Plant Reactome file"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.ReactomeProcessor"/>
+    <!-- LIS expression files -->
+
+    <source name="cajca.ICPL87119.gnm1.ann1.expr" type="legfed-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Cajanus_cajan/ICPL87119.gnm1.ann1.expr.4H6Z"/>
+    </source>
+
+    <source name="glyma.Wm82.gnm2.ann1.expr" type="legfed-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.expr.G7ZY"/>
+    </source>
+
+    <source name="phavu.G19833.gnm1.ann1.expr" type="legfed-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Phaseolus_vulgaris/G19833.gnm1.ann1.expr.4ZDQ"/>
+    </source>
+
+    <source name="vigun.IT97K-499-35.gnm1.ann1.expr" type="legfed-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Vigna_unguiculata/IT97K-499-35.gnm1.ann1.expr.BWH5"/>
     </source>
 
     <!-- PEANUTBASE CHADO -->
@@ -90,6 +115,8 @@
     </source>
 
     
+    <!-- GENERAL NON-CHADO -->
+
     <!-- synteny from GFF files -->
     <source name="legumes-synteny" type="legfed-synteny-gff" dump="true">
       <property name="src.data.dir" location="/data/legfed-intermine-data/legumes-synteny"/>
@@ -100,18 +127,6 @@
     <!-- QTL TO terms -->
     <source name="bean-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
       <property name="src.data.dir" location="/data/legfed-intermine-data/bean-qtl-trait-ontology"/>
-    </source>
-
-    <!-- PvGEA expression -->
-    <source name="bean-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/bean-expression"/>
-    </source>
-
-    <!-- CHICKPEA NON-CHADO -->
-
-    <!-- Chickpea Transcriptome Atlas - I -->
-    <source name="chickpea-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/chickpea-expression"/>
     </source>
 
     <!-- COWPEA NON-CHADO -->
@@ -156,11 +171,6 @@
       <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl-trait-ontology"/>
     </source>
 
-    <!-- VuGEA expression -->
-    <source name="cowpea-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-expression"/>
-    </source>
-
     <!-- PEANUT NON-CHADO -->
 
     <!-- genetic marker genomic locations from GFF files -->
@@ -168,24 +178,7 @@
       <property name="src.data.dir" location="/data/legfed-intermine-data/peanut-markers"/>
     </source>
 
-    <!-- peanutbase expression -->
-    <source name="peanut-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/peanut-expression"/>
-    </source>
-
-    <!-- PIGEONPEA NON-CHADO -->
-
-    <!-- pigeonpea expression -->
-    <source name="pigeonpea-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/pigeonpea-expression"/>
-    </source>
-
     <!-- SOYBEAN NON-CHADO -->
-
-    <!-- soybean expression -->
-    <source name="soybean-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-expression"/>
-    </source>
 
     <!-- Soybase QTL data from tab-delimited file -->
     <source name="soybase-qtls" type="legfed-qtl-file" dump="true">
@@ -257,15 +250,15 @@
     <!-- legfed references and collections -->
     <post-process name="legfed-create-exon-gene-references"/>
     <post-process name="legfed-create-go-annotations"/>
-    <post-process name="legfed-create-ontology-parent-annotations"/>
     <post-process name="legfed-create-proteindomain-references"/>
     <post-process name="legfed-create-protein-gene-references"/>
-    <post-process name="legfed-create-qtl-linkagegroup-references"/>
-    <post-process name="legfed-populate-gene-spanning-qtls"/>
     <post-process name="legfed-populate-interpro-data"/>
-    <post-process name="legfed-populate-linkagegroup-lengths"/>
-
     <post-process name="legfed-populate-publications"/>
+
+    <!-- <post-process name="legfed-create-qtl-linkagegroup-references"/> -->
+    <!-- <post-process name="legfed-populate-gene-spanning-qtls"/> -->
+    <!-- <post-process name="legfed-populate-linkagegroup-lengths"/> -->
+
     
     <!-- core references and collections -->
     <post-process name="populate-child-features"/>

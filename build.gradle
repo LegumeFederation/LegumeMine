@@ -26,6 +26,12 @@ subprojects {
 
   sourceCompatibility = 1.8
   targetCompatibility = 1.8
+
+  compileJava {
+    options.warnings = true
+    options.deprecation = true
+    options.compilerArgs += []
+  }
   
   repositories {
     mavenLocal()
