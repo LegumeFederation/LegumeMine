@@ -74,141 +74,141 @@
 
     <!-- LIS expression files -->
 
-    <source name="cajca.ICPL87119.gnm1.ann1.expr" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/LIS/Cajanus_cajan/ICPL87119.gnm1.ann1.expr.4H6Z"/>
+    <source name="cajca.ICPL87119.gnm1.ann1-expr" type="lis-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Cajanus_cajan/ICPL87119.gnm1.ann1.samplesN.expr1.4H6Z"/>
     </source>
 
-    <source name="glyma.Wm82.gnm2.ann1.expr" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.expr.G7ZY"/>
+    <source name="glyma.Wm82.gnm2.ann1-expr" type="lis-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.samplesN.expr1.G7ZY"/>
     </source>
 
-    <source name="phavu.G19833.gnm1.ann1.expr" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/LIS/Phaseolus_vulgaris/G19833.gnm1.ann1.expr.4ZDQ"/>
+    <source name="phavu.G19833.gnm1.ann1-expr" type="lis-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Phaseolus_vulgaris/G19833.gnm1.ann1.samplesN.expr1.4ZDQ"/>
     </source>
 
-    <source name="vigun.IT97K-499-35.gnm1.ann1.expr" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/LIS/Vigna_unguiculata/IT97K-499-35.gnm1.ann1.expr.BWH5"/>
+    <source name="vigun.IT97K-499-35.gnm1.ann1-expr" type="lis-expression" dump="true">
+      <property name="src.data.dir" location="/data/LIS/Vigna_unguiculata/IT97K-499-35.gnm1.ann1.samplesN.expr1.BWH5"/>
     </source>
 
     <!-- PEANUTBASE CHADO -->
 
     <!-- Peanutbase chado genetics -->
-    <source name="peanutbase-genetics" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="peanutbase-chado"/>
-      <property name="organisms" value="3818 130453 130454"/>
-      <property name="strains" value="Tifrunner V14167 K30076"/>
-      <property name="dataSetTitle" value="Peanutbase chado genetic data"/>
-      <property name="dataSourceName" value="Peanutbase chado"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/>
-    </source>
+    <!-- <source name="peanutbase-genetics" type="legfed-chado-db" dump="true"> -->
+    <!--   <property name="source.db.name" value="peanutbase-chado"/> -->
+    <!--   <property name="organisms" value="3818 130453 130454"/> -->
+    <!--   <property name="strains" value="Tifrunner V14167 K30076"/> -->
+    <!--   <property name="dataSetTitle" value="Peanutbase chado genetic data"/> -->
+    <!--   <property name="dataSourceName" value="Peanutbase chado"/> -->
+    <!--   <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/> -->
+    <!--   <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/> -->
+    <!-- </source> -->
 
     <!-- Peanutbase chado featureprop -->
-    <source name="peanutbase-featureprop" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="peanutbase-chado"/>
-      <property name="organisms" value="3818 130453 130454"/>
-      <property name="strains" value="Tifrunner V14167 K30076"/>
-      <property name="dataSetTitle" value="Peanutbase chado featureprop data"/>
-      <property name="dataSourceName" value="Peanutbase chado"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
-    </source>
+    <!-- <source name="peanutbase-featureprop" type="legfed-chado-db" dump="true"> -->
+    <!--   <property name="source.db.name" value="peanutbase-chado"/> -->
+    <!--   <property name="organisms" value="3818 130453 130454"/> -->
+    <!--   <property name="strains" value="Tifrunner V14167 K30076"/> -->
+    <!--   <property name="dataSetTitle" value="Peanutbase chado featureprop data"/> -->
+    <!--   <property name="dataSourceName" value="Peanutbase chado"/> -->
+    <!--   <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/> -->
+    <!--   <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/> -->
+    <!-- </source> -->
 
     
     <!-- GENERAL NON-CHADO -->
 
     <!-- synteny from GFF files -->
-    <source name="legumes-synteny" type="legfed-synteny-gff" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/legumes-synteny"/>
-    </source>
+    <!-- <source name="legumes-synteny" type="legfed-synteny-gff" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/legumes-synteny"/> -->
+    <!-- </source> -->
     
     <!-- COMMON BEAN NON-CHADO -->
 
     <!-- QTL TO terms -->
-    <source name="bean-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/bean-qtl-trait-ontology"/>
-    </source>
+    <!-- <source name="bean-qtl-ontology" type="legfed-qtl-ontology-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/bean-qtl-trait-ontology"/> -->
+    <!-- </source> -->
 
     <!-- COWPEA NON-CHADO -->
 
     <!-- Germplasms from custom tab-delimited file -->
-    <source name="cowpea-germplasms" type="legfed-germplasm-file" dump="true">
-        <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-germplasms"/>
-    </source>
+    <!-- <source name="cowpea-germplasms" type="legfed-germplasm-file" dump="true"> -->
+    <!--     <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-germplasms"/> -->
+    <!-- </source> -->
 
     <!-- SNP marker details (sequences, alleles, etc.) -->
-    <source name="cowpea-snpmarkers" type="legfed-snpmarker-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-iSelect-snps"/>
-    </source>
+    <!-- <source name="cowpea-snpmarkers" type="legfed-snpmarker-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-iSelect-snps"/> -->
+    <!-- </source> -->
 
     <!-- SNP marker genomic locations -->
-    <source name="cowpea-snppositions" type="legfed-snpvcf-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-1m-selected-snps"/>
-    </source>
+    <!-- <source name="cowpea-snppositions" type="legfed-snpvcf-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-1m-selected-snps"/> -->
+    <!-- </source> -->
 
     <!-- cowpea linkage groups and genetic maps from tab-delimited file -->
-    <source name="cowpea-linkagegroups" type="legfed-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-linkagegroups"/>
-    </source>
+    <!-- <source name="cowpea-linkagegroups" type="legfed-linkagegroup-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-linkagegroups"/> -->
+    <!-- </source> -->
 
     <!-- cowpea genetic marker locations on linkage groups from tab-delimited file -->
-    <source name="cowpea-markers-linkagegroups" type="legfed-marker-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-markers-linkagegroups"/>
-    </source>
+    <!-- <source name="cowpea-markers-linkagegroups" type="legfed-marker-linkagegroup-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-markers-linkagegroups"/> -->
+    <!-- </source> -->
 
     <!-- cowpea QTL data from tab-delimited file -->
-    <source name="cowpea-qtls" type="legfed-qtl-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl"/>
-    </source>
+    <!-- <source name="cowpea-qtls" type="legfed-qtl-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl"/> -->
+    <!-- </source> -->
 
     <!-- cowpea marker-QTL relations -->
-    <source name="cowpea-markers-qtls" type="legfed-marker-qtl-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl-markers"/>
-    </source>
+    <!-- <source name="cowpea-markers-qtls" type="legfed-marker-qtl-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl-markers"/> -->
+    <!-- </source> -->
 
     <!-- cowpea QTL-ontology relations from tab-delimited file -->
-    <source name="cowpea-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl-trait-ontology"/>
-    </source>
+    <!-- <source name="cowpea-qtl-ontology" type="legfed-qtl-ontology-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/cowpea-qtl-trait-ontology"/> -->
+    <!-- </source> -->
 
     <!-- PEANUT NON-CHADO -->
 
     <!-- genetic marker genomic locations from GFF files -->
-    <source name="peanut-geneticmarker-gff" type="legfed-geneticmarker-gff" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/peanut-markers"/>
-    </source>
+    <!-- <source name="peanut-geneticmarker-gff" type="legfed-geneticmarker-gff" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/peanut-markers"/> -->
+    <!-- </source> -->
 
     <!-- SOYBEAN NON-CHADO -->
 
     <!-- Soybase QTL data from tab-delimited file -->
-    <source name="soybase-qtls" type="legfed-qtl-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl"/>
-    </source>
+    <!-- <source name="soybase-qtls" type="legfed-qtl-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl"/> -->
+    <!-- </source> -->
 
     <!-- Soybase QTL-ontology relations from tab-delimited file -->
-    <source name="soybase-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-	    <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl-ontology"/>
-    </source>
+    <!-- <source name="soybase-qtl-ontology" type="legfed-qtl-ontology-file" dump="true"> -->
+    <!-- 	    <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl-ontology"/> -->
+    <!-- </source> -->
 
     <!-- Soybase genetic marker genomic locations and types from tab-delimited file -->
-    <source name="soybase-markers-chromosomes" type="legfed-marker-chromosome-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-chromosomes"/>
-    </source>
+    <!-- <source name="soybase-markers-chromosomes" type="legfed-marker-chromosome-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-chromosomes"/> -->
+    <!-- </source> -->
 
     <!-- Soybase linkage groups and genetic maps from tab-delimited file -->
-    <source name="soybase-linkagegroups" type="legfed-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-linkagegroups"/>
-    </source>
+    <!-- <source name="soybase-linkagegroups" type="legfed-linkagegroup-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-linkagegroups"/> -->
+    <!-- </source> -->
 
     <!-- Soybase genetic marker genetic locations on linkage groups from tab-delimited file -->
-    <source name="soybase-markers-linkagegroups" type="legfed-marker-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-linkagegroups"/>
-    </source>
+    <!-- <source name="soybase-markers-linkagegroups" type="legfed-marker-linkagegroup-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-linkagegroups"/> -->
+    <!-- </source> -->
 
     <!-- Soybase genetic marker associations with QTLs from tab-delimited file -->
-    <source name="soybase-markers-qtls" type="legfed-marker-qtl-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-qtls"/>
-    </source>
+    <!-- <source name="soybase-markers-qtls" type="legfed-marker-qtl-file" dump="true"> -->
+    <!--   <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-qtls"/> -->
+    <!-- </source> -->
 
     <!-- ONTOLOGIES -->
     
@@ -223,16 +223,34 @@
     </source>
 
     <!-- trait ontology -->
-    <source name="to" type="legfed-trait-ontology">
-      <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/>
-      <property name="ontology.prefix" value="TO"/>
-    </source>
+    <!-- <source name="to" type="legfed-trait-ontology"> -->
+    <!--   <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/> -->
+    <!--   <property name="ontology.prefix" value="TO"/> -->
+    <!-- </source> -->
 
     <!-- plant ontology -->
-    <source name="po" type="legfed-plant-ontology">
-      <property name="src.data.file" location="/data/legfed-intermine-data/plant-ontology/po.obo"/>
-      <property name="ontology.prefix" value="PO"/>
-    </source>
+    <!-- <source name="po" type="legfed-plant-ontology"> -->
+    <!--   <property name="src.data.file" location="/data/legfed-intermine-data/plant-ontology/po.obo"/> -->
+    <!--   <property name="ontology.prefix" value="PO"/> -->
+    <!-- </source> -->
+
+    <!-- PROTEIN DOMAINS -->
+    
+    <!-- InterPro -->
+    <!-- <source name="interpro" type="interpro"> -->
+    <!--   <property name="data.source.name" value="InterPro"/> -->
+    <!--   <property name="data.source.description" value="XML file listing each InterPro entry, the signatures that it contains, its abstract, GO terms, etc."/> -->
+    <!--   <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz"/> -->
+    <!--   <property name="src.data.dir" location="/data/InterPro/"/> -->
+    <!-- </source> -->
+    
+    <!-- InterPro to GO -->
+    <!-- <source name="interpro-go" type="interpro-go"> -->
+    <!--   <property name="data.source.name" value="InterPro2GO"/> -->
+    <!--   <property name="data.source.description" value="Mappings of InterPro entries to Gene Ontology (GO) terms."/> -->
+    <!--   <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro2go"/> -->
+    <!--   <property name="src.data.dir" location="/data/InterPro/ontology/"/> -->
+    <!-- </source> -->
 
   </sources>
 
