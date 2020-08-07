@@ -1,95 +1,229 @@
 #!/bin/sh
-
-## clear the logs (quietly)
 rm -f intermine.log
 
-## echo a big marker so we can see when this run started in the scroll
-echo "##################################################################################################"
-echo "###################################### integrate #################################################"
-echo "##################################################################################################"
+echo ""
+echo "##########################################################################################################################################"
+echo "##########################################################################################################################################"
+echo "#################################################### LEGUMEMINE INTEGRATE ################################################################"
+echo "##########################################################################################################################################"
+echo "##########################################################################################################################################"
+echo ""
 
-########### SHOULD WE DROP THESE? chadoId conflicts! #############
-# ## PeanutBase chado loaders (genetics)
-# ./gradlew integrate -Psource=peanutbase-genetics --stacktrace
-# ./gradlew integrate -Psource=peanutbase-featureprop --stacktrace
-##################################################################
+## ontologies and InterPro
+./gradlew integrate -Psource=go --stacktrace
+./gradlew integrate -Psource=so --stacktrace
+./gradlew integrate -Psource=plant-ontology --stacktrace
+./gradlew integrate -Psource=plant-trait-ontology --stacktrace
+./gradlew integrate -Psource=interpro --stacktrace
+./gradlew integrate -Psource=interpro-go --stacktrace
 
-###############################################################
-# Append -Paction=load to load items into production database #
-###############################################################
+## LIS gene families
+./gradlew integrate -Psource=lis.fam1-genefamily --stacktrace
 
-# ## ontologies
-# ./gradlew integrate -Psource=so
-# ./gradlew integrate -Psource=go
-# ./gradlew integrate -Psource=to
-# ./gradlew integrate -Psource=po
+###########
+## phavu ##
+###########
 
-# ## LIS chado loaders (includes peanut genomics)
-./gradlew integrate -Psource=lis-genomics --stacktrace
-# ./gradlew integrate -Psource=lis-proteins --stacktrace
-# ./gradlew integrate -Psource=lis-genetics --stacktrace
-# ./gradlew integrate -Psource=lis-featureprop --stacktrace
-# ./gradlew integrate -Psource=lis-reactome-file --stacktrace
-./gradlew integrate -Psource=lis-genefamilies --stacktrace
+./gradlew integrate -Psource=phavu-about --stacktrace
 
-# ## dump the chado state
-# pg_dump -Fc legumemine-dev > /data/legumemine-chado.dat
+## phavu.G19833.gnm1
+./gradlew integrate -Psource=phavu.G19833.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-info-annot --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-mrna-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-expression --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm1.ann1.syn1-synteny --stacktrace
 
-# ## expression files
-# ./gradlew integrate -Psource=cajca.ICPL87119.gnm1.ann1-expr
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-expr
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-expr
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-expr
+## phavu.G19833.gnm2
+./gradlew integrate -Psource=phavu.G19833.gnm2-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-gff --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-info-annot --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-mrna-fasta --stacktrace
+./gradlew integrate -Psource=phavu.G19833.gnm2.ann1.syn1-synteny --stacktrace
 
-# ## SQL updates for organisms and strains
-# ./gradlew generateUpdateTriggers
-# psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-# psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-# psql legumemine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
-# psql legumemine-dev -f ../legfed-intermine-sql/update-strain-descriptions.sql
-# psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+## phavu.UI111.gnm1
+./gradlew integrate -Psource=phavu.UI111.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-info-annot --stacktrace
+./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-mrna-fasta --stacktrace
 
+###########
+## cicar ##
+###########
 
+./gradlew integrate -Psource=cicar-about --stacktrace
 
+## cicar.CDCFrontier.gnm1
+./gradlew integrate -Psource=cicar.CDCFrontier.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1.syn1-synteny --stacktrace
 
-## IGNORE
-## psql legumemine-dev -f ../legfed-intermine-sql/update-identifiers.sql
+## cicar.ICC4958.gnm2
+./gradlew integrate -Psource=cicar.ICC4958.gnm2-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-gff --stacktrace
+./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1.syn1-synteny --stacktrace
+./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-expression --stacktrace
 
-# ## bean
-# ./gradlew integrate -Psource=bean-qtl-ontology --stacktrace
+###########
+## vigun ##
+###########
 
-# ## chickpea
-# ./gradlew integrate -Psource=cowpea-germplasms --stacktrace
+./gradlew integrate -Psource=vigun-about --stacktrace
 
-# ## cowpea
-# ./gradlew integrate -Psource=cowpea-qtls --stacktrace
-# ./gradlew integrate -Psource=cowpea-qtl-ontology --stacktrace
-# ./gradlew integrate -Psource=cowpea-markers-qtls --stacktrace
-# ./gradlew integrate -Psource=cowpea-snpmarkers --stacktrace
-# ./gradlew integrate -Psource=cowpea-snppositions --stacktrace
-# ./gradlew integrate -Psource=cowpea-linkagegroups --stacktrace
-# ./gradlew integrate -Psource=cowpea-markers-linkagegroups --stacktrace
+## vigun.IT97K-499-35
+./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-transcript-fasta --stacktrace
+./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.syn1-synteny --stacktrace
+./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-expression --stacktrace
 
-# ## peanut
-# ./gradlew integrate -Psource=peanut-geneticmarker-gff --stacktrace
+## vigun.CB5_2
+./gradlew integrate -Psource=vigun.CB5_2.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=vigun.CB5_2.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=vigun.CB5_2.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=vigun.CB5_2.gnm1.ann1-protein-fasta --stacktrace
 
-# ## pigeonpea
+## vigun.Sanzi
+./gradlew integrate -Psource=vigun.Sanzi.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-protein-fasta --stacktrace
 
-# ## soybean
-# ./gradlew integrate -Psource=soybase-qtls --stacktrace
-# ./gradlew integrate -Psource=soybase-qtl-ontology --stacktrace
-# ./gradlew integrate -Psource=soybase-markers-qtls --stacktrace
-# ./gradlew integrate -Psource=soybase-linkagegroups --stacktrace
-# ./gradlew integrate -Psource=soybase-markers-linkagegroups --stacktrace
-# ./gradlew integrate -Psource=soybase-markers-chromosomes --stacktrace
-# ./gradlew integrate -Psource=legumes-synteny --stacktrace 
+## vigun.Suvita2
+./gradlew integrate -Psource=vigun.Suvita2.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-protein-fasta --stacktrace
 
+## vigun.TZ30
+./gradlew integrate -Psource=vigun.TZ30.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-gff --stacktrace
+./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-cds-fasta --stacktrace
+./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-protein-fasta --stacktrace
 
+## vigun.UCR779
+./gradlew integrate -Psource=vigun.UCR779.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-protein-fasta --stacktrace
 
-# ## re-update the strain descriptions and organism genus/species
-# ./gradlew generateUpdateTriggers
-# psql legumemine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-# psql legumemine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-# psql legumemine-dev -f ../legfed-intermine-sql/update-strain-descriptions.sql
-# psql legumemine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+## vigun.Xiabao_II
+./gradlew integrate -Psource=vigun.Xiabao_II.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=vigun.Xiabao_II.gnm1.ann1-gff --stacktrace
 
+## vigun.ZN016
+./gradlew integrate -Psource=vigun.ZN016.gnm1-chromosome-fasta
+./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-gff
+./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-cds-fasta
+./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-protein-fasta
+
+###########
+## lupal ##
+###########
+
+./gradlew integrate -Psource=lupal-about
+
+## lupal.Amiga
+./gradlew integrate -Psource=lupal.Amiga.gnm1-chromosome-fasta
+./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-gff
+./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-cds-fasta
+./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-mrna-fasta
+./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-protein-fasta
+
+###########
+## lupan ##
+###########
+
+./gradlew integrate -Psource=lupan-about
+
+## lupan.Tanjil
+./gradlew integrate -Psource=lupan.Tanjil.gnm1-chromosome-fasta
+./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-gff
+./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-cds-fasta
+./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-protein-fasta
+./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1.syn1-synteny
+
+###########
+## medtr ##
+###########
+
+./gradlew integrate -Psource=medtr-about --stacktrace
+
+## medtr.A17_HM341.gnm4
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gff --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-cds-fasta --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-protein-fasta --stacktrace
+
+## medtr.R108_HM340.gnm1
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-protein-fasta --stacktrace
+
+###########
+## glyma ##
+###########
+
+./gradlew integrate -Psource=glyma-about --stacktrace
+./gradlew integrate -Psource=glyma-phenotypes --stacktrace
+
+## glyma.mixed
+./gradlew integrate -Psource=mixed.gwas.1W14-gwas --stacktrace
+
+## glyma.Wm82.gnm2
+./gradlew integrate -Psource=glyma.Wm82.gnm2-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-info-annot --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-gff --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-mrna-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-expression --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.mrk1-gff --stacktrace
+./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1.syn1-synteny --stacktrace
+
+## glyma.Lee.gnm1
+./gradlew integrate -Psource=glyma.Lee.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-info-annot --stacktrace
+./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-mrna-fasta --stacktrace
+
+## glyma.Zh13.gnm1
+./gradlew integrate -Psource=glyma.Zh13.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-protein-fasta --stacktrace
+
+###########
+## glyso ##
+###########
+
+./gradlew integrate -Psource=glyso-about --stacktrace
+
+## glyso.PI483463.gnm1
+./gradlew integrate -Psource=glyso.PI483463.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-info-annot --stacktrace
+./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-mrna-fasta --stacktrace
+
+## glyso.W05.gnm1
+./gradlew integrate -Psource=glyso.W05.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=glyso.W05.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=glyso.W05.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=glyso.W05.gnm1.ann1-protein-fasta --stacktrace
