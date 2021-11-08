@@ -1,12 +1,11 @@
 # legumemine
-An InterMine containing genomic annotation and expression data for legumes.
+An InterMine containing genome annotation for legumes.
 
 LegumeMine is a multi-genus InterMine with a consistent set of data for each genus/species/strain presented:
 - general description of each species
 - specific description of each strain
 - one genome assembly for each strain
 - one genome annotation for each strain
-- expression data for some strains
 
 The data sources used to load LegumeMine are therefore limited:
 - lis-about - data from the "about_this_collection" files describing the species and strains
@@ -15,7 +14,6 @@ The data sources used to load LegumeMine are therefore limited:
 - lis-ipr-gff - Interpro scan data in GFF format
 - lis-gfa - gene family associations for genes and proteins
 - lis-pathway	- pathway associations for genes
-- lis-expression - gene expression data
 - lis-genefamily - the gene family definitions  
 - lis-phylotree - the gene family trees
 - interpro - Interpro data
