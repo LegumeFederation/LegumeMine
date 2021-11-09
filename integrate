@@ -18,302 +18,244 @@ echo ""
 # ./gradlew integrate -Psource=interpro --stacktrace
 # ./gradlew integrate -Psource=interpro-go --stacktrace
 
-## LIS gene families
-# ./gradlew integrate -Psource=lis.fam1-genefamily --stacktrace
+## LIS gene families and phylotree
+# ./gradlew integrate -Psource=legume.genefam.fam1.M65K --stacktrace
+# ./gradlew integrate -Psource=legume.genefam.fam1.M65K.trees_ML_rooted --stacktrace
 
-## crop ontologies
-# ./gradlew integrate -Psource=bean-crop-ontology --stacktrace
-# ./gradlew integrate -Psource=chickpea-crop-ontology --stacktrace
-# ./gradlew integrate -Psource=cowpea-crop-ontology --stacktrace
-# ./gradlew integrate -Psource=mungbean-crop-ontology
-# ./gradlew integrate -Psource=soybean-crop-ontology --stacktrace
-# ./gradlew integrate -Psource=soybean-ontology --stacktrace
+## aesev
+# ./gradlew integrate --stacktrace -Psource=aesev-about
+# ./gradlew integrate --stacktrace -Psource=CIAT22838.gnm1.XF73.genome_main
+# ./gradlew integrate --stacktrace -Psource=CIAT22838.gnm1.ann1.ZM3R.cds
+# ./gradlew integrate --stacktrace -Psource=CIAT22838.gnm1.ann1.ZM3R.protein
+# ./gradlew integrate --stacktrace -Psource=CIAT22838.gnm1.ann1.ZM3R.transcript
+# ./gradlew integrate --stacktrace -Psource=CIAT22838.gnm1.ann1.ZM3R.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=CIAT22838.gnm1.ann1.ZM3R.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=CIAT22838.gnm1.ann1.ZM3R.legfed_v1_0.M65K.pathway
 
-## gensp-about
-# ./gradlew integrate -Psource=aradu-about --stacktrace
-# ./gradlew integrate -Psource=arahy-about --stacktrace
-# ./gradlew integrate -Psource=araip-about --stacktrace
-# ./gradlew integrate -Psource=cicar-about --stacktrace
-# ./gradlew integrate -Psource=glyma-about --stacktrace
-# ./gradlew integrate -Psource=glyso-about --stacktrace
-# ./gradlew integrate -Psource=lupal-about --stacktrace
-# ./gradlew integrate -Psource=lupan-about --stacktrace
-# ./gradlew integrate -Psource=medtr-about --stacktrace
-# ./gradlew integrate -Psource=medsa-about --stacktrace
-# ./gradlew integrate -Psource=phalu-about --stacktrace
-# ./gradlew integrate -Psource=phavu-about --stacktrace
-# ./gradlew integrate -Psource=vigan-about --stacktrace
-# ./gradlew integrate -Psource=vigra-about --stacktrace
-# ./gradlew integrate -Psource=vigun-about --stacktrace
+## aradu
+# ./gradlew integrate --stacktrace -Psource=aradu-about
+# ./gradlew integrate --stacktrace -Psource=V14167.gnm1.SWBf
+# ./gradlew integrate --stacktrace -Psource=V14167.gnm1.ann1.cxSM.cds
+# ./gradlew integrate --stacktrace -Psource=V14167.gnm1.ann1.cxSM.protein
+# ./gradlew integrate --stacktrace -Psource=V14167.gnm1.ann1.cxSM.transcript
+# ./gradlew integrate --stacktrace -Psource=V14167.gnm1.ann1.cxSM.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=V14167.gnm1.ann1.cxSM.legfed_v1_0.M65K.gfa.tsv
+# ./gradlew integrate --stacktrace -Psource=V14167.gnm1.ann1.cxSM.pathway.tsv
 
-## chromosome-fasta
-# ./gradlew integrate -Psource=aradu.V14167.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm2-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm263-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Zh13.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=glyso.W05.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=lupal.Amiga.gnm1-chromosome-fasta
-# ./gradlew integrate -Psource=lupan.Tanjil.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.A17_HM341.gnm4-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.R108_HM340.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.jemalong_A17.gnm5-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=phalu.G27455.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigan.Gyeongwon.gnm3-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigan.Shumari.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigra.VC1973A.gnm6-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.CB5-2.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Sanzi.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Suvita2.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.TZ30.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.UCR779.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Xiabao_II.gnm1-chromosome-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.ZN016.gnm1-chromosome-fasta --stacktrace
+## araip
+# ./gradlew integrate --stacktrace -Psource=araip-about
+# ./gradlew integrate --stacktrace -Psource=K30076.gnm1.bXJ8
+# ./gradlew integrate --stacktrace -Psource=K30076.gnm1.ann1.J37m.cds
+# ./gradlew integrate --stacktrace -Psource=K30076.gnm1.ann1.J37m.protein
+# ./gradlew integrate --stacktrace -Psource=K30076.gnm1.ann1.J37m.transcript
+# ./gradlew integrate --stacktrace -Psource=K30076.gnm1.ann1.J37m.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=K30076.gnm1.ann1.J37m.legfed_v1_0.M65K.gfa.tsv
+# ./gradlew integrate --stacktrace -Psource=K30076.gnm1.ann1.J37m.pathway.tsv
 
-## cds-fasta
-# ./gradlew integrate -Psource=aradu.V14167.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm2.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=glyso.W05.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-cds-fasta
-# ./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=phalu.G27455.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigan.Gyeongwon.gnm3.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigan.Shumari.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigra.VC1973A.gnm6.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann2-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.CB5-2.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-cds-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-cds-fasta --stacktrace
+## arahy
+# ./gradlew integrate --stacktrace -Psource=arahy-about
+# ./gradlew integrate --stacktrace -Psource=Tifrunner.gnm2.J5K5
+# ./gradlew integrate --stacktrace -Psource=Tifrunner.gnm2.ann1.4K0L.cds
+# ./gradlew integrate --stacktrace -Psource=Tifrunner.gnm2.ann1.4K0L.protein
+# ./gradlew integrate --stacktrace -Psource=Tifrunner.gnm2.ann1.4K0L.transcript
+# ./gradlew integrate --stacktrace -Psource=Tifrunner.gnm2.ann1.4K0L.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Tifrunner.gnm2.ann1.4K0L.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=Tifrunner.gnm2.ann1.4K0L.legfed_v1_0.M65K.pathway
 
-## mrna-fasta
-# ./gradlew integrate -Psource=aradu.V14167.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm2.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-mrna-fasta
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=phalu.G27455.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-mrna-fasta --stacktrace
-# ./gradlew integrate -Psource=vigan.Shumari.gnm1.ann1-mrna-fasta --stacktrace
+## cajca
+# ./gradlew integrate --stacktrace -Psource=cajca-about
+# ./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.SBGP
+# ./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.ann1.Y27M.cds
+# ./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.ann1.Y27M.protein
+# ./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.ann1.Y27M.transcript
+# ./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.ann1.Y27M.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.ann1.Y27M.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.ann1.Y27M.pathway
 
-## protein-fasta
-# ./gradlew integrate -Psource=aradu.V14167.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm2.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=glyso.W05.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-protein-fasta
-# ./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=phalu.G27455.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigan.Gyeongwon.gnm3.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigan.Shumari.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigra.VC1973A.gnm6.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.CB5-2.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.Xiabao_II.gnm1.ann1-protein-fasta --stacktrace
-# ./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-protein-fasta --stacktrace
+## cicar
+# ./gradlew integrate --stacktrace -Psource=cicar-about
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.GkHc
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.ann1.nRhs.cds
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.ann1.nRhs.transcript
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.ann1.nRhs.protein
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.ann1.nRhs.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.ann1.nRhs.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.ann1.nRhs.pathway
 
-## ann-gff
-# ./gradlew integrate -Psource=aradu.V14167.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm2.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm263.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=glyso.W05.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-gff
-# ./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gff --stacktrace
-# ./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-gff --stacktrace
-# ./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=phalu.G27455.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigan.Gyeongwon.gnm3.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigan.Shumari.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigra.VC1973A.gnm6.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann2-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.CB5-2.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.Xiabao_II.gnm1.ann1-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-gff --stacktrace
+# ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.bg5m
+# ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.cds
+# ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.protein
+# ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.transcript
+# ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.legfed_v1_0.M65K.gfa
+### PATHWAY FILE NEEDS TO BE BUILT
+./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.legfed_v1_0.M65K.pathway
 
-## info-annot
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1.ann1-info-annot --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-info-annot --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4.ann1-info-annot --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-info-annot --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-info-annot --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-info-annot --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-info-annot --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-info-annot --stacktrace
+## glyma
+# ./gradlew integrate --stacktrace -Psource=glyma-about
+# ./gradlew integrate --stacktrace -Psource=Wm82.gnm4.4PTR
+# ./gradlew integrate --stacktrace -Psource=Wm82.gnm4.ann1.T8TQ.cds
+# ./gradlew integrate --stacktrace -Psource=Wm82.gnm4.ann1.T8TQ.protein
+# ./gradlew integrate --stacktrace -Psource=Wm82.gnm4.ann1.T8TQ.transcript
+# ./gradlew integrate --stacktrace -Psource=Wm82.gnm4.ann1.T8TQ.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Wm82.gnm4.ann1.T8TQ.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=Wm82.gnm4.ann1.T8TQ.legfed_v1_0.M65K.pathway
 
-## ann-gfa
-# ./gradlew integrate -Psource=aradu.V14167.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm2.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=glyso.W05.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-gfa
-# ./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gfa --stacktrace
-# ./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-gfa --stacktrace
-# ./gradlew integrate -Psource=phalu.G27455.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigan.Gyeongwon.gnm3.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigan.Shumari.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigra.VC1973A.gnm6.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann2-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.CB5-2.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.Xiabao_II.gnm1.ann1-gfa --stacktrace
-# ./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-gfa --stacktrace
+# ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.LV9P
+# ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.cds
+# ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.protein
+# ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.transcript
+# ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.legfed_v1_0.M65K.gfa
+### PATHWAY FILE NEEDS TO BE BUILT
+./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.legfed_v1_0.M65K.pathway
 
-## ann-pathway
-# ./gradlew integrate -Psource=aradu.V14167.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=arahy.Tifrunner.gnm2.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm4.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=glyma.Lee.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=glyma.Zh13.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=glyso.PI483463.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=glyso.W05.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=lupal.Amiga.gnm1.ann0-pathway
-# ./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-pathway --stacktrace
-# ./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-pathway --stacktrace
-# ./gradlew integrate -Psource=phalu.G27455.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=phavu.UI111.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigan.Gyeongwon.gnm3.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigan.Shumari.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigra.VC1973A.gnm6.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann2-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.CB5-2.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.Sanzi.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.Suvita2.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.TZ30.gnm1.ann2-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.UCR779.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.Xiabao_II.gnm1.ann1-pathway --stacktrace
-# ./gradlew integrate -Psource=vigun.ZN016.gnm1.ann2-pathway --stacktrace
+## glyso
+# ./gradlew integrate --stacktrace -Psource=glyso-about
+# ./gradlew integrate --stacktrace -Psource=W05.gnm1.SVL1
+# ./gradlew integrate --stacktrace -Psource=W05.gnm1.ann1.T47J.cds
+# ./gradlew integrate --stacktrace -Psource=W05.gnm1.ann1.T47J.protein
+# ./gradlew integrate --stacktrace -Psource=W05.gnm1.ann1.T47J.transcript
+# ./gradlew integrate --stacktrace -Psource=W05.gnm1.ann1.T47J.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=W05.gnm1.ann1.T47J.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=W05.gnm1.ann1.T47J.legfed_v1_0.M65K.pathway
 
-## -synteny
-# ./gradlew integrate -Psource=aradu.V14167.gnm1.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=araip.K30076.gnm1.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=lupan.Tanjil.gnm1.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm2.ann1.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=vigan.Gyeongwon.gnm3.syn1-synteny --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.syn1-synteny --stacktrace
+## lotja
+# ./gradlew integrate --stacktrace -Psource=lotja-about
+# ./gradlew integrate --stacktrace -Psource=MG20.gnm3.QPGB
+# ./gradlew integrate --stacktrace -Psource=MG20.gnm3.ann1.WF9B.cds
+# ./gradlew integrate --stacktrace -Psource=MG20.gnm3.ann1.WF9B.protein
+# ./gradlew integrate --stacktrace -Psource=MG20.gnm3.ann1.WF9B.transcript
+# ./gradlew integrate --stacktrace -Psource=MG20.gnm3.ann1.WF9B.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=MG20.gnm3.ann1.WF9B.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=MG20.gnm3.ann1.WF9B.legfed_v1_0.M65K.pathway
 
-## -expression
-# ./gradlew integrate -Psource=cicar.ICC4958.gnm2.ann1-expression --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.ann1-expression --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.ann1-expression --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.ann1-expression --stacktrace
+## lupal
+# ./gradlew integrate --stacktrace -Psource=lupal-about
+# ./gradlew integrate --stacktrace -Psource=Amiga.gnm1.F4NR
+# ./gradlew integrate --stacktrace -Psource=Amiga.gnm1.ann1.3GKS.cds
+# ./gradlew integrate --stacktrace -Psource=Amiga.gnm1.ann1.3GKS.protein
+# ./gradlew integrate --stacktrace -Psource=Amiga.gnm1.ann1.3GKS.transcript
+# ./gradlew integrate --stacktrace -Psource=Amiga.gnm1.ann1.3GKS.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Amiga.gnm1.ann1.3GKS.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=Amiga.gnm1.ann1.3GKS.legfed_v1_0.M65K.pathway
 
-## mrk-gff
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm1.mrk-gff --stacktrace
-# ./gradlew integrate -Psource=cicar.CDCFrontier.gnm263.mrk-gff --stacktrace
-# ./gradlew integrate -Psource=phavu.G19833.gnm1.mrk-gff --stacktrace
-# ./gradlew integrate -Psource=glyma.Wm82.gnm2.mrk-gff --stacktrace
-# ./gradlew integrate -Psource=vigun.IT97K-499-35.gnm1.mrk-gff --stacktrace
+## lupan
+# ./gradlew integrate --stacktrace -Psource=lupan-about
+# ./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.Qq0N
+# ./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.ann1.nnV9.cds
+# ./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.ann1.nnV9.protein
+# ./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.ann1.nnV9.transcript
+# ./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.ann1.nnV9.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.ann1.nnV9.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.ann1.nnV9.pathway
+
+## medtr
+# ./gradlew integrate --stacktrace -Psource=medtr-about
+# ./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.2GZ9
+# ./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.cds
+# ./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.protein
+# ./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.transcript
+# ./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.pathway
+
+# ./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.XT6J
+# ./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.cds
+# ./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.transcript
+# ./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.protein
+# ./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.pathway
+
+# ./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.MVZ2
+# ./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.cds
+# ./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.transcript
+# ./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.protein
+# ./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.pathway
+
+## medsa
+# ./gradlew integrate --stacktrace -Psource=medsa-about
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.12MR
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.cds
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.protein
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.transcript
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.pathway
+
+## phavu
+# ./gradlew integrate --stacktrace -Psource=phavu-about
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.fC0g.genome_main
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d.cds
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d.protein
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d.transcript
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d.info_annot
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d.pathway
+
+## phalu
+# ./gradlew integrate --stacktrace -Psource=phalu-about
+# ./gradlew integrate --stacktrace -Psource=G27455.gnm1.7NXX.genome_main
+# ./gradlew integrate --stacktrace -Psource=G27455.gnm1.ann1.JD7C.cds
+# ./gradlew integrate --stacktrace -Psource=G27455.gnm1.ann1.JD7C.protein
+# ./gradlew integrate --stacktrace -Psource=G27455.gnm1.ann1.JD7C.transcript
+# ./gradlew integrate --stacktrace -Psource=G27455.gnm1.ann1.JD7C.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=G27455.gnm1.ann1.JD7C.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=G27455.gnm1.ann1.JD7C.legfed_v1_0.M65K.pathway
+
+## pissa
+# ./gradlew integrate --stacktrace -Psource=pissa-about
+# ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.P4FG
+# ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.cds
+# ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.protein
+# ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.transcript
+#./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.legfed_v1_0.M65K.gfa
+### PATHWAYS NEED TO BE BUILT
+./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.legfed_v1_0.M65K.pathway
+
+## tripr
+# ./gradlew integrate --stacktrace -Psource=tripr-about
+# ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.gNmT
+# ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.cds
+# ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.protein
+# ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.transcript
+# ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.legfed_v1_0.M65K.gfa
+./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.legfed_v1_0.M65K.pathway
+
+## vigan
+# ./gradlew integrate --stacktrace -Psource=vigan-about
+# ./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.JyYC
+# ./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.ann1.3Nz5.cds
+# ./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.ann1.3Nz5.transcript
+# ./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.ann1.3Nz5.protein
+# ./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.ann1.3Nz5.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.ann1.3Nz5.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.ann1.3Nz5.legfed_v1_0.M65K.pathway
+
+## vigra
+# ./gradlew integrate --stacktrace -Psource=vigra-about
+# ./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.3nL8
+# ./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.ann1.M1Qs.cds
+# ./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.ann1.M1Qs.protein
+# ./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.ann1.M1Qs.transcript
+# ./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.ann1.M1Qs.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.ann1.M1Qs.legfed_v1_0.M65K.gfa
+# ./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.ann1.M1Qs.pathway
+
+
+## vigun
+# ./gradlew integrate --stacktrace -Psource=vigun-about
+# ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.QnBW
+# ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.cds
+# ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.protein
+# ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.transcript
+# ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.legfed_v1_0.M65K.gfa
+### PATHWAYS NEED TO BE BUILT
+./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.legfed_v1_0.M65K.pathway

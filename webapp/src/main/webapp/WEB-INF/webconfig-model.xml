@@ -121,9 +121,6 @@
       <fieldconfig fieldExpr="geneFamilyScore" label="Gene family score"/>
       <fieldconfig fieldExpr="geneFamily.description" label="Gene family"/>
     </fields>
-    <bagdisplayers>
-      <displayer src="heatMap.tile" showOnLeft="true" />
-    </bagdisplayers>
   </class>
 
   <!-- extends SequenceFeature; needed for bagdisplayer -->
