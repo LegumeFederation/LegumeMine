@@ -453,11 +453,11 @@
 
     <!-- ============================================================================================== -->
 
-    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer"
-                     jspName="model/geneBarchartDisplayer.jsp"
-                     replacesFields=""
-                     placement="summary"
-                     types="Gene"/>
+    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer" -->
+    <!--                  jspName="model/geneBarchartDisplayer.jsp" -->
+    <!--                  replacesFields="" -->
+    <!--                  placement="summary" -->
+    <!--                  types="Gene"/> -->
 
     <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer" -->
     <!--                  jspName="model/linkageGroupDisplayer.jsp" -->
