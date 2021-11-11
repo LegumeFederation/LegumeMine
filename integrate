@@ -8,17 +8,17 @@ echo "##########################################################################
 echo "##########################################################################################################################################"
 echo ""
 
-## general ontologies
+# ## general ontologies
 # ./gradlew integrate -Psource=so --stacktrace
 # ./gradlew integrate -Psource=go --stacktrace
 # ./gradlew integrate -Psource=plant-ontology --stacktrace
 # ./gradlew integrate -Psource=plant-trait-ontology --stacktrace
 
-## InterPro
+# ## InterPro
 # ./gradlew integrate -Psource=interpro --stacktrace
 # ./gradlew integrate -Psource=interpro-go --stacktrace
 
-## LIS gene families and phylotree
+# ## LIS gene families and phylotree
 # ./gradlew integrate -Psource=legume.genefam.fam1.M65K --stacktrace
 # ./gradlew integrate -Psource=legume.genefam.fam1.M65K.trees_ML_rooted --stacktrace
 
@@ -88,8 +88,7 @@ echo ""
 # ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.transcript
 # ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.gene_models_main
 # ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.legfed_v1_0.M65K.gfa
-### PATHWAY FILE NEEDS TO BE BUILT
-./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.legfed_v1_0.M65K.pathway
+# ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX.legfed_v1_0.M65K.pathway
 
 ## glyma
 # ./gradlew integrate --stacktrace -Psource=glyma-about
@@ -107,8 +106,7 @@ echo ""
 # ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.protein
 # ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.transcript
 # ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.legfed_v1_0.M65K.gfa
-### PATHWAY FILE NEEDS TO BE BUILT
-./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.legfed_v1_0.M65K.pathway
+# ./gradlew integrate --stacktrace -Psource=Zh13.gnm2.ann1.FJ3G.legfed_v1_0.M65K.pathway
 
 ## glyso
 # ./gradlew integrate --stacktrace -Psource=glyso-about
@@ -215,8 +213,7 @@ echo ""
 # ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.transcript
 #./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.gene_models_main
 # ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.legfed_v1_0.M65K.gfa
-### PATHWAYS NEED TO BE BUILT
-./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.legfed_v1_0.M65K.pathway
+# ./gradlew integrate --stacktrace -Psource=Cameor.gnm1.ann1.7SZR.legfed_v1_0.M65K.pathway
 
 ## tripr
 # ./gradlew integrate --stacktrace -Psource=tripr-about
@@ -226,7 +223,7 @@ echo ""
 # ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.transcript
 # ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.gene_models_main
 # ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.legfed_v1_0.M65K.gfa
-./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.legfed_v1_0.M65K.pathway
+# ./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.ann1.DFgp.legfed_v1_0.M65K.pathway
 
 ## vigan
 # ./gradlew integrate --stacktrace -Psource=vigan-about
@@ -257,5 +254,4 @@ echo ""
 # ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.transcript
 # ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.gene_models_main
 # ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.legfed_v1_0.M65K.gfa
-### PATHWAYS NEED TO BE BUILT
-./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.legfed_v1_0.M65K.pathway
+# ./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.ann2.FD7K.legfed_v1_0.M65K.pathway
