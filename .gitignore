@@ -1,7 +1,4 @@
-dist
-build
-*.log
 *~
-sql
-webapp/src
-webapp/resources/webapp/model
+*.log
+.gradle
+build
