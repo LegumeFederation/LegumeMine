@@ -1,0 +1,22 @@
+#!/bin/sh
+NC='\033[0m'
+LP='\033[1;35m'
+
+echo -e "#################################################################"
+echo -e "############################ ${LP}SYNTENY${NC} ############################"
+echo -e "#################################################################"
+
+./gradlew integrate --stacktrace -Psource=V14167.gnm1.syn.qmkW
+./gradlew integrate --stacktrace -Psource=K30076.gnm1.syn.S8s4
+./gradlew integrate --stacktrace -Psource=ICPL87119.gnm1.syn.Nkx0
+./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.syn.7Bqh
+./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.syn.PdvJ
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.syn.HXNY
+./gradlew integrate --stacktrace -Psource=MG20.gnm3.syn.0ZB0
+./gradlew integrate --stacktrace -Psource=Tanjil.gnm1.syn.TwnC
+./gradlew integrate --stacktrace -Psource=G19833.gnm1.syn.xQ7F
+./gradlew integrate --stacktrace -Psource=G19833.gnm2.syn.DVDW
+./gradlew integrate --stacktrace -Psource=MilvusB.gnm2.syn.dXVX
+./gradlew integrate --stacktrace -Psource=Gyeongwon.gnm3.syn.wCFF
+./gradlew integrate --stacktrace -Psource=VC1973A.gnm6.syn.mcwy
+./gradlew integrate --stacktrace -Psource=IT97K-499-35.gnm1.syn.W3NY

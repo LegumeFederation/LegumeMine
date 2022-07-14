@@ -1,0 +1,76 @@
+#!/bin/sh
+rm -f validate-genomes.md
+touch validate-genomes.md
+for COLLECTION in Aeschynomene/evenia/genomes/CIAT22838.gnm1.XF73 \
+                      Arachis/duranensis/genomes/V14167.gnm1.SWBf \
+                      Arachis/duranensis/genomes/V14167.gnm2.J7QH \
+                      Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y \
+                      Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP \
+                      Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3 \
+                      Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5 \
+                      Arachis/ipaensis/genomes/K30076.gnm1.bXJ8 \
+                      Arachis/ipaensis/genomes/K30076.gnm2.1GWY \
+                      Cajanus/cajan/genomes/ICPL87119.gnm1.SBGP \
+                      Cajanus/cajan/genomes/ICPL87119.gnm2.KL9M \
+                      Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc \
+                      Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF \
+                      Cicer/arietinum/genomes/ICC4958.gnm2.bg5m \
+                      Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6 \
+                      Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K \
+                      Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B \
+                      Glycine/falcata/genomes/G1718.gnm1.B1PY \
+                      Glycine/max/genomes/FiskebyIII.gnm1.F177 \
+                      Glycine/max/genomes/Hefeng25_IGA1002.gnm1.L69T \
+                      Glycine/max/genomes/Huaxia3_IGA1007.gnm1.RGGN \
+                      Glycine/max/genomes/Jinyuan_IGA1006.gnm1.LXM0 \
+                      Glycine/max/genomes/Lee.gnm1.BXNC \
+                      Glycine/max/genomes/Lee.gnm2.K7BV \
+                      Glycine/max/genomes/Wenfeng7_IGA1001.gnm1.L0QH \
+                      Glycine/max/genomes/Wm82.gnm1.FCtY \
+                      Glycine/max/genomes/Wm82.gnm2.DTC4 \
+                      Glycine/max/genomes/Wm82.gnm4.4PTR \
+                      Glycine/max/genomes/Wm82_IGA1008.gnm1.5CQQ \
+                      Glycine/max/genomes/Zh13.gnm1.N6C8 \
+                      Glycine/max/genomes/Zh13.gnm2.LV9P \
+                      Glycine/max/genomes/Zh13_IGA1005.gnm1.FRXQ \
+                      Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ \
+                      Glycine/soja/genomes/F_IGA1003.gnm1.V9RB \
+                      Glycine/soja/genomes/PI483463.gnm1.YJWS \
+                      Glycine/soja/genomes/W05.gnm1.SVL1 \
+                      Glycine/stenophita/genomes/G1974.gnm1.7MZB \
+                      Glycine/syndetika/genomes/G1300.gnm1.C11H \
+                      Lotus/japonicus/genomes/MG20.gnm3.QPGB \
+                      Lupinus/albus/genomes/Amiga.gnm1.F4NR \
+                      Lupinus/angustifolius/genomes/Tanjil.gnm1.Qq0N \
+                      Medicago/sativa/genomes/RegenSY27x.gnm0_9.2VSM \
+                      Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR \
+                      Medicago/truncatula/genomes/A17.gnm5.MVZ2 \
+                      Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9 \
+                      Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS \
+                      Phaseolus/acutifolius/genomes/Frijol_Bayo.gnm1.QH8L \
+                      Phaseolus/acutifolius/genomes/W6_15578.gnm2.L2V4 \
+                      Phaseolus/lunatus/genomes/G27455.gnm1.7NXX \
+                      Phaseolus/vulgaris/genomes/5-593.gnm1.1P7P \
+                      Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF \
+                      Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g \
+                      Phaseolus/vulgaris/genomes/LaborOvalle.gnm1.VZZS \
+                      Phaseolus/vulgaris/genomes/UI111.gnm1.3VTM \
+                      Pisum/sativum/genomes/Cameor.gnm1.P4FG \
+                      Trifolium/pratense/genomes/MilvusB.gnm2.gNmT \
+                      Trifolium/subterraneum/genomes/Daliak.gnm2.VJZB \
+                      Vigna/angularis/genomes/Gyeongwon.gnm3.JyYC \
+                      Vigna/angularis/genomes/Shumari.gnm1.V0CS \
+                      Vigna/radiata/genomes/VC1973A.gnm6.3nL8 \
+                      Vigna/unguiculata/genomes/CB5-2.gnm1.WDTB \
+                      Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW \
+                      Vigna/unguiculata/genomes/Sanzi.gnm1.YNCM \
+                      Vigna/unguiculata/genomes/Suvita2.gnm1.5QLL \
+                      Vigna/unguiculata/genomes/TZ30.gnm1.TX9W \
+                      Vigna/unguiculata/genomes/UCR779.gnm1.M7KZ \
+                      Vigna/unguiculata/genomes/Xiabao_II.gnm1.WDBP \
+                      Vigna/unguiculata/genomes/ZN016.gnm1.997F
+do
+    validate-genome-collection /data/v2/$COLLECTION >> validate-genomes.md
+done
+
+

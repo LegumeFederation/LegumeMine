@@ -1,0 +1,7 @@
+#!/bin/sh
+rm -f validate-annotations.md
+touch validate-annotations.md
+for COLLECTION in `ls -1d /data/v2/*/*/annotations/*`
+do
+    validate-annotation-collection $COLLECTION >> validate-annotations.md
+done
