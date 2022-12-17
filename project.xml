@@ -12,12 +12,12 @@
       <property name="dataSetDescription" value="Aeschynomene evenia organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Aeschynomene/evenia/about_this_collection" />
     </source>
-    <!-- Apios/americana/about_this_collection -->
-    <source name="Apios-americana-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Apios/americana/about_this_collection" />
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Apios/americana/about_this_collection/" />
-      <property name="dataSetDescription" value="Apios americana organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Apios/americana/about_this_collection" />
+    <!-- Arachis/cardenasii/about_this_collection -->
+    <source name="Arachis-cardenasii-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Arachis/cardenasii/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/cardenasii/about_this_collection/" />
+      <property name="dataSetDescription" value="Arachis cardenasii organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Arachis/cardenasii/about_this_collection" />
     </source>
     <!-- Arachis/duranensis/about_this_collection -->
     <source name="Arachis-duranensis-description" type="lis-description" dump="true" >
@@ -54,19 +54,26 @@
       <property name="dataSetDescription" value="Cercis canadensis organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Cercis/canadensis/about_this_collection" />
     </source>
-    <!-- Chamaecrista/fasciculata/about_this_collection -->
-    <source name="Chamaecrista-fasciculata-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Chamaecrista/fasciculata/about_this_collection" />
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Chamaecrista/fasciculata/about_this_collection/" />
-      <property name="dataSetDescription" value="Chamaecrista fasciculata organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Chamaecrista/fasciculata/about_this_collection" />
-    </source>
     <!-- Cicer/arietinum/about_this_collection -->
     <source name="Cicer-arietinum-description" type="lis-description" dump="true" >
       <property name="dataSetName" value="Cicer/arietinum/about_this_collection" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/" />
       <property name="dataSetDescription" value="Cicer arietinum organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/about_this_collection" />
+    </source>
+    <!-- Cicer/echinospermum/about_this_collection -->
+    <source name="Cicer-echinospermum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cicer/echinospermum/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/about_this_collection/" />
+      <property name="dataSetDescription" value="Cicer echinospermum organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/about_this_collection" />
+    </source>
+    <!-- Cicer/reticulatum/about_this_collection -->
+    <source name="Cicer-reticulatum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cicer/reticulatum/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/about_this_collection/" />
+      <property name="dataSetDescription" value="Cicer reticulatum organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/about_this_collection" />
     </source>
     <!-- Glycine/cyrtoloba/about_this_collection -->
     <source name="Glycine-cyrtoloba-description" type="lis-description" dump="true" >
@@ -124,6 +131,20 @@
       <property name="dataSetDescription" value="Glycine syndetika organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/syndetika/about_this_collection" />
     </source>
+    <!-- Lens/culinaris/about_this_collection -->
+    <source name="Lens-culinaris-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Lens/culinaris/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/culinaris/about_this_collection/" />
+      <property name="dataSetDescription" value="Lens culinaris organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Lens/culinaris/about_this_collection" />
+    </source>
+    <!-- Lens/ervoides/about_this_collection -->
+    <source name="Lens-ervoides-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Lens/ervoides/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/ervoides/about_this_collection/" />
+      <property name="dataSetDescription" value="Lens ervoides organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Lens/ervoides/about_this_collection" />
+    </source>
     <!-- Lotus/japonicus/about_this_collection -->
     <source name="Lotus-japonicus-description" type="lis-description" dump="true" >
       <property name="dataSetName" value="Lotus/japonicus/about_this_collection" />
@@ -144,6 +165,20 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Lupinus/angustifolius/about_this_collection/" />
       <property name="dataSetDescription" value="Lupinus angustifolius organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Lupinus/angustifolius/about_this_collection" />
+    </source>
+    <!-- Medicago/polymorpha/about_this_collection -->
+    <source name="Medicago-polymorpha-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Medicago/polymorpha/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/polymorpha/about_this_collection/" />
+      <property name="dataSetDescription" value="Medicago polymorpha organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Medicago/polymorpha/about_this_collection" />
+    </source>
+    <!-- Medicago/ruthenica/about_this_collection -->
+    <source name="Medicago-ruthenica-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Medicago/ruthenica/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/ruthenica/about_this_collection/" />
+      <property name="dataSetDescription" value="Medicago ruthenica organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Medicago/ruthenica/about_this_collection" />
     </source>
     <!-- Medicago/sativa/about_this_collection -->
     <source name="Medicago-sativa-description" type="lis-description" dump="true" >
@@ -194,6 +229,13 @@
       <property name="dataSetDescription" value="Trifolium pratense organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Trifolium/pratense/about_this_collection" />
     </source>
+    <!-- Trifolium/subterraneum/about_this_collection -->
+    <source name="Trifolium-subterraneum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Trifolium/subterraneum/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/subterraneum/about_this_collection/" />
+      <property name="dataSetDescription" value="Trifolium subterraneum organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Trifolium/subterraneum/about_this_collection" />
+    </source>
     <!-- Vigna/angularis/about_this_collection -->
     <source name="Vigna-angularis-description" type="lis-description" dump="true" >
       <property name="dataSetName" value="Vigna/angularis/about_this_collection" />
@@ -217,479 +259,738 @@
     </source>
 
     <!-- Aeschynomene/evenia/genomes/CIAT22838.gnm1.XF73 -->
-    <source name="CIAT22838.gnm1.XF73" type="lis-fasta" dump="true">
+    <source name="CIAT22838.gnm1.XF73" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Aeschynomene/evenia/genomes/CIAT22838.gnm1.XF73/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.CIAT22838.gnm1.XF73.yml,aesev.CIAT22838.gnm1.XF73.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CIAT22838.gnm1.XF73.yml,aesev.CIAT22838.gnm1.XF73.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Aeschynomene/evenia/genomes/CIAT22838.gnm1.XF73"/>
     </source>
+    <!-- Arachis/cardenasii/genomes/K10017.gnm1.DQ4M -->
+    <source name="K10017.gnm1.DQ4M" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/cardenasii/genomes/K10017.gnm1.DQ4M/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.K10017.gnm1.DQ4M.yml,araca.K10017.gnm1.DQ4M.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Arachis/cardenasii/genomes/K10017.gnm1.DQ4M"/>
+    </source>
     <!-- Arachis/duranensis/genomes/V14167.gnm1.SWBf -->
-    <source name="V14167.gnm1.SWBf" type="lis-fasta" dump="true">
+    <source name="V14167.gnm1.SWBf" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm1.SWBf/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.V14167.gnm1.SWBf.yml,aradu.V14167.gnm1.SWBf.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.V14167.gnm1.SWBf.yml,aradu.V14167.gnm1.SWBf.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/duranensis/genomes/V14167.gnm1.SWBf"/>
     </source>
     <!-- Arachis/duranensis/genomes/V14167.gnm2.J7QH -->
-    <source name="V14167.gnm2.J7QH" type="lis-fasta" dump="true">
+    <source name="V14167.gnm2.J7QH" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.V14167.gnm2.J7QH.yml,aradu.V14167.gnm2.J7QH.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.V14167.gnm2.J7QH.yml,aradu.V14167.gnm2.J7QH.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/duranensis/genomes/V14167.gnm2.J7QH"/>
     </source>
     <!-- Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y -->
-    <source name="Fuhuasheng.gnm1.XX5Y" type="lis-fasta" dump="true">
+    <source name="Fuhuasheng.gnm1.XX5Y" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Fuhuasheng.gnm1.XX5Y.yml,arahy.Fuhuasheng.gnm1.XX5Y.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Fuhuasheng.gnm1.XX5Y.yml,arahy.Fuhuasheng.gnm1.XX5Y.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y"/>
     </source>
     <!-- Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP -->
-    <source name="Shitouqi.gnm1.L4VP" type="lis-fasta" dump="true">
+    <source name="Shitouqi.gnm1.L4VP" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Shitouqi.gnm1.L4VP.yml,arahy.Shitouqi.gnm1.L4VP.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Shitouqi.gnm1.L4VP.yml,arahy.Shitouqi.gnm1.L4VP.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP"/>
     </source>
     <!-- Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3 -->
-    <source name="Tifrunner.gnm1.KYV3" type="lis-fasta" dump="true">
+    <source name="Tifrunner.gnm1.KYV3" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Tifrunner.gnm1.KYV3.yml,arahy.Tifrunner.gnm1.KYV3.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Tifrunner.gnm1.KYV3.yml,arahy.Tifrunner.gnm1.KYV3.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3"/>
     </source>
     <!-- Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5 -->
-    <source name="Tifrunner.gnm2.J5K5" type="lis-fasta" dump="true">
+    <source name="Tifrunner.gnm2.J5K5" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Tifrunner.gnm2.J5K5.yml,arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Tifrunner.gnm2.J5K5.yml,arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5"/>
     </source>
     <!-- Arachis/ipaensis/genomes/K30076.gnm1.bXJ8 -->
-    <source name="K30076.gnm1.bXJ8" type="lis-fasta" dump="true">
+    <source name="K30076.gnm1.bXJ8" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm1.bXJ8/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.K30076.gnm1.bXJ8.yml,araip.K30076.gnm1.bXJ8.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.K30076.gnm1.bXJ8.yml,araip.K30076.gnm1.bXJ8.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/ipaensis/genomes/K30076.gnm1.bXJ8"/>
     </source>
     <!-- Arachis/ipaensis/genomes/K30076.gnm2.1GWY -->
-    <source name="K30076.gnm2.1GWY" type="lis-fasta" dump="true">
+    <source name="K30076.gnm2.1GWY" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm2.1GWY/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.K30076.gnm2.1GWY.yml,araip.K30076.gnm2.1GWY.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.K30076.gnm2.1GWY.yml,araip.K30076.gnm2.1GWY.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Arachis/ipaensis/genomes/K30076.gnm2.1GWY"/>
     </source>
     <!-- Cajanus/cajan/genomes/ICPL87119.gnm1.SBGP -->
-    <source name="ICPL87119.gnm1.SBGP" type="lis-fasta" dump="true">
+    <source name="ICPL87119.gnm1.SBGP" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cajanus/cajan/genomes/ICPL87119.gnm1.SBGP/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.ICPL87119.gnm1.SBGP.yml,cajca.ICPL87119.gnm1.SBGP.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.ICPL87119.gnm1.SBGP.yml,cajca.ICPL87119.gnm1.SBGP.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Cajanus/cajan/genomes/ICPL87119.gnm1.SBGP"/>
     </source>
     <!-- Cajanus/cajan/genomes/ICPL87119.gnm2.KL9M -->
-    <source name="ICPL87119.gnm2.KL9M" type="lis-fasta" dump="true">
+    <source name="ICPL87119.gnm2.KL9M" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cajanus/cajan/genomes/ICPL87119.gnm2.KL9M/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.ICPL87119.gnm2.KL9M.yml,cajca.ICPL87119.gnm2.KL9M.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.ICPL87119.gnm2.KL9M.yml,cajca.ICPL87119.gnm2.KL9M.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Cajanus/cajan/genomes/ICPL87119.gnm2.KL9M"/>
     </source>
+    <!-- Cercis/canadensis/genomes/ISC453364.gnm1.B05Z -->
+    <source name="ISC453364.gnm1.B05Z" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cercis/canadensis/genomes/ISC453364.gnm1.B05Z/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.ISC453364.gnm1.B05Z.yml,cerca.ISC453364.gnm1.B05Z.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Cercis/canadensis/genomes/ISC453364.gnm1.B05Z"/>
+    </source>
     <!-- Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc -->
-    <source name="CDCFrontier.gnm1.GkHc" type="lis-fasta" dump="true">
+    <source name="CDCFrontier.gnm1.GkHc" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.CDCFrontier.gnm1.GkHc.yml,cicar.CDCFrontier.gnm1.GkHc.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CDCFrontier.gnm1.GkHc.yml,cicar.CDCFrontier.gnm1.GkHc.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc"/>
     </source>
     <!-- Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF -->
-    <source name="CDCFrontier.gnm2.S2FF" type="lis-fasta" dump="true">
+    <source name="CDCFrontier.gnm2.S2FF" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.CDCFrontier.gnm2.S2FF.yml,cicar.CDCFrontier.gnm2.S2FF.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CDCFrontier.gnm2.S2FF.yml,cicar.CDCFrontier.gnm2.S2FF.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF"/>
     </source>
+    <!-- Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P -->
+    <source name="CDCFrontier.gnm3.QT0P" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CDCFrontier.gnm3.QT0P.yml,cicar.CDCFrontier.gnm3.QT0P.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P"/>
+    </source>
     <!-- Cicer/arietinum/genomes/ICC4958.gnm2.bg5m -->
-    <source name="ICC4958.gnm2.bg5m" type="lis-fasta" dump="true">
+    <source name="ICC4958.gnm2.bg5m" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.ICC4958.gnm2.bg5m.yml,cicar.ICC4958.gnm2.bg5m.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.ICC4958.gnm2.bg5m.yml,cicar.ICC4958.gnm2.bg5m.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m"/>
     </source>
+    <!-- Cicer/echinospermum/genomes/S2Drd065.gnm1.R888 -->
+    <source name="S2Drd065.gnm1.R888" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.S2Drd065.gnm1.R888.yml,cicec.S2Drd065.gnm1.R888.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888"/>
+    </source>
+    <!-- Cicer/reticulatum/genomes/Besev079.gnm1.2FZC -->
+    <source name="Besev079.gnm1.2FZC" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Besev079.gnm1.2FZC.yml,cicre.Besev079.gnm1.2FZC.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC"/>
+    </source>
     <!-- Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6 -->
-    <source name="G1267.gnm1.YWW6" type="lis-fasta" dump="true">
+    <source name="G1267.gnm1.YWW6" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G1267.gnm1.YWW6.yml,glycy.G1267.gnm1.YWW6.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G1267.gnm1.YWW6.yml,glycy.G1267.gnm1.YWW6.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6"/>
     </source>
     <!-- Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K -->
-    <source name="G1403.gnm1.CL6K" type="lis-fasta" dump="true">
+    <source name="G1403.gnm1.CL6K" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G1403.gnm1.CL6K.yml,glyd3.G1403.gnm1.CL6K.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G1403.gnm1.CL6K.yml,glyd3.G1403.gnm1.CL6K.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K"/>
     </source>
     <!-- Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B -->
-    <source name="G1134.gnm1.PP7B" type="lis-fasta" dump="true">
+    <source name="G1134.gnm1.PP7B" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G1134.gnm1.PP7B.yml,glydo.G1134.gnm1.PP7B.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G1134.gnm1.PP7B.yml,glydo.G1134.gnm1.PP7B.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B"/>
     </source>
     <!-- Glycine/falcata/genomes/G1718.gnm1.B1PY -->
-    <source name="G1718.gnm1.B1PY" type="lis-fasta" dump="true">
+    <source name="G1718.gnm1.B1PY" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/falcata/genomes/G1718.gnm1.B1PY/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G1718.gnm1.B1PY.yml,glyfa.G1718.gnm1.B1PY.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G1718.gnm1.B1PY.yml,glyfa.G1718.gnm1.B1PY.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/falcata/genomes/G1718.gnm1.B1PY"/>
     </source>
     <!-- Glycine/max/genomes/FiskebyIII.gnm1.F177 -->
-    <source name="FiskebyIII.gnm1.F177" type="lis-fasta" dump="true">
+    <source name="FiskebyIII.gnm1.F177" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/FiskebyIII.gnm1.F177/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.FiskebyIII.gnm1.F177.yml,glyma.FiskebyIII.gnm1.F177.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.FiskebyIII.gnm1.F177.yml,glyma.FiskebyIII.gnm1.F177.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/FiskebyIII.gnm1.F177"/>
     </source>
     <!-- Glycine/max/genomes/Hefeng25_IGA1002.gnm1.L69T -->
-    <source name="Hefeng25_IGA1002.gnm1.L69T" type="lis-fasta" dump="true">
+    <source name="Hefeng25_IGA1002.gnm1.L69T" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Hefeng25_IGA1002.gnm1.L69T/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Hefeng25_IGA1002.gnm1.L69T.yml,glyma.Hefeng25_IGA1002.gnm1.L69T.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Hefeng25_IGA1002.gnm1.L69T.yml,glyma.Hefeng25_IGA1002.gnm1.L69T.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Hefeng25_IGA1002.gnm1.L69T"/>
     </source>
     <!-- Glycine/max/genomes/Huaxia3_IGA1007.gnm1.RGGN -->
-    <source name="Huaxia3_IGA1007.gnm1.RGGN" type="lis-fasta" dump="true">
+    <source name="Huaxia3_IGA1007.gnm1.RGGN" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Huaxia3_IGA1007.gnm1.RGGN/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Huaxia3_IGA1007.gnm1.RGGN.yml,glyma.Huaxia3_IGA1007.gnm1.RGGN.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Huaxia3_IGA1007.gnm1.RGGN.yml,glyma.Huaxia3_IGA1007.gnm1.RGGN.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Huaxia3_IGA1007.gnm1.RGGN"/>
     </source>
+    <!-- Glycine/max/genomes/Hwangkeum.gnm1.4S83 -->
+    <source name="Hwangkeum.gnm1.4S83" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Hwangkeum.gnm1.4S83/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Hwangkeum.gnm1.4S83.yml,glyma.Hwangkeum.gnm1.4S83.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Hwangkeum.gnm1.4S83"/>
+    </source>
     <!-- Glycine/max/genomes/Jinyuan_IGA1006.gnm1.LXM0 -->
-    <source name="Jinyuan_IGA1006.gnm1.LXM0" type="lis-fasta" dump="true">
+    <source name="Jinyuan_IGA1006.gnm1.LXM0" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Jinyuan_IGA1006.gnm1.LXM0/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Jinyuan_IGA1006.gnm1.LXM0.yml,glyma.Jinyuan_IGA1006.gnm1.LXM0.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Jinyuan_IGA1006.gnm1.LXM0.yml,glyma.Jinyuan_IGA1006.gnm1.LXM0.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Jinyuan_IGA1006.gnm1.LXM0"/>
     </source>
     <!-- Glycine/max/genomes/Lee.gnm1.BXNC -->
-    <source name="Lee.gnm1.BXNC" type="lis-fasta" dump="true">
+    <source name="Lee.gnm1.BXNC" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Lee.gnm1.BXNC/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Lee.gnm1.BXNC.yml,glyma.Lee.gnm1.BXNC.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Lee.gnm1.BXNC.yml,glyma.Lee.gnm1.BXNC.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Lee.gnm1.BXNC"/>
     </source>
     <!-- Glycine/max/genomes/Lee.gnm2.K7BV -->
-    <source name="Lee.gnm2.K7BV" type="lis-fasta" dump="true">
+    <source name="Lee.gnm2.K7BV" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Lee.gnm2.K7BV/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Lee.gnm2.K7BV.yml,glyma.Lee.gnm2.K7BV.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Lee.gnm2.K7BV.yml,glyma.Lee.gnm2.K7BV.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Lee.gnm2.K7BV"/>
     </source>
     <!-- Glycine/max/genomes/Wenfeng7_IGA1001.gnm1.L0QH -->
-    <source name="Wenfeng7_IGA1001.gnm1.L0QH" type="lis-fasta" dump="true">
+    <source name="Wenfeng7_IGA1001.gnm1.L0QH" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wenfeng7_IGA1001.gnm1.L0QH/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Wenfeng7_IGA1001.gnm1.L0QH.yml,glyma.Wenfeng7_IGA1001.gnm1.L0QH.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Wenfeng7_IGA1001.gnm1.L0QH.yml,glyma.Wenfeng7_IGA1001.gnm1.L0QH.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wenfeng7_IGA1001.gnm1.L0QH"/>
     </source>
     <!-- Glycine/max/genomes/Wm82.gnm1.FCtY -->
-    <source name="Wm82.gnm1.FCtY" type="lis-fasta" dump="true">
+    <source name="Wm82.gnm1.FCtY" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm1.FCtY/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Wm82.gnm1.FCtY.yml,glyma.Wm82.gnm1.FCtY.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Wm82.gnm1.FCtY.yml,glyma.Wm82.gnm1.FCtY.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82.gnm1.FCtY"/>
     </source>
     <!-- Glycine/max/genomes/Wm82.gnm2.DTC4 -->
-    <source name="Wm82.gnm2.DTC4" type="lis-fasta" dump="true">
+    <source name="Wm82.gnm2.DTC4" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm2.DTC4/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Wm82.gnm2.DTC4.yml,glyma.Wm82.gnm2.DTC4.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Wm82.gnm2.DTC4.yml,glyma.Wm82.gnm2.DTC4.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82.gnm2.DTC4"/>
     </source>
     <!-- Glycine/max/genomes/Wm82.gnm4.4PTR -->
-    <source name="Wm82.gnm4.4PTR" type="lis-fasta" dump="true">
+    <source name="Wm82.gnm4.4PTR" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm4.4PTR/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Wm82.gnm4.4PTR.yml,glyma.Wm82.gnm4.4PTR.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Wm82.gnm4.4PTR.yml,glyma.Wm82.gnm4.4PTR.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82.gnm4.4PTR"/>
     </source>
     <!-- Glycine/max/genomes/Wm82_IGA1008.gnm1.5CQQ -->
-    <source name="Wm82_IGA1008.gnm1.5CQQ" type="lis-fasta" dump="true">
+    <source name="Wm82_IGA1008.gnm1.5CQQ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82_IGA1008.gnm1.5CQQ/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Wm82_IGA1008.gnm1.5CQQ.yml,glyma.Wm82_IGA1008.gnm1.5CQQ.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Wm82_IGA1008.gnm1.5CQQ.yml,glyma.Wm82_IGA1008.gnm1.5CQQ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82_IGA1008.gnm1.5CQQ"/>
     </source>
+    <!-- Glycine/max/genomes/Wm82_ISU01.gnm2.JFPQ -->
+    <source name="Wm82_ISU01.gnm2.JFPQ" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82_ISU01.gnm2.JFPQ/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Wm82_ISU01.gnm2.JFPQ.yml,glyma.Wm82_ISU01.gnm2.JFPQ.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82_ISU01.gnm2.JFPQ"/>
+    </source>
     <!-- Glycine/max/genomes/Zh13.gnm1.N6C8 -->
-    <source name="Zh13.gnm1.N6C8" type="lis-fasta" dump="true">
+    <source name="Zh13.gnm1.N6C8" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh13.gnm1.N6C8/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Zh13.gnm1.N6C8.yml,glyma.Zh13.gnm1.N6C8.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Zh13.gnm1.N6C8.yml,glyma.Zh13.gnm1.N6C8.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh13.gnm1.N6C8"/>
     </source>
     <!-- Glycine/max/genomes/Zh13.gnm2.LV9P -->
-    <source name="Zh13.gnm2.LV9P" type="lis-fasta" dump="true">
+    <source name="Zh13.gnm2.LV9P" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh13.gnm2.LV9P/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Zh13.gnm2.LV9P.yml,glyma.Zh13.gnm2.LV9P.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Zh13.gnm2.LV9P.yml,glyma.Zh13.gnm2.LV9P.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh13.gnm2.LV9P"/>
     </source>
     <!-- Glycine/max/genomes/Zh13_IGA1005.gnm1.FRXQ -->
-    <source name="Zh13_IGA1005.gnm1.FRXQ" type="lis-fasta" dump="true">
+    <source name="Zh13_IGA1005.gnm1.FRXQ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh13_IGA1005.gnm1.FRXQ/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Zh13_IGA1005.gnm1.FRXQ.yml,glyma.Zh13_IGA1005.gnm1.FRXQ.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Zh13_IGA1005.gnm1.FRXQ.yml,glyma.Zh13_IGA1005.gnm1.FRXQ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh13_IGA1005.gnm1.FRXQ"/>
     </source>
     <!-- Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ -->
-    <source name="Zh35_IGA1004.gnm1.DBYJ" type="lis-fasta" dump="true">
+    <source name="Zh35_IGA1004.gnm1.DBYJ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Zh35_IGA1004.gnm1.DBYJ.yml,glyma.Zh35_IGA1004.gnm1.DBYJ.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Zh35_IGA1004.gnm1.DBYJ.yml,glyma.Zh35_IGA1004.gnm1.DBYJ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ"/>
     </source>
     <!-- Glycine/soja/genomes/F_IGA1003.gnm1.V9RB -->
-    <source name="F_IGA1003.gnm1.V9RB" type="lis-fasta" dump="true">
+    <source name="F_IGA1003.gnm1.V9RB" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/F_IGA1003.gnm1.V9RB/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.F_IGA1003.gnm1.V9RB.yml,glyso.F_IGA1003.gnm1.V9RB.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.F_IGA1003.gnm1.V9RB.yml,glyso.F_IGA1003.gnm1.V9RB.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/F_IGA1003.gnm1.V9RB"/>
     </source>
     <!-- Glycine/soja/genomes/PI483463.gnm1.YJWS -->
-    <source name="PI483463.gnm1.YJWS" type="lis-fasta" dump="true">
+    <source name="PI483463.gnm1.YJWS" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/PI483463.gnm1.YJWS/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.PI483463.gnm1.YJWS.yml,glyso.PI483463.gnm1.YJWS.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.PI483463.gnm1.YJWS.yml,glyso.PI483463.gnm1.YJWS.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS"/>
     </source>
     <!-- Glycine/soja/genomes/W05.gnm1.SVL1 -->
-    <source name="W05.gnm1.SVL1" type="lis-fasta" dump="true">
+    <source name="W05.gnm1.SVL1" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/W05.gnm1.SVL1/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.W05.gnm1.SVL1.yml,glyso.W05.gnm1.SVL1.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.W05.gnm1.SVL1.yml,glyso.W05.gnm1.SVL1.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/W05.gnm1.SVL1"/>
     </source>
     <!-- Glycine/stenophita/genomes/G1974.gnm1.7MZB -->
-    <source name="G1974.gnm1.7MZB" type="lis-fasta" dump="true">
+    <source name="G1974.gnm1.7MZB" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/stenophita/genomes/G1974.gnm1.7MZB/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G1974.gnm1.7MZB.yml,glyst.G1974.gnm1.7MZB.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G1974.gnm1.7MZB.yml,glyst.G1974.gnm1.7MZB.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/stenophita/genomes/G1974.gnm1.7MZB"/>
     </source>
     <!-- Glycine/syndetika/genomes/G1300.gnm1.C11H -->
-    <source name="G1300.gnm1.C11H" type="lis-fasta" dump="true">
+    <source name="G1300.gnm1.C11H" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/syndetika/genomes/G1300.gnm1.C11H/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G1300.gnm1.C11H.yml,glysy.G1300.gnm1.C11H.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G1300.gnm1.C11H.yml,glysy.G1300.gnm1.C11H.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/syndetika/genomes/G1300.gnm1.C11H"/>
     </source>
+    <!-- Lens/culinaris/genomes/CDC_Redberry.gnm2.7C5P -->
+    <source name="CDC_Redberry.gnm2.7C5P" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/culinaris/genomes/CDC_Redberry.gnm2.7C5P/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CDC_Redberry.gnm2.7C5P.yml,lencu.CDC_Redberry.gnm2.7C5P.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Lens/culinaris/genomes/CDC_Redberry.gnm2.7C5P"/>
+    </source>
+    <!-- Lens/ervoides/genomes/IG_72815.gnm1.ZDWF -->
+    <source name="IG_72815.gnm1.ZDWF" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/ervoides/genomes/IG_72815.gnm1.ZDWF/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.IG_72815.gnm1.ZDWF.yml,lener.IG_72815.gnm1.ZDWF.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Lens/ervoides/genomes/IG_72815.gnm1.ZDWF"/>
+    </source>
     <!-- Lotus/japonicus/genomes/MG20.gnm3.QPGB -->
-    <source name="MG20.gnm3.QPGB" type="lis-fasta" dump="true">
+    <source name="MG20.gnm3.QPGB" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Lotus/japonicus/genomes/MG20.gnm3.QPGB/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.MG20.gnm3.QPGB.yml,lotja.MG20.gnm3.QPGB.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.MG20.gnm3.QPGB.yml,lotja.MG20.gnm3.QPGB.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Lotus/japonicus/genomes/MG20.gnm3.QPGB"/>
     </source>
     <!-- Lupinus/albus/genomes/Amiga.gnm1.F4NR -->
-    <source name="Amiga.gnm1.F4NR" type="lis-fasta" dump="true">
+    <source name="Amiga.gnm1.F4NR" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Lupinus/albus/genomes/Amiga.gnm1.F4NR/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Amiga.gnm1.F4NR.yml,lupal.Amiga.gnm1.F4NR.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Amiga.gnm1.F4NR.yml,lupal.Amiga.gnm1.F4NR.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Lupinus/albus/genomes/Amiga.gnm1.F4NR"/>
     </source>
     <!-- Lupinus/angustifolius/genomes/Tanjil.gnm1.Qq0N -->
-    <source name="Tanjil.gnm1.Qq0N" type="lis-fasta" dump="true">
+    <source name="Tanjil.gnm1.Qq0N" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Lupinus/angustifolius/genomes/Tanjil.gnm1.Qq0N/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Tanjil.gnm1.Qq0N.yml,lupan.Tanjil.gnm1.Qq0N.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Tanjil.gnm1.Qq0N.yml,lupan.Tanjil.gnm1.Qq0N.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Lupinus/angustifolius/genomes/Tanjil.gnm1.Qq0N"/>
     </source>
+    <!-- Medicago/polymorpha/genomes/Huaiyang_Jinhuacai.gnm1.ZH4B -->
+    <source name="Huaiyang_Jinhuacai.gnm1.ZH4B" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/polymorpha/genomes/Huaiyang_Jinhuacai.gnm1.ZH4B/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Huaiyang_Jinhuacai.gnm1.ZH4B.yml,medpo.Huaiyang_Jinhuacai.gnm1.ZH4B.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/polymorpha/genomes/Huaiyang_Jinhuacai.gnm1.ZH4B"/>
+    </source>
+    <!-- Medicago/ruthenica/genomes/Xinghe.gnm1.KKFS -->
+    <source name="Xinghe.gnm1.KKFS" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/ruthenica/genomes/Xinghe.gnm1.KKFS/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Xinghe.gnm1.KKFS.yml,medru.Xinghe.gnm1.KKFS.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/ruthenica/genomes/Xinghe.gnm1.KKFS"/>
+    </source>
+    <!-- Medicago/sativa/genomes/CADL_HM342.gnm1.rVNY -->
+    <source name="CADL_HM342.gnm1.rVNY" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/genomes/CADL_HM342.gnm1.rVNY/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CADL_HM342.gnm1.rVNY.yml,medsa.CADL_HM342.gnm1.rVNY.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/CADL_HM342.gnm1.rVNY"/>
+    </source>
+    <!-- Medicago/sativa/genomes/PI464715.gnm1.8GK6 -->
+    <source name="PI464715.gnm1.8GK6" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/genomes/PI464715.gnm1.8GK6/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.PI464715.gnm1.8GK6.yml,medsa.PI464715.gnm1.8GK6.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/PI464715.gnm1.8GK6"/>
+    </source>
     <!-- Medicago/sativa/genomes/RegenSY27x.gnm0_9.2VSM -->
-    <source name="RegenSY27x.gnm0_9.2VSM" type="lis-fasta" dump="true">
+    <source name="RegenSY27x.gnm0_9.2VSM" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/genomes/RegenSY27x.gnm0_9.2VSM/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.RegenSY27x.gnm0_9.2VSM.yml,medsa.RegenSY27x.gnm0_9.2VSM.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.RegenSY27x.gnm0_9.2VSM.yml,medsa.RegenSY27x.gnm0_9.2VSM.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/RegenSY27x.gnm0_9.2VSM"/>
     </source>
     <!-- Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR -->
-    <source name="XinJiangDaYe.gnm1.12MR" type="lis-fasta" dump="true">
+    <source name="XinJiangDaYe.gnm1.12MR" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.XinJiangDaYe.gnm1.12MR.yml,medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.XinJiangDaYe.gnm1.12MR.yml,medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR"/>
     </source>
+    <!-- Medicago/sativa/genomes/Zhongmu_No_1.gnm1.TRQW -->
+    <source name="Zhongmu_No_1.gnm1.TRQW" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/genomes/Zhongmu_No_1.gnm1.TRQW/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Zhongmu_No_1.gnm1.TRQW.yml,medsa.Zhongmu_No_1.gnm1.TRQW.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/Zhongmu_No_1.gnm1.TRQW"/>
+    </source>
     <!-- Medicago/truncatula/genomes/A17.gnm5.MVZ2 -->
-    <source name="A17.gnm5.MVZ2" type="lis-fasta" dump="true">
+    <source name="A17.gnm5.MVZ2" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17.gnm5.MVZ2/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.A17.gnm5.MVZ2.yml,medtr.A17.gnm5.MVZ2.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.A17.gnm5.MVZ2.yml,medtr.A17.gnm5.MVZ2.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/A17.gnm5.MVZ2"/>
     </source>
     <!-- Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9 -->
-    <source name="A17_HM341.gnm4.2GZ9" type="lis-fasta" dump="true">
+    <source name="A17_HM341.gnm4.2GZ9" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.A17_HM341.gnm4.2GZ9.yml,medtr.A17_HM341.gnm4.2GZ9.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.A17_HM341.gnm4.2GZ9.yml,medtr.A17_HM341.gnm4.2GZ9.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9"/>
     </source>
+    <!-- Medicago/truncatula/genomes/HM002.gnm1.TWKJ -->
+    <source name="HM002.gnm1.TWKJ" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM002.gnm1.TWKJ/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM002.gnm1.TWKJ.yml,medtr.HM002.gnm1.TWKJ.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM002.gnm1.TWKJ"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM004.gnm1.L7PM -->
+    <source name="HM004.gnm1.L7PM" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM004.gnm1.L7PM/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM004.gnm1.L7PM.yml,medtr.HM004.gnm1.L7PM.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM004.gnm1.L7PM"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM005.gnm1.BQQH -->
+    <source name="HM005.gnm1.BQQH" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM005.gnm1.BQQH/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM005.gnm1.BQQH.yml,medtr.HM005.gnm1.BQQH.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM005.gnm1.BQQH"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM006.gnm1.XKYH -->
+    <source name="HM006.gnm1.XKYH" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM006.gnm1.XKYH/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM006.gnm1.XKYH.yml,medtr.HM006.gnm1.XKYH.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM006.gnm1.XKYH"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM010.gnm1.YDPY -->
+    <source name="HM010.gnm1.YDPY" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM010.gnm1.YDPY/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM010.gnm1.YDPY.yml,medtr.HM010.gnm1.YDPY.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM010.gnm1.YDPY"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM017.gnm1.HSRX -->
+    <source name="HM017.gnm1.HSRX" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM017.gnm1.HSRX/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM017.gnm1.HSRX.yml,medtr.HM017.gnm1.HSRX.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM017.gnm1.HSRX"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM018.gnm1.3NVM -->
+    <source name="HM018.gnm1.3NVM" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM018.gnm1.3NVM/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM018.gnm1.3NVM.yml,medtr.HM018.gnm1.3NVM.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM018.gnm1.3NVM"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM020.gnm1.PNGN -->
+    <source name="HM020.gnm1.PNGN" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM020.gnm1.PNGN/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM020.gnm1.PNGN.yml,medtr.HM020.gnm1.PNGN.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM020.gnm1.PNGN"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM022.gnm1.B190 -->
+    <source name="HM022.gnm1.B190" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM022.gnm1.B190/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM022.gnm1.B190.yml,medtr.HM022.gnm1.B190.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM022.gnm1.B190"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM023.gnm1.FFHH -->
+    <source name="HM023.gnm1.FFHH" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM023.gnm1.FFHH/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM023.gnm1.FFHH.yml,medtr.HM023.gnm1.FFHH.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM023.gnm1.FFHH"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM026.gnm1.PH3S -->
+    <source name="HM026.gnm1.PH3S" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM026.gnm1.PH3S/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM026.gnm1.PH3S.yml,medtr.HM026.gnm1.PH3S.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM026.gnm1.PH3S"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM034.gnm1.6VW9 -->
+    <source name="HM034.gnm1.6VW9" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM034.gnm1.6VW9/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM034.gnm1.6VW9.yml,medtr.HM034.gnm1.6VW9.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM034.gnm1.6VW9"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM050.gnm1.9JPP -->
+    <source name="HM050.gnm1.9JPP" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM050.gnm1.9JPP/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM050.gnm1.9JPP.yml,medtr.HM050.gnm1.9JPP.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM050.gnm1.9JPP"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM056.gnm1.JBKN -->
+    <source name="HM056.gnm1.JBKN" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM056.gnm1.JBKN/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM056.gnm1.JBKN.yml,medtr.HM056.gnm1.JBKN.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM056.gnm1.JBKN"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM058.gnm1.JVBP -->
+    <source name="HM058.gnm1.JVBP" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM058.gnm1.JVBP/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM058.gnm1.JVBP.yml,medtr.HM058.gnm1.JVBP.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM058.gnm1.JVBP"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM060.gnm1.V7B2 -->
+    <source name="HM060.gnm1.V7B2" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM060.gnm1.V7B2/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM060.gnm1.V7B2.yml,medtr.HM060.gnm1.V7B2.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM060.gnm1.V7B2"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM095.gnm1.FBQK -->
+    <source name="HM095.gnm1.FBQK" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM095.gnm1.FBQK/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM095.gnm1.FBQK.yml,medtr.HM095.gnm1.FBQK.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM095.gnm1.FBQK"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM125.gnm1.GFN2 -->
+    <source name="HM125.gnm1.GFN2" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM125.gnm1.GFN2/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM125.gnm1.GFN2.yml,medtr.HM125.gnm1.GFN2.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM125.gnm1.GFN2"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM129.gnm1.9HG9 -->
+    <source name="HM129.gnm1.9HG9" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM129.gnm1.9HG9/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM129.gnm1.9HG9.yml,medtr.HM129.gnm1.9HG9.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM129.gnm1.9HG9"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM185.gnm1.1G05 -->
+    <source name="HM185.gnm1.1G05" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM185.gnm1.1G05/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM185.gnm1.1G05.yml,medtr.HM185.gnm1.1G05.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM185.gnm1.1G05"/>
+    </source>
+    <!-- Medicago/truncatula/genomes/HM324.gnm1.SJSJ -->
+    <source name="HM324.gnm1.SJSJ" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM324.gnm1.SJSJ/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.HM324.gnm1.SJSJ.yml,medtr.HM324.gnm1.SJSJ.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM324.gnm1.SJSJ"/>
+    </source>
     <!-- Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS -->
-    <source name="R108.gnmHiC_1.7RWS" type="lis-fasta" dump="true">
+    <source name="R108.gnmHiC_1.7RWS" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.R108.gnmHiC_1.7RWS.yml,medtr.R108.gnmHiC_1.7RWS.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.R108.gnmHiC_1.7RWS.yml,medtr.R108.gnmHiC_1.7RWS.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS"/>
     </source>
+    <!-- Medicago/truncatula/genomes/R108_HM340.gnm1.XT6J -->
+    <source name="R108_HM340.gnm1.XT6J" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/R108_HM340.gnm1.XT6J/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.R108_HM340.gnm1.XT6J.yml,medtr.R108_HM340.gnm1.XT6J.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/R108_HM340.gnm1.XT6J"/>
+    </source>
     <!-- Phaseolus/acutifolius/genomes/Frijol_Bayo.gnm1.QH8L -->
-    <source name="Frijol_Bayo.gnm1.QH8L" type="lis-fasta" dump="true">
+    <source name="Frijol_Bayo.gnm1.QH8L" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/acutifolius/genomes/Frijol_Bayo.gnm1.QH8L/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Frijol_Bayo.gnm1.QH8L.yml,phaac.Frijol_Bayo.gnm1.QH8L.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Frijol_Bayo.gnm1.QH8L.yml,phaac.Frijol_Bayo.gnm1.QH8L.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/acutifolius/genomes/Frijol_Bayo.gnm1.QH8L"/>
     </source>
     <!-- Phaseolus/acutifolius/genomes/W6_15578.gnm2.L2V4 -->
-    <source name="W6_15578.gnm2.L2V4" type="lis-fasta" dump="true">
+    <source name="W6_15578.gnm2.L2V4" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/acutifolius/genomes/W6_15578.gnm2.L2V4/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.W6_15578.gnm2.L2V4.yml,phaac.W6_15578.gnm2.L2V4.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.W6_15578.gnm2.L2V4.yml,phaac.W6_15578.gnm2.L2V4.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/acutifolius/genomes/W6_15578.gnm2.L2V4"/>
     </source>
     <!-- Phaseolus/lunatus/genomes/G27455.gnm1.7NXX -->
-    <source name="G27455.gnm1.7NXX" type="lis-fasta" dump="true">
+    <source name="G27455.gnm1.7NXX" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/lunatus/genomes/G27455.gnm1.7NXX/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G27455.gnm1.7NXX.yml,phalu.G27455.gnm1.7NXX.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G27455.gnm1.7NXX.yml,phalu.G27455.gnm1.7NXX.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/lunatus/genomes/G27455.gnm1.7NXX"/>
     </source>
     <!-- Phaseolus/vulgaris/genomes/5-593.gnm1.1P7P -->
-    <source name="5-593.gnm1.1P7P" type="lis-fasta" dump="true">
+    <source name="5-593.gnm1.1P7P" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/5-593.gnm1.1P7P/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.5-593.gnm1.1P7P.yml,phavu.5-593.gnm1.1P7P.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.5-593.gnm1.1P7P.yml,phavu.5-593.gnm1.1P7P.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/5-593.gnm1.1P7P"/>
     </source>
     <!-- Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF -->
-    <source name="G19833.gnm1.zBnF" type="lis-fasta" dump="true">
+    <source name="G19833.gnm1.zBnF" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G19833.gnm1.zBnF.yml,phavu.G19833.gnm1.zBnF.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G19833.gnm1.zBnF.yml,phavu.G19833.gnm1.zBnF.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF"/>
     </source>
     <!-- Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g -->
-    <source name="G19833.gnm2.fC0g" type="lis-fasta" dump="true">
+    <source name="G19833.gnm2.fC0g" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G19833.gnm2.fC0g.yml,phavu.G19833.gnm2.fC0g.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G19833.gnm2.fC0g.yml,phavu.G19833.gnm2.fC0g.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g"/>
     </source>
     <!-- Phaseolus/vulgaris/genomes/LaborOvalle.gnm1.VZZS -->
-    <source name="LaborOvalle.gnm1.VZZS" type="lis-fasta" dump="true">
+    <source name="LaborOvalle.gnm1.VZZS" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/LaborOvalle.gnm1.VZZS/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.LaborOvalle.gnm1.VZZS.yml,phavu.LaborOvalle.gnm1.VZZS.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.LaborOvalle.gnm1.VZZS.yml,phavu.LaborOvalle.gnm1.VZZS.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/LaborOvalle.gnm1.VZZS"/>
     </source>
     <!-- Phaseolus/vulgaris/genomes/UI111.gnm1.3VTM -->
-    <source name="UI111.gnm1.3VTM" type="lis-fasta" dump="true">
+    <source name="UI111.gnm1.3VTM" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/UI111.gnm1.3VTM/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.UI111.gnm1.3VTM.yml,phavu.UI111.gnm1.3VTM.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.UI111.gnm1.3VTM.yml,phavu.UI111.gnm1.3VTM.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/UI111.gnm1.3VTM"/>
     </source>
     <!-- Pisum/sativum/genomes/Cameor.gnm1.P4FG -->
-    <source name="Cameor.gnm1.P4FG" type="lis-fasta" dump="true">
+    <source name="Cameor.gnm1.P4FG" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Pisum/sativum/genomes/Cameor.gnm1.P4FG/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Cameor.gnm1.P4FG.yml,pissa.Cameor.gnm1.P4FG.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Cameor.gnm1.P4FG.yml,pissa.Cameor.gnm1.P4FG.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Pisum/sativum/genomes/Cameor.gnm1.P4FG"/>
     </source>
     <!-- Trifolium/pratense/genomes/MilvusB.gnm2.gNmT -->
-    <source name="MilvusB.gnm2.gNmT" type="lis-fasta" dump="true">
+    <source name="MilvusB.gnm2.gNmT" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/genomes/MilvusB.gnm2.gNmT/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.MilvusB.gnm2.gNmT.yml,tripr.MilvusB.gnm2.gNmT.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.MilvusB.gnm2.gNmT.yml,tripr.MilvusB.gnm2.gNmT.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Trifolium/pratense/genomes/MilvusB.gnm2.gNmT"/>
     </source>
     <!-- Trifolium/subterraneum/genomes/Daliak.gnm2.VJZB -->
-    <source name="Daliak.gnm2.VJZB" type="lis-fasta" dump="true">
+    <source name="Daliak.gnm2.VJZB" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/subterraneum/genomes/Daliak.gnm2.VJZB/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Daliak.gnm2.VJZB.yml,trisu.Daliak.gnm2.VJZB.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Daliak.gnm2.VJZB.yml,trisu.Daliak.gnm2.VJZB.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Trifolium/subterraneum/genomes/Daliak.gnm2.VJZB"/>
     </source>
     <!-- Vigna/angularis/genomes/Gyeongwon.gnm3.JyYC -->
-    <source name="Gyeongwon.gnm3.JyYC" type="lis-fasta" dump="true">
+    <source name="Gyeongwon.gnm3.JyYC" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/angularis/genomes/Gyeongwon.gnm3.JyYC/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Gyeongwon.gnm3.JyYC.yml,vigan.Gyeongwon.gnm3.JyYC.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Gyeongwon.gnm3.JyYC.yml,vigan.Gyeongwon.gnm3.JyYC.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/angularis/genomes/Gyeongwon.gnm3.JyYC"/>
     </source>
     <!-- Vigna/angularis/genomes/Shumari.gnm1.V0CS -->
-    <source name="Shumari.gnm1.V0CS" type="lis-fasta" dump="true">
+    <source name="Shumari.gnm1.V0CS" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/angularis/genomes/Shumari.gnm1.V0CS/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Shumari.gnm1.V0CS.yml,vigan.Shumari.gnm1.V0CS.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Shumari.gnm1.V0CS.yml,vigan.Shumari.gnm1.V0CS.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/angularis/genomes/Shumari.gnm1.V0CS"/>
     </source>
     <!-- Vigna/radiata/genomes/VC1973A.gnm6.3nL8 -->
-    <source name="VC1973A.gnm6.3nL8" type="lis-fasta" dump="true">
+    <source name="VC1973A.gnm6.3nL8" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/radiata/genomes/VC1973A.gnm6.3nL8/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.VC1973A.gnm6.3nL8.yml,vigra.VC1973A.gnm6.3nL8.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.VC1973A.gnm6.3nL8.yml,vigra.VC1973A.gnm6.3nL8.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/radiata/genomes/VC1973A.gnm6.3nL8"/>
     </source>
+    <!-- Vigna/radiata/genomes/VC1973A.gnm7.SB53 -->
+    <source name="VC1973A.gnm7.SB53" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/radiata/genomes/VC1973A.gnm7.SB53/" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.VC1973A.gnm7.SB53.yml,vigra.VC1973A.gnm7.SB53.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Vigna/radiata/genomes/VC1973A.gnm7.SB53"/>
+    </source>
     <!-- Vigna/unguiculata/genomes/CB5-2.gnm1.WDTB -->
-    <source name="CB5-2.gnm1.WDTB" type="lis-fasta" dump="true">
+    <source name="CB5-2.gnm1.WDTB" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/CB5-2.gnm1.WDTB/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.CB5-2.gnm1.WDTB.yml,vigun.CB5-2.gnm1.WDTB.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CB5-2.gnm1.WDTB.yml,vigun.CB5-2.gnm1.WDTB.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/CB5-2.gnm1.WDTB"/>
     </source>
     <!-- Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW -->
-    <source name="IT97K-499-35.gnm1.QnBW" type="lis-fasta" dump="true">
+    <source name="IT97K-499-35.gnm1.QnBW" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.IT97K-499-35.gnm1.QnBW.yml,vigun.IT97K-499-35.gnm1.QnBW.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.IT97K-499-35.gnm1.QnBW.yml,vigun.IT97K-499-35.gnm1.QnBW.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW"/>
     </source>
     <!-- Vigna/unguiculata/genomes/Sanzi.gnm1.YNCM -->
-    <source name="Sanzi.gnm1.YNCM" type="lis-fasta" dump="true">
+    <source name="Sanzi.gnm1.YNCM" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/Sanzi.gnm1.YNCM/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Sanzi.gnm1.YNCM.yml,vigun.Sanzi.gnm1.YNCM.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Sanzi.gnm1.YNCM.yml,vigun.Sanzi.gnm1.YNCM.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/Sanzi.gnm1.YNCM"/>
     </source>
     <!-- Vigna/unguiculata/genomes/Suvita2.gnm1.5QLL -->
-    <source name="Suvita2.gnm1.5QLL" type="lis-fasta" dump="true">
+    <source name="Suvita2.gnm1.5QLL" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/Suvita2.gnm1.5QLL/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Suvita2.gnm1.5QLL.yml,vigun.Suvita2.gnm1.5QLL.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Suvita2.gnm1.5QLL.yml,vigun.Suvita2.gnm1.5QLL.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/Suvita2.gnm1.5QLL"/>
     </source>
     <!-- Vigna/unguiculata/genomes/TZ30.gnm1.TX9W -->
-    <source name="TZ30.gnm1.TX9W" type="lis-fasta" dump="true">
+    <source name="TZ30.gnm1.TX9W" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/TZ30.gnm1.TX9W/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.TZ30.gnm1.TX9W.yml,vigun.TZ30.gnm1.TX9W.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.TZ30.gnm1.TX9W.yml,vigun.TZ30.gnm1.TX9W.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/TZ30.gnm1.TX9W"/>
     </source>
     <!-- Vigna/unguiculata/genomes/UCR779.gnm1.M7KZ -->
-    <source name="UCR779.gnm1.M7KZ" type="lis-fasta" dump="true">
+    <source name="UCR779.gnm1.M7KZ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/UCR779.gnm1.M7KZ/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.UCR779.gnm1.M7KZ.yml,vigun.UCR779.gnm1.M7KZ.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.UCR779.gnm1.M7KZ.yml,vigun.UCR779.gnm1.M7KZ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/UCR779.gnm1.M7KZ"/>
     </source>
     <!-- Vigna/unguiculata/genomes/Xiabao_II.gnm1.WDBP -->
-    <source name="Xiabao_II.gnm1.WDBP" type="lis-fasta" dump="true">
+    <source name="Xiabao_II.gnm1.WDBP" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/Xiabao_II.gnm1.WDBP/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.Xiabao_II.gnm1.WDBP.yml,vigun.Xiabao_II.gnm1.WDBP.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.Xiabao_II.gnm1.WDBP.yml,vigun.Xiabao_II.gnm1.WDBP.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/Xiabao_II.gnm1.WDBP"/>
     </source>
     <!-- Vigna/unguiculata/genomes/ZN016.gnm1.997F -->
-    <source name="ZN016.gnm1.997F" type="lis-fasta" dump="true">
+    <source name="ZN016.gnm1.997F" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/genomes/ZN016.gnm1.997F/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.ZN016.gnm1.997F.yml,vigun.ZN016.gnm1.997F.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.ZN016.gnm1.997F.yml,vigun.ZN016.gnm1.997F.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/genomes/ZN016.gnm1.997F"/>
     </source>
 
@@ -728,6 +1029,11 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cajanus/cajan/annotations/ICPL87119.gnm2.ann1.L3ZH/" />
       <property name="src.data.dir" location="/data/v2/Cajanus/cajan/annotations/ICPL87119.gnm2.ann1.L3ZH"/>
     </source>
+    <!-- Cercis/canadensis/annotations/ISC453364.gnm1.ann1.HZJM -->
+    <source name="ISC453364.gnm1.ann1.HZJM" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cercis/canadensis/annotations/ISC453364.gnm1.ann1.HZJM/" />
+      <property name="src.data.dir" location="/data/v2/Cercis/canadensis/annotations/ISC453364.gnm1.ann1.HZJM"/>
+    </source>
     <!-- Cicer/arietinum/annotations/CDCFrontier.gnm1.ann1.nRhs -->
     <source name="CDCFrontier.gnm1.ann1.nRhs" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm1.ann1.nRhs/" />
@@ -738,10 +1044,25 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L/" />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L"/>
     </source>
+    <!-- Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7 -->
+    <source name="CDCFrontier.gnm3.ann1.NPD7" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
+    </source>
     <!-- Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX -->
     <source name="ICC4958.gnm2.ann1.LCVX" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX/" />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX"/>
+    </source>
+    <!-- Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H -->
+    <source name="S2Drd065.gnm1.ann1.YZ9H" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
+    </source>
+    <!-- Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z -->
+    <source name="Besev079.gnm1.ann1.F01Z" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
     </source>
     <!-- Glycine/cyrtoloba/annotations/G1267.gnm1.ann1.HRFD -->
     <source name="G1267.gnm1.ann1.HRFD" type="lis-annotation" dump="true">
@@ -777,6 +1098,11 @@
     <source name="Huaxia3_IGA1007.gnm1.ann1.LKC7" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Huaxia3_IGA1007.gnm1.ann1.LKC7/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Huaxia3_IGA1007.gnm1.ann1.LKC7"/>
+    </source>
+    <!-- Glycine/max/annotations/Hwangkeum.gnm1.ann1.1G4F -->
+    <source name="Hwangkeum.gnm1.ann1.1G4F" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Hwangkeum.gnm1.ann1.1G4F/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Hwangkeum.gnm1.ann1.1G4F"/>
     </source>
     <!-- Glycine/max/annotations/Jinyuan_IGA1006.gnm1.ann1.2NNX -->
     <source name="Jinyuan_IGA1006.gnm1.ann1.2NNX" type="lis-annotation" dump="true">
@@ -817,6 +1143,11 @@
     <source name="Wm82_IGA1008.gnm1.ann1.FGN6" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82_IGA1008.gnm1.ann1.FGN6/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82_IGA1008.gnm1.ann1.FGN6"/>
+    </source>
+    <!-- Glycine/max/annotations/Wm82_ISU01.gnm2.ann1.FGFB -->
+    <source name="Wm82_ISU01.gnm2.ann1.FGFB" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82_ISU01.gnm2.ann1.FGFB/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82_ISU01.gnm2.ann1.FGFB"/>
     </source>
     <!-- Glycine/max/annotations/Zh13.gnm1.ann1.8VV3 -->
     <source name="Zh13.gnm1.ann1.8VV3" type="lis-annotation" dump="true">
@@ -863,6 +1194,16 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/syndetika/annotations/G1300.gnm1.ann1.RRK6/" />
       <property name="src.data.dir" location="/data/v2/Glycine/syndetika/annotations/G1300.gnm1.ann1.RRK6"/>
     </source>
+    <!-- Lens/culinaris/annotations/CDC_Redberry.gnm2.ann1.5FB4 -->
+    <source name="CDC_Redberry.gnm2.ann1.5FB4" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/culinaris/annotations/CDC_Redberry.gnm2.ann1.5FB4/" />
+      <property name="src.data.dir" location="/data/v2/Lens/culinaris/annotations/CDC_Redberry.gnm2.ann1.5FB4"/>
+    </source>
+    <!-- Lens/ervoides/annotations/IG_72815.gnm1.ann1.R90F -->
+    <source name="IG_72815.gnm1.ann1.R90F" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/ervoides/annotations/IG_72815.gnm1.ann1.R90F/" />
+      <property name="src.data.dir" location="/data/v2/Lens/ervoides/annotations/IG_72815.gnm1.ann1.R90F"/>
+    </source>
     <!-- Lotus/japonicus/annotations/MG20.gnm3.ann1.WF9B -->
     <source name="MG20.gnm3.ann1.WF9B" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Lotus/japonicus/annotations/MG20.gnm3.ann1.WF9B/" />
@@ -893,10 +1234,85 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
     </source>
+    <!-- Medicago/truncatula/annotations/HM004.gnm1.ann1.2XTB -->
+    <source name="HM004.gnm1.ann1.2XTB" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM004.gnm1.ann1.2XTB/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM004.gnm1.ann1.2XTB"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM010.gnm1.ann1.WV9J -->
+    <source name="HM010.gnm1.ann1.WV9J" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM010.gnm1.ann1.WV9J/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM010.gnm1.ann1.WV9J"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM022.gnm1.ann1.6C8N -->
+    <source name="HM022.gnm1.ann1.6C8N" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM022.gnm1.ann1.6C8N/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM022.gnm1.ann1.6C8N"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM023.gnm1.ann1.WZN8 -->
+    <source name="HM023.gnm1.ann1.WZN8" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM023.gnm1.ann1.WZN8/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM023.gnm1.ann1.WZN8"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM034.gnm1.ann1.YR6S -->
+    <source name="HM034.gnm1.ann1.YR6S" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM034.gnm1.ann1.YR6S/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM034.gnm1.ann1.YR6S"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM050.gnm1.ann1.GWRX -->
+    <source name="HM050.gnm1.ann1.GWRX" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM050.gnm1.ann1.GWRX/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM050.gnm1.ann1.GWRX"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM056.gnm1.ann1.CHP6 -->
+    <source name="HM056.gnm1.ann1.CHP6" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM056.gnm1.ann1.CHP6/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM056.gnm1.ann1.CHP6"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM058.gnm1.ann1.LXPZ -->
+    <source name="HM058.gnm1.ann1.LXPZ" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM058.gnm1.ann1.LXPZ/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM058.gnm1.ann1.LXPZ"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM060.gnm1.ann1.H41P -->
+    <source name="HM060.gnm1.ann1.H41P" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM060.gnm1.ann1.H41P/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM060.gnm1.ann1.H41P"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM095.gnm1.ann1.55W4 -->
+    <source name="HM095.gnm1.ann1.55W4" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM095.gnm1.ann1.55W4/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM095.gnm1.ann1.55W4"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM125.gnm1.ann1.KY5W -->
+    <source name="HM125.gnm1.ann1.KY5W" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM125.gnm1.ann1.KY5W/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM125.gnm1.ann1.KY5W"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM129.gnm1.ann1.7FTD -->
+    <source name="HM129.gnm1.ann1.7FTD" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM129.gnm1.ann1.7FTD/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM129.gnm1.ann1.7FTD"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM185.gnm1.ann1.GB3D -->
+    <source name="HM185.gnm1.ann1.GB3D" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM185.gnm1.ann1.GB3D/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM185.gnm1.ann1.GB3D"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/HM324.gnm1.ann1.SQH2 -->
+    <source name="HM324.gnm1.ann1.SQH2" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM324.gnm1.ann1.SQH2/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM324.gnm1.ann1.SQH2"/>
+    </source>
     <!-- Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH -->
     <source name="R108.gnmHiC_1.ann1.Y8NH" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH/" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH"/>
+    </source>
+    <!-- Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW -->
+    <source name="R108_HM340.gnm1.ann1.85YW" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW"/>
     </source>
     <!-- Phaseolus/acutifolius/annotations/Frijol_Bayo.gnm1.ann1.ML22 -->
     <source name="Frijol_Bayo.gnm1.ann1.ML22" type="lis-annotation" dump="true">
@@ -968,10 +1384,20 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/radiata/annotations/VC1973A.gnm6.ann1.M1Qs/" />
       <property name="src.data.dir" location="/data/v2/Vigna/radiata/annotations/VC1973A.gnm6.ann1.M1Qs"/>
     </source>
+    <!-- Vigna/radiata/annotations/VC1973A.gnm7.ann1.RWBG -->
+    <source name="VC1973A.gnm7.ann1.RWBG" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/radiata/annotations/VC1973A.gnm7.ann1.RWBG/" />
+      <property name="src.data.dir" location="/data/v2/Vigna/radiata/annotations/VC1973A.gnm7.ann1.RWBG"/>
+    </source>
     <!-- Vigna/unguiculata/annotations/CB5-2.gnm1.ann1.0GKC -->
     <source name="CB5-2.gnm1.ann1.0GKC" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/annotations/CB5-2.gnm1.ann1.0GKC/" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/annotations/CB5-2.gnm1.ann1.0GKC"/>
+    </source>
+    <!-- Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann1.zb5D -->
+    <source name="IT97K-499-35.gnm1.ann1.zb5D" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann1.zb5D/" />
+      <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann1.zb5D"/>
     </source>
     <!-- Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann2.FD7K -->
     <source name="IT97K-499-35.gnm1.ann2.FD7K" type="lis-annotation" dump="true">
@@ -1079,82 +1505,73 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/synteny/IT97K-499-35.gnm1.syn.W3NY/" />
       <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/synteny/IT97K-499-35.gnm1.syn.W3NY" />
     </source>
-    
-    <!-- Cajanus/cajan/expression/ICPL87119.gnm1.ann1.expr.4H6Z -->
-    <source name="ICPL87119.gnm1.ann1.expr.4H6Z" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cajanus/cajan/expression/ICPL87119.gnm1.ann1.expr.4H6Z/" />
-      <property name="src.data.dir" location="/data/v2/Cajanus/cajan/expression/ICPL87119.gnm1.ann1.expr.4H6Z" />
+
+    <!-- Cajanus/cajan/expression/ICPL87119.gnm1.ann1.expr.ICPL87119.Pazhamala_Purohit_2017 -->
+    <source name="ICPL87119.gnm1.ann1.expr.ICPL87119.Pazhamala_Purohit_2017" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cajanus/cajan/expression/ICPL87119.gnm1.ann1.expr.ICPL87119.Pazhamala_Purohit_2017/" />
+      <property name="src.data.dir" location="/data/v2/Cajanus/cajan/expression/ICPL87119.gnm1.ann1.expr.ICPL87119.Pazhamala_Purohit_2017" />
     </source>
-    <!-- Cicer/arietinum/expression/CDCFrontier.gnm1.ann1.expr.C14F SKIP: it's not CDCFrontier RNA-seq data! -->
-    <!-- Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.4Y7B -->
-    <source name="ICC4958.gnm2.ann1.expr.4Y7B" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.4Y7B/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.4Y7B" />
+    <!-- Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018 -->
+    <source name="CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018" />
     </source>
-    <!-- Glycine/max/expression/Wm82.gnm1.ann1.expr.Z679 SKIP: doesn't contain any relevant files -->
-    <!-- Glycine/max/expression/Wm82.gnm2.ann1.expr.G7ZY -->
-    <source name="Wm82.gnm2.ann1.expr.G7ZY" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/expression/Wm82.gnm2.ann1.expr.G7ZY/" />
-      <property name="src.data.dir" location="/data/v2/Glycine/max/expression/Wm82.gnm2.ann1.expr.G7ZY" />
+    <!-- Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018 -->
+    <source name="CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018" />
     </source>
-    <!-- Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY -->
-    <source name="A17_HM341.gnm4.ann2.expr.RLZY" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY" />
+    <!-- Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018 -->
+    <source name="CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018" />
     </source>
-    <!-- Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.4ZDQ -->
-    <source name="G19833.gnm1.ann1.expr.4ZDQ" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.4ZDQ/" />
-      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.4ZDQ" />
+    <!-- Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a -->
+    <source name="CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a" />
     </source>
-    <!-- Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.BWH5 -->
-    <source name="IT97K-499-35.gnm1.ann1.expr.BWH5" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.BWH5/" />
-      <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.BWH5" />
+    <!-- Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b -->
+    <source name="CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b" />
     </source>
-    
-    <!-- ############### -->
-    <!-- ONTOLOGIES ETC. -->
-    <!-- ############### -->
-    
-    <!-- LIS gene families -->
-    <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
-      <property name="dataSetName" value="legume.genefam.fam1.M65K"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
-      <property name="dataSetDescription" value="LIS gene families"/>
-      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
+    <!-- Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013 -->
+    <source name="ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013" />
+    </source>
+    <!-- Glycine/max/expression/Wm82.gnm2.ann1.expr.Wm82.Libault_Farmer_2010 -->
+    <source name="Wm82.gnm2.ann1.expr.Wm82.Libault_Farmer_2010" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/expression/Wm82.gnm2.ann1.expr.Wm82.Libault_Farmer_2010/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/expression/Wm82.gnm2.ann1.expr.Wm82.Libault_Farmer_2010" />
+    </source>
+    <!-- Medicago/sativa/expression/XinJiangDaYe.gnm1.ann1.expr.B47_F56.ORourke_Fu_2015 -->
+    <source name="XinJiangDaYe.gnm1.ann1.expr.B47_F56.ORourke_Fu_2015" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/expression/XinJiangDaYe.gnm1.ann1.expr.B47_F56.ORourke_Fu_2015/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/expression/XinJiangDaYe.gnm1.ann1.expr.B47_F56.ORourke_Fu_2015" />
+    </source>
+    <!-- Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.He_Vagner_2009 -->
+    <source name="A17_HM341.gnm4.ann2.expr.He_Vagner_2009" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.He_Vagner_2009/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.He_Vagner_2009" />
+    </source>
+    <!-- Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014 -->
+    <source name="G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014/" />
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014" />
+    </source>
+    <!-- Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016 -->
+    <source name="IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016/" />
+      <property name="src.data.dir" location="/data/v2/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016" />
     </source>
 
-    <!-- LIS gene family trees -->
-    <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
-      <property name="dataSetName" value="legume.genefam.fam1.M65K.trees_ML_rooted"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/" />
-      <property name="dataSetDescription" value="LIS gene family phylogenetic trees"/>
-      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
-    </source>
+    <!-- ############### ONTOLOGIES etc. ############### -->
 
-    <!-- INTERPRO -->
-    <source name="interpro" type="interpro">
-      <property name="data.source.name" value="InterPro"/>
-      <property name="data.source.description" value="XML file listing each InterPro entry."/>
-      <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
-      <property name="src.data.dir" location="/data/InterPro/"/>
-    </source>
-    <source name="interpro-go" type="interpro-go">
-      <property name="data.source.name" value="InterPro2GO"/>
-      <property name="data.source.description" value="Mappings of InterPro entries to Gene Ontology (GO) terms."/>
-      <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
-      <property name="src.data.dir" location="/data/InterPro/ontology/"/>
-    </source>
-
-    <!-- plant ontology -->
-    <source name="plant-ontology" type="obo">
-      <property name="src.data.file" location="/data/plant-ontology/po.obo"/>
-      <property name="ontology.prefix" value="PO"/>
-      <property name="obo.ontology.name" value="Plant Ontology"/>
-      <property name="obo.ontology.url" value="http://planteome.org/" />
-      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/" />
-      <property name="obo.ontology.description" value="The Plant Ontology (PO) is a community resource consisting of standardized terms, definitions, and logical relations describing plant structures and development stages, augmented by a large database of annotations from genomic and phenomic studies."/>
+    <!-- sequence ontology -->
+    <source name="so" type="so">
+      <property name="src.data.file" location="/data/SO-Ontologies/Ontology_Files/so-simple.obo"/>
     </source>
 
     <!-- gene ontology -->
@@ -1162,18 +1579,66 @@
       <property name="src.data.file" location="/data/gene-ontology/go-basic.obo"/>
     </source>
 
-    <!-- sequence ontology -->
-    <source name="so" type="so">
-      <property name="src.data.file" location="/data/SO-Ontologies/so-simple.obo"/>
+    <!-- INTERPRO -->
+    <source name="interpro" type="interpro">
+      <property name="src.data.dir" location="/data/InterPro/"/>
+    </source>
+
+    <!-- InterPro2GO -->
+    <source name="interpro-go" type="interpro-go">
+      <property name="src.data.dir" location="/data/InterPro/ontology/"/>
+    </source>
+
+    <!-- Pfam terms -->
+    <source name="pfam-term" type="pfam-term">
+      <property name="src.data.dir" location="/data/Pfam/"/>
+    </source>
+
+    <!-- PANTHER terms -->
+    <source name="panther-term" type="panther-term">
+      <property name="src.data.dir" location="/data/PANTHER/"/>
+    </source>
+    
+    <!-- plant ontology -->
+    <source name="plant-ontology" type="obo">
+      <property name="src.data.file" location="/data/plant-ontology/po.obo"/>
+      <property name="ontology.prefix" value="PO"/>
+      <property name="obo.ontology.name" value="Plant Ontology"/>
+      <property name="obo.ontology.url" value="http://planteome.org/"/>
+      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
+      <property name="obo.ontology.description" value="The Plant Ontology (PO) is a community resource consisting of standardized terms, definitions, and logical relations describing plant structures and development stages, augmented by a large database of annotations from genomic and phenomic studies."/>
+    </source>
+
+    <!-- plant trait ontology -->
+    <source name="plant-trait-ontology" type="obo">
+      <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/>
+      <property name="ontology.prefix" value="TO"/>
+      <property name="obo.ontology.name" value="Plant Trait Ontology"/>
+      <property name="obo.ontology.url" value="http://www.obofoundry.org/ontology/to.html"/>
+      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
+      <property name="obo.ontology.description" value="A controlled vocabulary of describe phenotypic traits in plants."/>
+    </source>
+
+    <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/ -->
+    <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
+      <property name="dataSetName" value="legume.genefam.fam1.M65K"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
+      <property name="dataSetDescription" value="LIS gene families"/>
+      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
+    </source>
+
+    <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
+    <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
+      <property name="dataSetName" value="legume.genefam.fam1.M65K.trees_ML_rooted"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/" />
+      <property name="dataSetDescription" value="LIS gene family phylogenetic trees"/>
+      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
     </source>
 
   </sources>
 
-  <!-- ############### -->
-  <!-- post-processing -->
-  <!-- ############### -->
-  
   <post-processing>
+
     <!-- IM CORE -->
     <post-process name="do-sources" />
     <post-process name="create-utr-references"/>
@@ -1196,6 +1661,7 @@
     <post-process name="summarise-objectstore" />
     <post-process name="create-autocomplete-index" />
     <post-process name="create-search-index" />
+
   </post-processing>
 
 </project>
