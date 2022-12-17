@@ -37,12 +37,13 @@
 <definition name="friendlyMineLinkDisplayer.tile" path="/model/friendlyMineLinkDisplayer.jsp" controllerUrl="/initFriendlyMineLinkDisplayer.do"/>
 
 <!-- Heat Map -->
-<!-- <definition name="heatMap.tile" path="/model/heatMap.jsp" controllerUrl="/initHeatMap.do"/> -->
+<definition name="heatMap.tile" path="/model/heatMap.jsp"
+            controllerUrl="/initHeatMap.do"/>
 
-<!-- <definition name="heatMap.page" extends="layout.template"> -->
-<!--   <put name="body" value="heatMap.tile"/> -->
-<!--   <put name="pageName" value="heatMap"/> -->
-<!-- </definition> -->
+<definition name="heatMap.page" extends="layout.template">
+  <put name="body" value="heatMap.tile"/>
+  <put name="pageName" value="heatMap"/>
+</definition>
 
 <!-- Linkage Group Diagram -->
 <definition name="linkageGroupDiagram.tile" path="/model/linkageGroupDiagram.jsp"
@@ -60,6 +61,10 @@
 <!-- Motif Search -->
 <definition name="motifSearch.tile" path="/model/motifSearch.jsp"
             controllerUrl="/initMotifSearch.do" />
+
+<!-- Marker Genotypes -->
+<definition name="markerGenotypes.tile" path="/model/markerGenotypes.jsp"
+            controllerUrl="/initMarkerGenotypes.do" />
 
 <!-- LIS pages -->
 <definition name="lisLinkDisplayer.tile" path="/model/lisLinkDisplayer.jsp"/>
