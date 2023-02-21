@@ -1815,7 +1815,6 @@
 
     <!-- LIS -->
     <post-process name="lis-create-genefamilytally" />
-    <!-- <post-process name="lis-populate-publications" /> -->
 
     <!-- VIEWS AND INDEXES -->
     <post-process name="create-location-overlap-index" />
