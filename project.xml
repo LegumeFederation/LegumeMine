@@ -222,6 +222,14 @@
       <property name="dataSetDescription" value="Phaseolus lunatus organism and strain information." />
       <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/lunatus/about_this_collection" />
     </source>
+    <!-- Phaseolus/vulgaris/about_this_collection -->
+    <source name="Phaseolus-vulgaris-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Phaseolus-vulgaris-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/about_this_collection/" />
+      <property name="dataSetDescription" value="Phaseolus vulgaris organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/vulgaris/about_this_collection" />
+    </source>
+    <!-- Pisum/sativum/about_this_collection -->
     <source name="Pisum-sativum-description" type="lis-description" dump="true" >
       <property name="dataSetName" value="Pisum-sativum-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Pisum/sativum/about_this_collection/" />
@@ -1823,35 +1831,35 @@
       <property name="src.data.dir" location="/home/shokin/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
-    <!-- Arachis/GENUS/pangenes/Arachis.pan1.4LN9 -->
-    <source name="Arachis.pan1.4LN9" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/GENUS/pngenes/Arachis.pan1.4LN9/" />
-      <property name="src.data.dir" location="/home/shokin/v2/Arachis/GENUS/pangenes/Arachis.pan1.4LN9"/>
+    <!-- Arachis/GENUS/pangenes/Arachis.pan2.5P1K -->
+    <source name="Arachis.pan2.5P1K" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/GENUS/pangenes/Arachis.pan2.5P1K/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Arachis/GENUS/pangenes/Arachis.pan2.5P1K"/>
     </source>
-    <!-- Cicer/GENUS/pangenes/Cicer.pan1.SV8C -->
-    <source name="Cicer.pan1.SV8C" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/GENUS/pngenes/Cicer.pan1.SV8C/" />
-      <property name="src.data.dir" location="/home/shokin/v2/Cicer/GENUS/pangenes/Cicer.pan1.SV8C"/>
+    <!-- Cicer/GENUS/pangenes/Cicer.pan2.CMWZ -->
+    <source name="Cicer.pan2.CMWZ" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/GENUS/pngenes/Cicer.pan2.CMWZ/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Cicer/GENUS/pangenes/Cicer.pan2.CMWZ"/>
     </source>
-    <!-- Glycine/GENUS/pangenes/Glycine.pan3.YWTW -->
-    <source name="Glycine.pan3.YWTW" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/GENUS/pngenes/Glycine.pan3.YWTW/" />
-      <property name="src.data.dir" location="/home/shokin/v2/Glycine/GENUS/pangenes/Glycine.pan3.YWTW"/>
+    <!-- Glycine/GENUS/pangenes/Glycine.pan4.RK4P -->
+    <source name="Glycine.pan4.RK4P" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/GENUS/pangenes/Glycine.pan4.RK4P/"/>
+      <property name="src.data.dir" location="/home/shokin/v2/Glycine/GENUS/pangenes/Glycine.pan4.RK4P"/>
     </source>
-    <!-- Medicago/GENUS/pangenes/Medicago.pan1.XXQ6 -->
-    <source name="Medicago.pan1.XXQ6" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/GENUS/pngenes/Medicago.pan1.XXQ6/" />
-      <property name="src.data.dir" location="/home/shokin/v2/Medicago/GENUS/pangenes/Medicago.pan1.XXQ6"/>
+    <!-- Medicago/GENUS/pangenes/Medicago.pan2.451K -->
+    <source name="Medicago.pan2.451K" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/GENUS/pngenes/Medicago.pan2.451K/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Medicago/GENUS/pangenes/Medicago.pan2.451K"/>
     </source>
-    <!-- Phaseolus/GENUS/pangenes/Phaseolus.pan1.X2PC -->
-    <source name="Phaseolus.pan1.X2PC" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/GENUS/pangenes/Phaseolus.pan1.X2PC/"/>
-      <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/GENUS/pangenes/Phaseolus.pan1.X2PC"/>
+    <!-- Phaseolus/GENUS/pangenes/Phaseolus.pan2.G5HV -->
+    <source name="Phaseolus.pan2.G5HV" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/GENUS/pangenes/Phaseolus.pan2.G5HV/"/>
+      <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/GENUS/pangenes/Phaseolus.pan2.G5HV"/>
     </source>
-    <!-- Vigna/GENUS/pangenes/Vigna.pan1.X2PC -->
-    <source name="Vigna.pan1.X2PC" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/GENUS/pngenes/Vigna.pan1.X2PC/" />
-      <property name="src.data.dir" location="/home/shokin/v2/Vigna/GENUS/pangenes/Vigna.pan1.X2PC"/>
+    <!-- Vigna/GENUS/pangenes/Vigna.pan2.MQQM -->
+    <source name="Vigna.pan2.MQQM" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/GENUS/pngenes/Vigna.pan2.MQQM/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Vigna/GENUS/pangenes/Vigna.pan2.MQQM"/>
     </source>
     
     <!-- ############################################################################################# -->
@@ -1909,9 +1917,9 @@
     <post-process name="make-spanning-locations"/>
     <post-process name="create-chromosome-locations-and-lengths"/>
     <post-process name="create-intergenic-region-features"/>
-    <post-process name="transfer-sequences"/>
     <post-process name="populate-child-features"/>
     <post-process name="create-gene-flanking-features"/>
+    <post-process name="transfer-sequences"/>
 
     <!-- LIS -->
     <post-process name="lis-create-genefamilytally" />
