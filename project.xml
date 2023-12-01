@@ -1922,7 +1922,10 @@
     <post-process name="transfer-sequences"/>
 
     <!-- LIS -->
-    <post-process name="lis-create-genefamilytally" />
+    <post-process name="lis-remove-orphans"/>
+    <!-- <post-process name="lis-create-pathways"/> 5.1.0.4 -->
+    <post-process name="lis-create-genefamilytally"/>
+    <!-- <post-process name="lis-populate-pangeneset-genes-proteins"/> 5.1.0.4 -->
 
     <!-- VIEWS AND INDEXES -->
     <post-process name="create-location-overlap-index" />
