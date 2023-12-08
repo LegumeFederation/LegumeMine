@@ -1733,6 +1733,16 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Lupinus/angustifolius/synteny/Tanjil.gnm1.syn.TwnC/" />
       <property name="src.data.dir" location="/home/shokin/v2/Lupinus/angustifolius/synteny/Tanjil.gnm1.syn.TwnC" />
     </source>
+    <!-- Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F -->
+    <source name="G19833.gnm1.syn.xQ7F" type="lis-synteny" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F" />
+    </source>
+    <!-- Phaseolus/vulgaris/synteny/G19833.gnm2.syn.DVDW -->
+    <source name="G19833.gnm2.syn.DVDW" type="lis-synteny" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/synteny/G19833.gnm2.syn.DVDW/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/vulgaris/synteny/G19833.gnm2.syn.DVDW" />
+    </source>
     <!-- Trifolium/pratense/synteny/MilvusB.gnm2.syn.dXVX -->
     <source name="MilvusB.gnm2.syn.dXVX" type="lis-synteny" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/synteny/MilvusB.gnm2.syn.dXVX/" />
